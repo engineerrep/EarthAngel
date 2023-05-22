@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="dialog"
+            type="com.earth.angel.dialog.DialogCommon" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/llTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_top"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/AppTheme.TextView"
+                android:layout_marginLeft="@dimen/page_space"
+                android:layout_marginRight="@dimen/page_space"
+                android:lineSpacingMultiplier="1"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/tvContent"
+                style="@style/AppTheme.TextView"
+                android:textColor="@color/main_unselect"
+                android:textSize="15sp"
+                android:text=""
+                android:lineSpacingMultiplier="1"
+                android:layout_marginLeft="@dimen/page_space"
+                android:layout_marginRight="@dimen/page_space"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+        </LinearLayout>
+
+
+
+        <View
+            android:id="@+id/viewDivider1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color"
+            app:layout_constraintTop_toBottomOf="@id/llTitle" />
+
+
+        <TextView
+            android:id="@+id/tvCancel"
+            style="@style/AppTheme.TextView"
+            android:layout_width="0dp"
+            android:background="@drawable/bg_white_bottom_left"
+            android:padding="@dimen/_18sdp"
+            android:text="@string/lab_Cancel"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@id/viewDivider2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/holo_blue_light"
+            app:layout_constraintTop_toBottomOf="@id/viewDivider1" />
+        <View
+            android:id="@+id/viewDivider2"
+            android:layout_width="0.5dp"
+            android:layout_height="0dp"
+            android:background="@color/divider_color"
+            app:layout_constraintBottom_toBottomOf="@id/tvCancel"
+            app:layout_constraintEnd_toStartOf="@id/tvBlock"
+            app:layout_constraintStart_toEndOf="@id/tvCancel"
+            app:layout_constraintTop_toTopOf="@id/tvCancel" />
+        <TextView
+            android:id="@+id/tvBlock"
+            style="@style/AppTheme.TextView"
+            android:layout_width="0dp"
+            android:background="@drawable/bg_white_bottom_right"
+            android:padding="@dimen/_18sdp"
+            android:text="@string/lab_Confirm"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/viewDivider2"
+            app:layout_constraintTop_toBottomOf="@id/viewDivider1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

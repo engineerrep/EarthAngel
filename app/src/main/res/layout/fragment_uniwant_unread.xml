@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="handler"
+            type="com.earth.angel.mine.fragment.UnreadIWantFragment" />
+        <variable
+            name="adapter"
+            type="com.earth.angel.mine.adapter.EcoGiftWantAdapter" />
+        <variable
+            name="onRefreshLoadMoreListener"
+            type="com.scwang.smart.refresh.layout.listener.OnRefreshLoadMoreListener" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mine.fragment.UnreadFragment">
+
+    <com.earth.angel.view.NestedScrollableHost
+        bind:layout_constraintTop_toTopOf="parent"
+        bind:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/srf"
+            bind:layout_constraintTop_toTopOf="parent"
+            bind:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            bind:layout_constraintTop_toTopOf="parent"
+            bind:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </com.earth.angel.view.NestedScrollableHost>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

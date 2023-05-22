@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llItem"
+    android:paddingTop="@dimen/_3sdp"
+    android:paddingBottom="@dimen/_3sdp"
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:layout_marginRight="@dimen/_15sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<com.earth.libbase.view.ShapedImageView
+    android:id="@+id/iv"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:scaleType="centerCrop"
+    app:round_radius="@dimen/_8sdp"
+    app:shape_mode="circle"
+
+    android:layout_width="@dimen/_48sdp"
+    android:layout_height="@dimen/_48sdp"/>
+    <TextView
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/tvNum"
+        app:layout_constraintTop_toTopOf="@+id/iv"
+        app:layout_constraintStart_toEndOf="@+id/iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tv"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tinai’s  ID: 875sssssssssssssssssssssssssssssss"
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/tvNum"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:layout_constraintStart_toEndOf="@+id/iv"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Number : 7777"
+        android:textColor="#ff666666"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/lineView"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@+id/iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/iv"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

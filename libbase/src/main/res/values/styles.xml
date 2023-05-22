@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    -<style parent="Theme.AppCompat.Light.DarkActionBar" name="AppTheme">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/BaseThemColor</item>
+
+    <item name="colorPrimaryDark">@color/BaseThemColor</item>
+
+
+    <item name="android:colorEdgeEffect">@color/BaseThemColor</item>
+    <!--字体库-->
+    <item name="android:fontFamily">@font/mm_avenirnext_medium</item>
+
+</style>
+    <style parent="@style/AppTheme" name="Theme"/>
+
+
+    -<style parent="TextAppearance.Design.Tab" name="Theme.TabLayoutTextStyle">
+
+    <item name="android:textSize">16sp</item>
+
+    <!-- <item name="textAllCaps">false</item>-->
+
+
+</style>
+    <style name="Theme.BaseTextView">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:textColor">@color/BaseThemColor</item>
+    <item name="android:textSize">15sp</item>
+    <item name="android:lineSpacingMultiplier">1</item>
+    <item name="android:drawablePadding">5dp</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:textColorHint">@color/theme_secondary_text_color</item>
+    <item name="android:fontFamily">@font/mm_avenirnext_medium</item>
+</style>
+<style name="Theme.BaseTitleTextView">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:textColor">@color/BaseThemColor</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:lineSpacingMultiplier">1</item>
+    <item name="android:drawablePadding">5dp</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:textColorHint">@color/theme_secondary_text_color</item>
+    <item name="android:fontFamily">@font/avenirnext_latobold</item>
+</style>
+    <style name="LibBaseTabLayoutText">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="AppTheme.BaseEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/base_black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColorHint">@color/base_text_theme_hint</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:fontFamily">@font/mm_avenirnext_medium</item>
+        <item name="android:textCursorDrawable">@drawable/base_color_cursor</item>
+        <item name="android:background">@null</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+
+    </style>
+    <style name="BaseUserSign.InputText" parent="@style/AppTheme.BaseEditText">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:textColor">#ff9a9a9a</item>
+        <item name="android:textColorHint">@color/base_login_hint</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:paddingTop">@dimen/etMain</item>
+        <item name="android:paddingBottom">@dimen/etMain</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textCursorDrawable">@drawable/base_color_cursor</item>
+    </style>
+    <style name="BaseUserSign.LoginButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/avenirnext_semibold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="LoginSee">
+        <item name="android:layout_gravity">center_vertical|end</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:src">@drawable/eye_select</item>
+    </style>
+
+    <style name="UserSign.InputText" parent="@style/AppTheme.EditText">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:textColor">#ff9a9a9a</item>
+        <item name="android:textColorHint">#DDCED8</item>
+        <item name="android:textSize">17sp</item>
+        <item name="fontFamily">@font/avenirnext_regular</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="AppTheme.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/base_black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColorHint">#DDCED8</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+        <item name="android:background">@null</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+
+    </style>
+
+    <style name="dialog_style" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <!--无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--这个无标题才可以的-->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:windowIsTranslucent">false</item>
+        <!--背景变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--全屏,无标题-->
+
+    </style>
+
+
+</resources>

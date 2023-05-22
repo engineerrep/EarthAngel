@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_white"
+    android:orientation="horizontal">
+    <!-- 消息主体,width记得match_parent,直接把后面两个布局顶出去 -->
+    <LinearLayout
+        android:id="@+id/ll_msg_remind_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_white"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_3sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <com.earth.libbase.view.ShapedImageView
+                android:id="@+id/LibmineItemSaveHead"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:scaleType="centerCrop"
+                android:layout_margin="5dp"
+                app:shape_mode="circle"
+                android:layout_width="@dimen/head_image"
+                android:layout_height="@dimen/head_image"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/base_page"
+                app:layout_constraintStart_toEndOf="@+id/LibmineItemSaveHead"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/LibmineItemSaveHead"
+                app:layout_constraintBottom_toTopOf="@+id/LibmineItemSaveContent"
+                android:id="@+id/LibmineItemSaveName"
+                style="@style/Theme.BaseTitleTextView"
+                android:lines="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mona James"
+                android:textColor="#ff555555"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_marginLeft="@dimen/base_page"
+                android:id="@+id/LibmineItemSaveContent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/LibmineItemSaveHead"
+                app:layout_constraintTop_toBottomOf="@+id/LibmineItemSaveName"
+                app:layout_constraintBottom_toBottomOf="@+id/LibmineItemSaveHead"
+                style="@style/Theme.BaseTextView"
+                android:layout_width="0dp"
+                android:lines="1"
+                android:layout_height="wrap_content"
+                android:text="15 gifts waiting to be given"
+                android:textColor="#ff9d9d9d"
+                android:textSize="14sp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@color/base_white">
+
+        <TextView
+            android:id="@+id/tv_msg_remind_check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/base_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@color/base_white">
+
+        <TextView
+            android:id="@+id/tv_msg_remind_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="delete"
+            android:textColor="@color/base_white" />
+    </LinearLayout>
+
+</LinearLayout>

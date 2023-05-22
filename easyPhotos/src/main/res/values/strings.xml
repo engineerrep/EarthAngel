@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">EarthAngel</string>
+
+    <string name="selector_folder_all_easy_photos">All images</string>
+
+    <string name="selector_folder_all_video_photo_easy_photos">Pictures and videos</string>
+
+    <string name="selector_folder_video_easy_photos">All videos</string>
+
+    <string name="selector_easy_photos">Select</string>
+
+    <!--http://stackoverflow.com/questions/17502824/whats-wrong-with-this-format-string-->
+    <string name="selector_action_done_easy_photos">Finish(%1$d/%2$d)</string>
+
+    <string name="selector_preview_easy_photos">Preview</string>
+
+    <string name="selector_reach_max_hint_easy_photos">Maximum selections exceeded</string>
+
+    <string name="selector_reach_max_image_hint_easy_photos">You can only select at most %d images</string>
+
+    <string name="selector_reach_max_video_hint_easy_photos">You can only select at most %d videos</string>
+
+    <string name="selector_single_type_hint_easy_photos">Need to select files of the same type</string>
+
+    <string name="msg_no_camera_easy_photos">Unable to start camera!</string>
+
+    <string name="camera_temp_file_error_easy_photos">Wrong picture</string>
+
+    <string name="selector_permission_error_easy_photos">Wrong permissions, not working!</string>
+
+    <string name="selector_image_size_error_easy_photos">The width of the image must be larger than %1$d,height must be greater than %2$d</string>
+
+    <string name="selector_image_type_error_easy_photos">This image format is not supported</string>
+
+    <string name="edit_easy_photos">Edit</string>
+
+    <string name="empty_easy_photos">Empty</string>
+
+    <string name="no_photos_easy_photos">There is no picture that meets the requirements, take a picture</string>
+
+    <string name="no_videos_easy_photos">No matching videos</string>
+
+    <string name="permissions_again_easy_photos">Please click and allow the relevant permissions</string>
+
+    <string name="permissions_die_easy_photos">Please click and allow related permissions in Settings</string>
+
+    <string name="original_easy_photos">Original image</string>
+
+    <string name="preview_current_number_easy_photos">%1$d/%2$d</string>
+
+    <string name="done_easy_photos">Finish</string>
+
+    <string name="cancel_easy_photos">Cancel</string>
+
+    <string name="template_easy_photos">Template</string>
+
+    <string name="text_sticker_easy_photos">Word</string>
+
+    <string name="text_sticker_date_easy_photos">Date</string>
+
+    <string name="text_sticker_hint_easy_photos">Double click to edit</string>
+
+    <string name="text_sticker_hint_name_easy_photos">Customize</string>
+
+    <string name="picture_selection_easy_photos">Picture selection</string>
+
+    <string name="video_selection_easy_photos">Video selection</string>
+
+    <string name="puzzle_easy_photos">Spell one</string>
+
+    <string name="select_puzzle_photos">Please select 2 \ -9 photos for one piece</string>
+
+    <string name="gif_easy_photos">GIF</string>
+
+    <string name="video_easy_photos">Video</string>
+
+
+</resources>

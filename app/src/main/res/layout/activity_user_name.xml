@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.earth.angel.login.UserNameActivity" />
+
+        <variable
+            name="handler"
+            type="UserNameActivity" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <include layout="@layout/include_top_bar" />
+
+        <TextView
+            android:id="@+id/tvConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/page_space"
+            android:layout_marginRight="@dimen/page_space"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/text_enter_your_name"
+            android:textColor="@color/rank_un"
+            style="@style/AppTheme.TextView"
+            android:gravity="left"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlTopToolbar" />
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/etName"
+            style="@style/UserSign.InputText"
+            android:layout_width="match_parent"
+            android:background="@drawable/edittext_bg_selector"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/page_space"
+            android:layout_marginStart="@dimen/page_space"
+            android:hint="@string/label_Enter_your_name"
+            android:textColorHint="@color/hint_user_name_bg"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvConfirm" />
+        <TextView
+            android:gravity="right"
+            android:id="@+id/tv_num"
+            app:layout_constraintEnd_toStartOf="@+id/tv_all"
+            app:layout_constraintBottom_toBottomOf="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_0"
+            android:textColor="@color/rank_un"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_marginRight="@dimen/page_space"
+            android:id="@+id/tv_all"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_15"
+            android:textColor="@color/rank_un"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/_4sdp"
+            android:id="@+id/tvLeast"
+            android:layout_marginLeft="@dimen/page_space"
+            android:layout_marginRight="@dimen/page_space"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_Least"
+            android:textColor="@color/rank_un"
+            android:textSize="16sp"
+            />
+        <Button
+            android:id="@+id/btNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_84sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_84sdp"
+            android:background="@drawable/theme_button_bg"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/lab_Next"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

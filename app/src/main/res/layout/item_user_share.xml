@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/shape_corner_8sp_wite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp">
+
+
+        <com.earth.libbase.view.ShapedImageView
+
+            android:id="@+id/ivPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:round_radius="@dimen/_8sdp"
+            app:shape_mode="round_rect" />
+        <ImageView
+            app:layout_constraintEnd_toEndOf="@+id/ivPhoto"
+            app:layout_constraintStart_toStartOf="@+id/ivPhoto"
+            app:layout_constraintTop_toTopOf="@+id/ivPhoto"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPhoto"
+            android:id="@+id/ivIsSend"
+            android:src="@mipmap/gift_details_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:padding="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:id="@+id/tvUserName"
+            style="@style/AppTheme.TextView"
+            android:textColor="#FF323232"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text=""
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="@id/ivPhoto"
+            app:layout_constraintStart_toStartOf="@id/ivPhoto"
+            app:layout_constraintTop_toBottomOf="@+id/ivPhoto"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

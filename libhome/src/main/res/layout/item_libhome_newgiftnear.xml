@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.earth.libbase.view.ShapedImageView
+        android:id="@+id/ivImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        app:round_radius="@dimen/radius"
+        app:shape_mode="round_rect"
+        android:background="@android:color/black"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_width"/>
+    <TextView
+        android:layout_marginLeft="@dimen/_12sdp"
+
+        android:layout_marginTop="@dimen/_6sdp"
+        style="@style/Theme.BaseTextView"
+        app:layout_constraintTop_toTopOf="@+id/ivImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivImage"
+        app:layout_constraintBottom_toTopOf="@+id/itemLibHomeHours"
+        android:id="@+id/tvText"
+        android:layout_width="0dp"
+        android:lines="3"
+        android:ellipsize="end"
+        android:layout_height="wrap_content"
+        android:text="Certified Refurbished Echelon Bike EX-4s with 10’’ Screen"
+        android:textColor="#ff555555"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:id="@+id/itemLibHomeHours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivImage"
+        app:layout_constraintBottom_toBottomOf="@+id/ivImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvText"
+        style="@style/Theme.BaseTextView"
+        android:drawableLeft="@mipmap/lib_home_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="  Within 24 Hours"
+        android:textColor="#ff9d9d9d"
+        android:textSize="12sp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

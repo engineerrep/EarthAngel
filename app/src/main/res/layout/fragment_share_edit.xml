@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D3BCA6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:padding="@dimen/page_space"
+            android:id="@+id/etShare"
+            android:layout_marginLeft="@dimen/page_space"
+            android:layout_marginRight="@dimen/page_space"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/clGift"
+            android:lines="3"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="dd"
+            android:background="@drawable/shape_corner_share_edit_stroke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/lineEtShare"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/etShare"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></TextView>
+        <ImageView
+            android:layout_marginLeft="@dimen/page_space"
+            app:layout_constraintStart_toStartOf="@+id/etShare"
+            app:layout_constraintTop_toTopOf="@+id/lineEtShare"
+            app:layout_constraintBottom_toBottomOf="@+id/lineEtShare"
+            android:src="@mipmap/share_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="@dimen/_30sdp"
+            android:id="@+id/clGift"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/etShare"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginRight="@dimen/_60sdp"
+                    android:layout_marginLeft="@dimen/_60sdp"
+                    app:layout_constraintDimensionRatio="w,138:100"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:cardBackgroundColor="#D7C5B0"
+                    app:contentPadding="@dimen/page_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <RelativeLayout
+                        android:background="@drawable/shape_corner_share_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rlvImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivShareDown"
+        android:layout_marginRight="@dimen/_60sdp"
+        app:layout_constraintEnd_toEndOf="@+id/clGift"
+        app:layout_constraintBottom_toBottomOf="@+id/clGift"
+        android:src="@mipmap/share_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

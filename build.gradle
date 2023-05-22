@@ -1,0 +1,81 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: 'config.gradle' //引入配置文件
+
+buildscript {
+
+    ext.kotlin_version = "1.5.21"
+
+    ext.koin_version = '2.1.6'
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        maven { url "https://mirrors.tencent.com/nexus/repository/maven-public/" }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+//        maven {
+//            allowInsecureProtocol = true
+//            url 'http://47.112.160.66:8081/repository/maven-releases'
+//        }
+        maven { url "https://www.jitpack.io" }
+        google()
+        jcenter()
+        mavenCentral()
+
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.2.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.10'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+        classpath "com.alibaba:arouter-register:1.0.2"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+        maven {
+            allowInsecureProtocol = true
+            url 'http://47.112.160.66:8081/repository/maven-releases'
+        }
+        maven { url "https://mirrors.tencent.com/nexus/repository/maven-public/" }
+
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        mavenCentral()
+
+
+    }
+
+}
+
+//groovy
+configurations.all {
+    resolutionStrategy.force "org.antlr:antlr4-runtime:4.7.1"
+    resolutionStrategy.force "org.antlr:antlr4-tool:4.7.1"
+}
+
+//kotlin DSL
+configurations.all {
+    resolutionStrategy {
+        force("org.antlr:antlr4-runtime:4.7.1")
+        force("org.antlr:antlr4-tool:4.7.1")
+    }
+}
+
+ext {
+    abiFilters = ['armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'] //['armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64']
+    arguments = "-DANDROID_STL=c++_static"
+    cppFlags = "-std=c++11"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

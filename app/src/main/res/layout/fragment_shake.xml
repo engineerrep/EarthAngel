@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.earth.angel.search.ShakeFragment" />
+
+        <variable
+            name="handler"
+            type="ShakeFragment" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/rlEcoTopToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/tool_bar_min_height">
+
+            <ImageView
+                android:id="@+id/tvLeftTool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/bank"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvEcoTitleCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Shake"
+                android:textColor="#FF111111"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/toolbarEcoTabRight"
+                style="@style/Theme.ToolBar.MenuTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp"
+                android:textColor="#FF656565" />
+
+
+        </RelativeLayout>
+        <View
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlEcoTopToolbar"
+            android:id="@+id/line"
+            android:background="@color/line_bg"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <androidx.constraintlayout.helper.widget.Layer
+            android:id="@+id/lyConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_corner_contacts"
+            app:constraint_referenced_ids="contacts_iv,tvConnect,tvPeople,tvConnectBtn,tvRight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line"/>
+        <ImageView
+            android:id="@+id/contacts_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/page_space"
+            android:paddingLeft="@dimen/page_space"
+            android:src="@mipmap/shake_user"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPeople"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvConnect" />
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/tvConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/page_space"
+            android:text="Connect Location"
+            android:textColor="#ff323232"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/contacts_iv"
+            app:layout_constraintTop_toBottomOf="@+id/line"/>
+        <TextView
+            android:id="@+id/tvPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/page_space"
+            android:text="Find nearby people"
+            android:textColor="#ff666666"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tvConnect"
+            app:layout_constraintTop_toBottomOf="@+id/tvConnect" />
+        <TextView
+            android:layout_marginRight="@dimen/page_space"
+            android:id="@+id/tvConnectBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_corner_group_join"
+            android:padding="@dimen/_10sdp"
+            android:text="Connect"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPeople"
+            app:layout_constraintEnd_toStartOf="@+id/tvRight"
+            app:layout_constraintTop_toTopOf="@+id/tvConnect" />
+        <TextView
+            android:layout_marginRight="@dimen/page_space"
+            android:id="@+id/tvRight"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPeople"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rlvShakeYes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPeople"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/ivShake"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@mipmap/shake_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
+        <TextView
+            android:id="@+id/tvLooking"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/ivShake"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Looking for people shaking their phones"
+            android:textColor="#FF676767"
+            android:textSize="16sp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

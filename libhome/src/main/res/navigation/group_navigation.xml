@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/group_navigation"
+    app:startDestination="@id/groupNameFragment">
+
+    <fragment
+        android:id="@+id/groupNameFragment"
+        android:name="com.earth.libhome.group.GroupNameFragment"
+        tools:layout="@layout/fragment_groupname"
+        android:label="GroupNameFragment" >
+        <action
+            android:id="@+id/action_groupNameFragment_to_groupMapFragment"
+            app:destination="@id/groupMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupMapFragment"
+        android:name="com.earth.libhome.group.GroupMapFragment"
+        tools:layout="@layout/fragment_groupmap"
+
+        android:label="GroupMapFragment" />
+</navigation>

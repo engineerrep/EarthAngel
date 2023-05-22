@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/rlTopToolbar"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/tool_bar_min_height">
+
+    <ImageView
+        android:id="@+id/tvLeftTool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:src="@mipmap/arrow_right" />
+
+    <TextView
+        style="@style/Theme.BaseTitleTextView"
+        android:layout_toRightOf="@+id/tvLeftTool"
+        android:id="@+id/tvTitleCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF111111"
+        android:layout_centerInParent="true"
+        android:lines="1"
+        android:layout_toLeftOf="@+id/toolbarTabRight"
+        android:enabled="true"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:text=""
+        android:id="@+id/toolbarTabRight"
+        style="@style/Theme.ToolBar.MenuTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textColor="#FF656565"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:padding="@dimen/_10sdp" />
+
+    <ImageView
+        android:id="@+id/ivRightTool"
+        style="@style/Theme.ToolBar.MenuImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:padding="@dimen/_10sdp" />
+
+</RelativeLayout>

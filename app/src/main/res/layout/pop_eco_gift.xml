@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginLeft="@dimen/_10sdp"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivBg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@mipmap/eco_gift_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <TextView
+            app:layout_constraintTop_toTopOf="@+id/ivBg"
+            app:layout_constraintBottom_toBottomOf="@+id/ivBg"
+            app:layout_constraintStart_toStartOf="@+id/ivBg"
+            app:layout_constraintEnd_toEndOf="@+id/ivBg"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eco gifts are used items of\n yours in good shape"
+            android:textColor="#FF838383"
+            android:textSize="16sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

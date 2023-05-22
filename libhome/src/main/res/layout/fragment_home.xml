@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<data>
+    <import type="com.earth.libhome.ui.HomeFragment"/>
+    <variable
+        name="handler"
+        type="com.earth.libhome.ui.HomeFragment" />
+</data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/base_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.HomeFragment">
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/libHomeSrl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:descendantFocusability="blocksDescendants"
+            android:id="@+id/libHomeRlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/base_page" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/base_page" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<data>
+    <import type="com.earth.angel.search.SearchActivity" />
+
+    <variable
+        name="handler"
+        type="SearchActivity" />
+
+</data>
+
+<androidx.core.widget.NestedScrollView
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="#FFF4F4F4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:background="@color/white"
+        android:id="@+id/llSearch"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginLeft="@dimen/page_space"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <androidx.constraintlayout.helper.widget.Layer
+                android:background="@drawable/shape_corner_search"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:constraint_referenced_ids="ivsearch,etSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:paddingRight="@dimen/_4sdp"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/ivsearch"
+                android:src="@mipmap/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:padding="@dimen/_10sdp"
+                android:id="@+id/etSearch"
+                style="@style/UserSign.InputText"
+                app:layout_constraintStart_toEndOf="@+id/ivsearch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_search_hint"
+                android:textColor="#FF9A9A9A"
+                android:textSize="14sp"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:gravity="center"
+            android:id="@+id/tvCancel"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Cancel"
+            android:textColor="#ff323232"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+    <androidx.constraintlayout.helper.widget.Layer
+        android:visibility="gone"
+        android:id="@+id/lyConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_corner_contacts"
+        app:constraint_referenced_ids="contacts_iv,tvConnect,tvPeople,tvConnectBtn,tvRight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/contacts_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/page_space"
+        android:layout_marginLeft="@dimen/page_space"
+        android:src="@mipmap/shake_user"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPeople"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvConnect" />
+
+    <TextView
+        android:id="@+id/tvConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/page_space"
+        android:text="Connect Contacts"
+        android:textColor="#ff323232"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/contacts_iv"
+        app:layout_constraintTop_toBottomOf="@+id/llSearch" />
+
+    <TextView
+        android:id="@+id/tvPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:paddingBottom="@dimen/page_space"
+        android:text="Find people you know"
+        android:textColor="#ff666666"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tvConnect"
+        app:layout_constraintTop_toBottomOf="@+id/tvConnect" />
+
+    <TextView
+        android:layout_marginRight="@dimen/page_space"
+        android:id="@+id/tvConnectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_corner_group_join"
+        android:padding="@dimen/_10sdp"
+        android:text="CONNECT"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPeople"
+        app:layout_constraintEnd_toStartOf="@+id/tvRight"
+        app:layout_constraintTop_toTopOf="@+id/tvConnect" />
+
+    <TextView
+        android:layout_marginRight="@dimen/page_space"
+        android:id="@+id/tvRight"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPeople"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/page_space"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:id="@+id/tvContacts"
+        app:layout_constraintTop_toBottomOf="@+id/tvPeople"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contacts"
+        android:textColor="#ff0f0f0f"
+        android:textSize="16sp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/white"
+        android:visibility="gone"
+
+        app:layout_constraintTop_toBottomOf="@+id/tvContacts"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/rlv_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.helper.widget.Layer
+        android:visibility="gone"
+
+        android:id="@+id/lyUser"
+        app:layout_constraintEnd_toStartOf="@+id/tvUserMore"
+        app:layout_constraintTop_toBottomOf="@+id/rlv_user"
+        app:constraint_referenced_ids="ivUserMore,tvUserMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:background="@color/white"
+        android:padding="@dimen/page_space"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvUserMore"
+        app:layout_constraintTop_toBottomOf="@+id/rlv_user"
+        android:id="@+id/ivUserMore"
+        android:src="@mipmap/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+
+        android:background="@color/white"
+        android:id="@+id/tvUserMore"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="More Contacts"
+        android:textColor="#ff0f0f0f"
+        android:textSize="16sp"
+        android:gravity="center|left"
+        app:layout_constraintStart_toEndOf="@+id/ivUserMore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/ivUserMore"
+        app:layout_constraintTop_toTopOf="@+id/ivUserMore" />
+
+    <TextView
+        android:visibility="gone"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/page_space"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:id="@+id/tvGroups"
+        app:layout_constraintTop_toBottomOf="@+id/ivUserMore"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eco Gift Groups"
+        android:textColor="#ff0f0f0f"
+        android:textSize="16sp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tvGroups"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/rlv_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.helper.widget.Layer
+        android:visibility="gone"
+
+        android:id="@+id/lyGroup"
+        app:layout_constraintEnd_toStartOf="@+id/tvUserMore"
+        app:layout_constraintTop_toBottomOf="@+id/rlv_user"
+        app:constraint_referenced_ids="ivGroupMore,tvGroupMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:background="@color/white"
+        android:padding="@dimen/page_space"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvGroupMore"
+        app:layout_constraintTop_toBottomOf="@+id/rlv_group"
+        android:id="@+id/ivGroupMore"
+        android:src="@mipmap/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/tvGroupMore"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Eco Gift Groups"
+        android:textColor="#ff0f0f0f"
+        android:textSize="16sp"
+        android:gravity="center|left"
+        app:layout_constraintStart_toEndOf="@+id/ivGroupMore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGroupMore"
+        app:layout_constraintTop_toTopOf="@+id/ivGroupMore" />
+    <LinearLayout
+        android:id="@+id/llsearch"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/ivGroupMore"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="left|center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/search_iv"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/shape_corner_group_join"
+            app:layout_constraintTop_toBottomOf="@+id/rlv_group"
+            android:layout_marginLeft="@dimen/page_space"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@mipmap/search_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvSearchContent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@+id/search_iv"
+            app:layout_constraintTop_toTopOf="@+id/search_iv"
+            app:layout_constraintBottom_toBottomOf="@+id/search_iv"
+            android:layout_width="wrap_content"
+            style="@style/AppTheme.TextView"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:text="@string/text_search_content"
+            android:textColor="#FF333333"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/tvSearchContentEnd"
+            app:layout_constraintStart_toEndOf="@+id/search_iv"
+            app:layout_constraintTop_toTopOf="@+id/search_iv"
+            app:layout_constraintBottom_toBottomOf="@+id/search_iv"
+            android:layout_width="wrap_content"
+            style="@style/AppTheme.TextView"
+
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/themColor"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchRlv"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+</layout>

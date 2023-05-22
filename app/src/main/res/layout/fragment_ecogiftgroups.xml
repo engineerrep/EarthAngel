@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.earth.angel.gift.ui.fragment.EcoGiftGroupsFragment" />
+
+        <variable
+            name="handler"
+            type="EcoGiftGroupsFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlEcoTopToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/tool_bar_min_height">
+
+            <ImageView
+                android:id="@+id/tvLeftTool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/bank" />
+
+            <TextView
+                android:id="@+id/tvEcoTitleCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="EARTHANGEL"
+                android:textColor="#FF111111"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/toolbarEcoTabRight"
+                style="@style/Theme.ToolBar.MenuTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp"
+                android:textColor="#FF656565" />
+
+            <ImageView
+                android:id="@+id/ivEcoRightTool"
+                style="@style/Theme.ToolBar.MenuImageView"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@mipmap/add_group" />
+        </RelativeLayout>
+
+        <include layout="@layout/search_layout" />
+<com.scwang.smart.refresh.layout.SmartRefreshLayout
+    android:id="@+id/srl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clConnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.helper.widget.Layer
+                android:id="@+id/lyConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_corner_contacts"
+                app:constraint_referenced_ids="contacts_iv,tvConnect,tvPeople,tvConnectBtn,tvRight"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/contacts_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/page_space"
+                android:paddingLeft="@dimen/page_space"
+                android:src="@mipmap/shake_user"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPeople"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvConnect" />
+
+            <TextView
+                android:id="@+id/tvConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/page_space"
+                android:paddingTop="@dimen/page_space"
+                android:text="Connect Contacts"
+                android:textColor="#ff323232"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/contacts_iv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:paddingBottom="@dimen/page_space"
+                android:text="Find people you know"
+                android:textColor="#ff666666"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/tvConnect"
+                app:layout_constraintTop_toBottomOf="@+id/tvConnect" />
+
+            <TextView
+                android:layout_marginRight="@dimen/page_space"
+                android:id="@+id/tvConnectBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_corner_group_join"
+                android:padding="@dimen/_10sdp"
+                android:text="CONNECT"
+                android:textColor="#ffffffff"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPeople"
+                app:layout_constraintEnd_toStartOf="@+id/tvRight"
+                app:layout_constraintTop_toTopOf="@+id/tvConnect" />
+
+            <TextView
+                android:layout_marginRight="@dimen/page_space"
+                android:id="@+id/tvRight"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPeople"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rlvList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/page_space"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llContacts"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:paddingRight="@dimen/page_space"
+                android:paddingLeft="@dimen/page_space"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/main_no_message"
+                android:text="@string/text_Status"
+                android:textColor="#ff72726d"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:paddingRight="@dimen/page_space"
+                android:paddingLeft="@dimen/page_space"
+                android:layout_marginTop="@dimen/page_space"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You haven't received any new messages"
+                android:textColor="#ff72726d"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/_20sdp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/LibHomeGiftShareLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_page"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/base_page"
+        android:background="@drawable/bg_corners_shopp_28_side"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/Theme.BaseTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btnMargin"
+            android:layout_marginBottom="@dimen/btnMargin"
+            android:drawableLeft="@mipmap/share_base"
+            android:text="@string/label_Share_Product"
+            android:textColor="#ff6cc24b"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

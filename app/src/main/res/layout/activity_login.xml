@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.earth.angel.login.LoginActivity" />
+
+        <variable
+            name="handler"
+            type="LoginActivity" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <include layout="@layout/include_top_bar" />
+
+        <TextView
+            android:id="@+id/tvConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/text_phone_Confirm"
+            android:textColor="#ff676767"
+            style="@style/AppTheme.TextView"
+            android:gravity="left"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlTopToolbar" />
+
+        <androidx.constraintlayout.helper.widget.Layer
+            android:id="@+id/llCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="ivContry,code"
+            app:layout_constraintBottom_toBottomOf="@+id/code"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/code">
+
+        </androidx.constraintlayout.helper.widget.Layer>
+
+        <ImageView
+            android:id="@+id/ivContry"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/code"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/code"></ImageView>
+
+        <TextView
+            android:background="@drawable/et_underline_selected"
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:minWidth="@dimen/_45sdp"
+            android:padding="@dimen/_15sdp"
+            android:text=""
+            style="@style/AppTheme.TextView"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/ivContry"
+            app:layout_constraintTop_toBottomOf="@+id/tvConfirm" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/etPhone"
+            style="@style/UserSign.InputText"
+            android:layout_width="0dp"
+            android:background="@drawable/edittext_bg_selector"
+            android:layout_height="0dp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:hint=""
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="@+id/code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/code"
+            app:layout_constraintTop_toTopOf="@+id/code" />
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_84sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_84sdp"
+            android:background="@drawable/shape_corner_group_join"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/lab_Login"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/code" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

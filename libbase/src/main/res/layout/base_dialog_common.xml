@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="dialog"
+            type="com.earth.libbase.dialog.BaseDialogCommon" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/llTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            android:background="@drawable/base_bg_white_top"
+            android:paddingBottom="@dimen/base_page"
+            android:paddingTop="@dimen/base_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/Theme.BaseTitleTextView"
+                android:layout_marginLeft="@dimen/base_page"
+                android:layout_marginRight="@dimen/base_page"
+                android:lineSpacingMultiplier="1"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:text=""
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/tvContent"
+                style="@style/Theme.BaseTitleTextView"
+                android:textColor="@color/base_black"
+                android:textSize="15sp"
+                android:text=""
+                android:gravity="center"
+                android:lineSpacingMultiplier="1"
+                android:layout_marginLeft="@dimen/base_page"
+                android:layout_marginRight="@dimen/base_page"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+        </LinearLayout>
+
+
+
+        <View
+            android:id="@+id/viewDivider1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/base_line"
+            app:layout_constraintTop_toBottomOf="@id/llTitle" />
+
+
+        <TextView
+            android:id="@+id/tvCancel"
+            style="@style/Theme.BaseTitleTextView"
+            android:layout_width="0dp"
+            android:background="@drawable/basebg_white_bottom_left"
+            android:padding="@dimen/margin18"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@id/viewDivider2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/base_login_un"
+            app:layout_constraintTop_toBottomOf="@id/viewDivider1" />
+        <View
+            android:id="@+id/viewDivider2"
+            android:layout_width="0.5dp"
+            android:layout_height="0dp"
+            android:background="@color/base_line"
+            app:layout_constraintBottom_toBottomOf="@id/tvCancel"
+            app:layout_constraintEnd_toStartOf="@id/tvBlock"
+            app:layout_constraintStart_toEndOf="@id/tvCancel"
+            app:layout_constraintTop_toTopOf="@id/tvCancel" />
+        <TextView
+            android:id="@+id/tvBlock"
+            style="@style/Theme.BaseTitleTextView"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:background="@drawable/basebg_white_bottom_right"
+            android:padding="@dimen/margin18"
+            android:text="Confirm"
+            android:textColor="@color/base_black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/viewDivider2"
+            app:layout_constraintTop_toBottomOf="@id/viewDivider1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

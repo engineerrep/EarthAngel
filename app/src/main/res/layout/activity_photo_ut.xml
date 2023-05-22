@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.earth.angel.appphoto.CutPhotoActivity" />
+
+        <variable
+            name="handler"
+            type="com.earth.angel.appphoto.CutPhotoActivity" />
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/llBgMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/page_space"
+            android:id="@+id/photo_view_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/page_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:src="@mipmap/take_delete" />
+            <TextView
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/page_space"
+                android:id="@+id/tvConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@mipmap/take_config"
+                android:text="NEXT"
+                android:background="@drawable/shape_corner_8sp_themcoclor"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+            <TextView
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/page_space"
+                android:id="@+id/tvSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@mipmap/take_config"
+                android:text="SAVE"
+                android:background="@drawable/shape_corner_8sp_themcoclor"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/llRlBg"
+            android:layout_above="@+id/llEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.tencent.qcloud.tim.uikit.component.photoview.PhotoView
+                android:id="@+id/cut_photo_view"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <com.earth.angel.view.DragView
+                android:visibility="gone"
+                android:id="@+id/ivDv"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_80sdp">
+            <ImageView
+                android:id="@+id/dvImageView"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+                <TextView
+                    android:paddingLeft="@dimen/page_space"
+                    android:paddingRight="@dimen/page_space"
+                    android:id="@+id/tvET"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:hint="Comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </com.earth.angel.view.DragView>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llEtColor"
+                android:layout_marginRight="@dimen/page_space"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_corner_share_edit_stroke"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/llIvET"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/page_space"
+                    android:src="@mipmap/color_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/llIvCV"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/page_space"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:src="@mipmap/text_et_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <ImageView
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/ivWaterLogin"
+                android:src="@mipmap/water_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+        </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llEdit"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/llColorTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/llColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/cutTVColor"
+                            android:layout_marginLeft="@dimen/page_space"
+                            android:paddingTop="@dimen/page_space"
+                            android:paddingBottom="@dimen/page_space"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Please select the background color you want."
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="16sp"
+                            />
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_marginLeft="@dimen/page_space"
+                            android:layout_marginBottom="@dimen/page_space"
+                            android:id="@+id/cutRlvColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_68sdp">
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:id="@+id/llTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/cutTV"
+                            android:layout_marginLeft="@dimen/page_space"
+                            android:paddingTop="@dimen/page_space"
+                            android:paddingBottom="@dimen/page_space"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Please select the tag style."
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="16sp"
+                            />
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_marginLeft="@dimen/page_space"
+                            android:layout_marginBottom="@dimen/page_space"
+                            android:id="@+id/cutRlvTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_68sdp">
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/cutrlv"
+                    android:layout_above="@+id/llBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_68sdp">
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <LinearLayout
+                    android:paddingTop="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:background="@drawable/bg_cutphoto_bottom_16sp"
+                    android:id="@+id/llBottom"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/old_iv"
+                        android:layout_marginLeft="@dimen/page_space"
+                        android:src="@mipmap/old_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </ImageView>
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Click to remove background"
+                        android:lines="1"
+                        android:textColor="#FFF2EBEB"
+                        android:textSize="12sp"
+                        />
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/new_iv"
+                        android:layout_marginRight="@dimen/page_space"
+                        android:src="@mipmap/new_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</layout>

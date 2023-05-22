@@ -1,0 +1,6 @@
+rootProject.name = "EarthAngel"
+include ':app','tuikit','easyPhotos'
+include ':libhome'
+include ':libbase'
+include ':libmine'
+include ':libarticl'

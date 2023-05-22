@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlLibMineBar"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/bar_min_height">
+
+    <ImageView
+        android:id="@+id/tvLibMineLeftTool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:src="@mipmap/arrow_right" />
+
+    <TextView
+        android:layout_toRightOf="@+id/tvLibMineLeftTool"
+        android:id="@+id/tvLibMinTitleCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF111111"
+        android:layout_centerInParent="true"
+        android:lines="1"
+        android:layout_toLeftOf="@+id/toolbarLibMineTabRight"
+        android:enabled="true"
+        android:textSize="18sp"
+        style="@style/Theme.BaseTitleTextView"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:text=""
+        android:id="@+id/toolbarLibMineTabRight"
+        style="@style/Theme.BaseTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textColor="#FF656565"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:padding="@dimen/_10sdp" />
+
+    <ImageView
+        android:id="@+id/ivLibMineRightTool"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:padding="@dimen/_10sdp" />
+
+</RelativeLayout>

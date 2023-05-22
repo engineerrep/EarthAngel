@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.earth.libbase.util.leftslidelib.CustomLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingBottom="@dimen/_3sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.nine.palace.headpic.NinePalaceImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/iv"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_margin="5dp"
+            android:background="@drawable/group_bg"/>
+        <com.earth.libbase.view.ShapedImageView
+            android:layout_marginLeft="@dimen/_36sdp"
+            android:id="@+id/ivHead"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"
+            app:shape_mode="circle"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvNum"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:gravity="center"
+            android:textSize="8sp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:background="@drawable/circle_red"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/iv"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"/>
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@+id/tvmessage"
+            app:layout_constraintTop_toTopOf="@+id/iv"
+            app:layout_constraintStart_toEndOf="@+id/iv"
+            app:layout_constraintEnd_toStartOf="@+id/tvJoined"
+            android:id="@+id/tv"
+            android:lines="1"
+            android:layout_width="0dp"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ff333333"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv"
+            app:layout_constraintTop_toBottomOf="@+id/tv"
+            app:layout_constraintStart_toEndOf="@+id/iv"
+            android:id="@+id/tvmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 new items"
+            android:textColor="#FF676767"
+            android:textSize="13sp"
+            />
+
+
+        <TextView
+            android:layout_marginRight="@dimen/_16sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:paddingRight="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv"
+            app:layout_constraintBottom_toBottomOf="@+id/iv"
+            android:id="@+id/tvJoined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joined"
+            android:textColor="#FF676767"
+            android:textSize="12sp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.earth.libbase.util.leftslidelib.CustomLinearLayout>

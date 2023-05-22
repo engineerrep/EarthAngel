@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/shape_corner_8sp_wite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp">
+
+
+        <com.earth.libbase.view.ShapedImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="w,138:100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:round_radius="@dimen/_8sdp"
+            app:shape_mode="round_rect" />
+        <ImageView
+            app:layout_constraintEnd_toEndOf="@+id/ivPhoto"
+            app:layout_constraintStart_toStartOf="@+id/ivPhoto"
+            app:layout_constraintTop_toTopOf="@+id/ivPhoto"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPhoto"
+            android:id="@+id/ivIsSend"
+            android:src="@mipmap/gift_details_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:paddingLeft="@dimen/_10sdp"
+            android:id="@+id/tvUserName"
+            style="@style/AppTheme.TextView"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textColor="#FF323232"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text=""
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="@id/ivPhoto"
+            app:layout_constraintStart_toStartOf="@id/ivPhoto"
+            app:layout_constraintTop_toBottomOf="@+id/ivPhoto"/>
+
+
+
+        <androidx.constraintlayout.helper.widget.Layer
+            android:id="@+id/lyMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:constraint_referenced_ids="message_send,tvMessage"
+            android:layout_width="wrap_content"
+            android:background="@drawable/shape_corner_group_joined"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginTop="@dimen/_4sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:id="@+id/message_send"
+            app:layout_constraintEnd_toStartOf="@+id/tvMessage"
+            app:layout_constraintTop_toTopOf="@+id/tvMessage"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMessage"
+            android:src="@mipmap/message_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="@dimen/_4sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:paddingRight="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@+id/ivPhoto"
+            app:layout_constraintEnd_toEndOf="@+id/ivPhoto"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserName"
+            android:id="@+id/tvMessage"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_I_want_this"
+            android:textColor="@color/themColor"
+            android:textSize="12sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

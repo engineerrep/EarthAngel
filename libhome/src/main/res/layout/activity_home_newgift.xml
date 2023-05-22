@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="com.earth.libhome.ui.HomeNewGiftActivity"/>
+        <variable
+            name="handler"
+            type="com.earth.libhome.ui.HomeNewGiftActivity" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.HomeNewGiftActivity">
+        <LinearLayout
+            android:id="@+id/LibHomeNewGiftLL"
+            android:background="#FF6CC24B"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="horizontal"
+            android:src="@mipmap/arrow_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/LibHomeNewGiftBank"
+                android:padding="@dimen/base_page"
+                android:src="@mipmap/white_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+            <TextView
+                android:id="@+id/LibHomeNewGiftTV"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Product"
+                android:textColor="#ffffffff"
+                style="@style/Theme.BaseTextView"
+                android:fontFamily="@font/avenirnext_latobolditalic"
+                android:textSize="20sp"
+                />
+            <ImageView
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_marginRight="@dimen/base_page"
+                android:src="@mipmap/home_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/LibHomeNewGiftLine"
+            android:layout_marginBottom="@dimen/base_page"
+            app:layout_constraintBottom_toBottomOf="@+id/LibHomeNewGiftLL"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </TextView>
+        <LinearLayout
+            android:background="@drawable/bg_shopp_white_top"
+            app:layout_constraintTop_toTopOf="@+id/LibHomeNewGiftLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+            <com.scwang.smart.refresh.layout.SmartRefreshLayout
+                android:id="@+id/libHomeNewGiftSrl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/libHomeNewGiftRlv"
+            android:layout_margin="@dimen/base_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+            </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/base_page" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/base_page" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

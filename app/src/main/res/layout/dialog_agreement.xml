@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/shape_corner_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/lltitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:padding="@dimen/page_space"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+
+        <TextView
+            android:paddingRight="@dimen/page_space"
+            android:paddingLeft="@dimen/page_space"
+            app:layout_constraintTop_toBottomOf="@+id/lltitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tvAgreementViewpage"
+            android:lines="8"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please understand that you need to be at least 18 years old and registered as an EarthAngel user before you can use the eco gifts and sharing functions of this software. Please be fully aware of the circumstances in which we may collect, use or share your personal information in the course of using this software:
+\n1. In order to facilitate your login when you change your mobile device, we may ask you if you would like to add your phone number and your cell phone number information;
+
+\n2. We may ask you if you would like to upload your contacts information for the purpose of adding friends.
+
+\nPlease read and fully understand our Privacy Policy, and if you agree to the foregoing, please click to agree and continue to use this software. We will continue to improve our technology and security management to protect your personal information.
+"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            />
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="Agree"
+        android:textSize="15sp"
+        android:layout_marginLeft="@dimen/page_space"
+        android:layout_marginRight="@dimen/page_space"
+        app:layout_constraintTop_toBottomOf="@+id/tvAgreementViewpage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_thremcolor_bottom_16sp"
+        android:id="@+id/btAgreement"
+        android:textColor="@android:color/white"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginLeft="@dimen/page_space"
+            android:layout_marginRight="@dimen/page_space"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="@dimen/page_space"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/tvDisAgree"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btAgreement"
+            android:text="Disagree"
+            android:textColor="#FF979797"
+            android:textSize="15sp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

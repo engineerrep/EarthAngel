@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_navigation"
+    app:startDestination="@id/registEmailFragment">
+
+    <fragment
+        android:id="@+id/registEmailFragment"
+        android:name="com.earth.angel.regist.ui.RegistEmailFragment"
+        android:label="fragment_regist_email"
+        tools:layout="@layout/fragment_regist_email" >
+        <action
+            android:id="@+id/action_registEmailFragment_to_registNameFragment"
+            app:destination="@id/registNameFragment" />
+        <action
+            android:id="@+id/action_registEmailFragment_to_registLoginMainFragment"
+            app:destination="@id/registLoginMainFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/registNameFragment"
+        android:name="com.earth.angel.regist.ui.RegistNameFragment"
+        android:label="fragment_regist_name"
+        tools:layout="@layout/fragment_regist_name" >
+        <action
+            android:id="@+id/action_registNameFragment_to_registLocationFragment"
+            app:destination="@id/registLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registLocationFragment"
+        android:name="com.earth.angel.regist.ui.RegistLocationFragment"
+        android:label="fragment_regist_location"
+        tools:layout="@layout/fragment_regist_location" />
+    <fragment
+        android:id="@+id/registLoginMainFragment"
+        android:name="com.earth.angel.regist.ui.LoginMainFragment"
+        android:label="fragment_login_main"
+        tools:layout="@layout/fragment_login_main" />
+</navigation>

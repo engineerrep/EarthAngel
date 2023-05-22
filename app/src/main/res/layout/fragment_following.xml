@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="handler"
+            type="com.earth.angel.gift.ui.fragment.FollowingFragment" />
+        <variable
+            name="adapter"
+            type="com.earth.angel.gift.adapter.PageGiftAdapter" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/srf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.earth.angel.view.NestedScrollableHost
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintTop_toTopOf="parent">
+        <androidx.recyclerview.widget.RecyclerView
+            bind:layout_constraintTop_toTopOf="parent"
+            bind:layout_constraintBottom_toBottomOf="parent"
+            bind:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            bind:adapter="@{adapter}" />
+        </com.earth.angel.view.NestedScrollableHost>
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvEmpty"
+            style="@style/AppTheme.TextView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="There are no other people you follow, try search for people you know or join the eco gifts groups."
+            android:textColor="#ff888888"
+            android:textSize="15sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

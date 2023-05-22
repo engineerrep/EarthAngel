@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="handler"
+            type="com.earth.angel.gift.ui.UserLikeActivity" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_top_bar"></include>
+        <TextView
+            android:id="@+id/lineView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlTopToolbar"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:background="@color/line"
+            />
+        <com.earth.angel.view.xrecylerview.XRecyclerView
+            app:layout_constraintTop_toBottomOf="@+id/lineView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/tvPeople"
+            android:id="@+id/llEmpty"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+            <TextView
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_45sdp"
+                android:layout_marginRight="@dimen/_45sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mutual friends will be shown here"
+                android:textColor="#FF8D8D92"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+    <data>
+        <import type="com.earth.libbase.view.loadingstatus.LoadingStatusCode" />
+        <variable
+            name="statusCode"
+            type="LoadingStatusCode" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rlLibMineBar"
+        android:background="@color/order_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/bar_min_height">
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/LibMineSendSRL"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/margin14"
+                android:id="@+id/LibMineSendRlv"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+        <com.earth.libbase.view.loadingstatus.LoadingStatusView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            bind:requestStatusCode="@{statusCode}"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

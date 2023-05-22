@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.earth.libmine.set.LibMineSetActivity" />
+
+        <variable
+            name="handler"
+            type="com.earth.libmine.set.LibMineSetActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/base_white">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:paddingBottom="@dimen/margin20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/LibMineSetBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:minHeight="@dimen/bar_min_height"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/base_page"
+                        android:id="@+id/LibMineSetLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:src="@mipmap/arrow_right"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/LibMineSetTiTle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:enabled="true"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:text="@string/label_Setting"
+                        android:textColor="#FF111111"
+                        style="@style/Theme.BaseTitleTextView"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/ivLibBaseRightTool"
+                        app:layout_constraintStart_toEndOf="@+id/LibMineSetLeft"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView
+                        android:layout_marginRight="@dimen/base_page"
+                        android:id="@+id/ivLibBaseRightTool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/margin10"
+                        android:src="@mipmap/base_set_pocket"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="@+id/ivLibBaseRightTool"
+                        app:layout_constraintTop_toTopOf="@+id/ivLibBaseRightTool"
+                        android:id="@+id/LibMineSetBarPacketNum"
+                        android:gravity="center"
+                        android:textSize="8sp"
+                        android:textColor="@color/base_white"
+                        android:background="@drawable/base_circle_red"
+                        android:layout_width="@dimen/radius"
+                        android:layout_height="@dimen/radius"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/LibMineSetAccount"
+                    style="@style/Theme.BaseTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_Account"
+                    android:textColor="#ff555555"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSetBar" />
+
+                <androidx.constraintlayout.helper.widget.Layer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_regist_8"
+                    app:constraint_referenced_ids="LibMineSetHeadImageLine,LibMineSetHeadImage,LibMineSetNotification,LibMineSetNotify"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSetAccount">
+
+                </androidx.constraintlayout.helper.widget.Layer>
+                <androidx.constraintlayout.helper.widget.Layer
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSetHeadImageLine"
+                    android:id="@+id/LibMineSetHeadNameLy"
+                    app:constraint_referenced_ids="LibMineSetHeadNAme,LibMineSetHeadImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginRight="@dimen/base_page"
+                    android:layout_marginLeft="@dimen/base_page"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:id="@+id/LibMineSetHeadImageLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSetAccount"/>
+
+                <com.earth.libbase.view.ShapedImageView
+                    android:id="@+id/LibMineSetHeadImage"
+                    android:layout_width="@dimen/head_image"
+                    android:layout_height="@dimen/head_image"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:background="@mipmap/base_comm_head"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSetHeadImageLine"
+                    app:round_radius="@dimen/radius"
+                    app:shape_mode="circle" />
+
+                <TextView
+                    android:gravity="right|center"
+                    android:id="@+id/LibMineSetHeadNAme"
+                    style="@style/Theme.BaseTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:paddingRight="@dimen/margin16"
+                    android:text="@string/label_Edit"
+                    android:textColor="#ff555555"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/LibMineSetHeadImage"
+                    app:layout_constraintBottom_toBottomOf="@id/LibMineSetHeadImage"
+                    app:layout_constraintEnd_toEndOf="@id/guideline2"
+                    app:layout_constraintTop_toTopOf="@id/LibMineSetHeadImage" />
+                <com.earth.libbase.view.CustomSetLayoutView
+                    android:layout_marginLeft="@dimen/base_page"
+                    android:layout_marginRight="@dimen/base_page"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSetHeadImage"
+                    android:id="@+id/LibMineSetEmailClv"
+                    app:title_text="@string/label_Email"
+                    app:needArrow="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <com.earth.libbase.view.CustomSetLayoutView
+                    android:layout_marginLeft="@dimen/base_page"
+                    android:layout_marginRight="@dimen/base_page"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSetEmailClv"
+                    android:id="@+id/LibMineSetAddAddressClv"
+                    app:title_text="@string/label_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.earth.libbase.view.CustomSetLayoutView
+                    android:layout_marginLeft="@dimen/base_page"
+                    android:layout_marginRight="@dimen/base_page"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSetAddAddressClv"
+                    android:id="@+id/LibMineSetNameClv"
+                    app:title_text="@string/label_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.earth.libbase.view.CustomSetLayoutView
+                    android:layout_marginLeft="@dimen/base_page"
+                    android:layout_marginRight="@dimen/base_page"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSetNameClv"
+                    android:id="@+id/LibMinePasswordClv"
+                    app:title_text="@string/label_Change_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <androidx.constraintlayout.helper.widget.Layer
+
+                    android:id="@+id/LibMineSetNotificationLy"
+                    app:constraint_referenced_ids="LibMineSetNotification,LibMineSetNotify"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMinePasswordClv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/LibMineSetNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin16"
+                    android:paddingTop="@dimen/margin12"
+                    android:paddingBottom="@dimen/margin12"
+                    android:text="@string/label_Notification"
+                    android:textColor="#ff555555"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMinePasswordClv" />
+
+                <ImageView
+                    android:layout_marginRight="@dimen/margin16"
+                    android:id="@+id/LibMineSetNotify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/base_notify_no"
+                    app:layout_constraintBottom_toBottomOf="@id/LibMineSetNotification"
+                    app:layout_constraintEnd_toEndOf="@id/guideline2"
+                    app:layout_constraintTop_toTopOf="@id/LibMineSetNotification">
+
+
+                </ImageView>
+
+
+
+
+                <TextView
+                    android:id="@+id/LibMineSetAbout"
+                    style="@style/Theme.BaseTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:text="@string/label_About"
+                    android:textColor="#ff555555"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSetNotification" />
+                <androidx.constraintlayout.helper.widget.Layer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_regist_8"
+                    app:constraint_referenced_ids="LibMinePrivacyPolicyClv,LibMineSetVersion"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSetAccount">
+
+                </androidx.constraintlayout.helper.widget.Layer>
+                <com.earth.libbase.view.CustomSetLayoutView
+                    android:layout_marginTop="@dimen/margin10"
+                    android:layout_marginLeft="@dimen/base_page"
+                    android:layout_marginRight="@dimen/base_page"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSetAbout"
+                    android:id="@+id/LibMinePrivacyPolicyClv"
+                    app:title_text="@string/label_PrivacyPolicy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <com.earth.libbase.view.CustomSetLayoutView
+                    android:layout_marginLeft="@dimen/base_page"
+                    android:layout_marginRight="@dimen/base_page"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMinePrivacyPolicyClv"
+                    android:id="@+id/LibMineTermsClv"
+                    app:title_text="@string/label_TermsofUse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView
+                    android:id="@+id/LibMineSetVersion"
+                    android:layout_width="0dp"
+                    app:layout_constraintEnd_toEndOf="@id/guideline2"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_13sdp"
+                    android:paddingBottom="@dimen/_13sdp"
+                    android:text="@string/label_Version"
+                    android:textColor="#ff555555"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineTermsClv" />
+
+                <TextView
+                    android:id="@+id/LibMineSetVersionTv"
+                    style="@style/Theme.BaseTextView"
+                    android:text=""
+                    android:textColor="#ff555555"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/LibMineSetVersion"
+                    app:layout_constraintEnd_toEndOf="@id/guideline2"
+                    app:layout_constraintTop_toTopOf="@id/LibMineSetVersion"/>
+
+                <TextView
+                    style="@style/Theme.BaseTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin24"
+                    android:background="@drawable/bg_corners_shopp_28"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/margin10"
+                    android:paddingBottom="@dimen/margin10"
+                    android:text="@string/label_Log_Out"
+                    android:textColor="#ffffffff"
+                    android:textSize="18sp"
+                    android:id="@+id/LibMineSetLogOut"
+                    app:layout_constraintEnd_toEndOf="@id/guideline2"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSetVersion" />
+                <TextView
+                    android:id="@+id/LibMineSetDelete"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    style="@style/Theme.BaseTitleTextView"
+                    android:layout_marginTop="@dimen/margin20"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSetLogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_Delete"
+                    android:textColor="#ff9d9d9d"
+                    android:textSize="18sp"
+                    />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="@dimen/base_page" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="@dimen/base_page" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

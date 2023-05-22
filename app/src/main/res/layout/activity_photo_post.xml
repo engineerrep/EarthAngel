@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.earth.angel.appphoto.PhotoPostActivity" />
+
+        <variable
+            name="handler"
+            type="PhotoPostActivity" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/postNsv"
+        android:background="@color/base_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF6CC24B">
+                <androidx.constraintlayout.helper.widget.Layer
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FF6CC24B"
+                    app:constraint_referenced_ids="BankPhotoDelete,PhotoPostLine2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                </androidx.constraintlayout.helper.widget.Layer>
+
+                <ImageView
+                    android:paddingTop="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/base_page"
+                    android:paddingLeft="@dimen/base_page"
+                    android:paddingRight="@dimen/base_page"
+                    android:id="@+id/BankPhotoDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/bank_photo_delete"
+                    app:layout_constraintStart_toStartOf="@+id/HomeHeadImage"
+                    app:layout_constraintEnd_toEndOf="@+id/HomeHeadImage"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <com.earth.libbase.view.ShapedImageView
+                    android:id="@+id/HomeHeadImage"
+                    android:layout_width="@dimen/_43sdp"
+                    android:layout_height="@dimen/_43sdp"
+                    android:background="@mipmap/post_head"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/BankPhotoDelete"
+                    app:shape_mode="circle" />
+
+                <TextView
+                    android:id="@+id/HomeName"
+                    style="@style/Theme.BaseTitleTextView"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/avenirnext_latobold"
+                    android:text=""
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@+id/HomedIntroduce"
+                    app:layout_constraintStart_toEndOf="@+id/HomeHeadImage"
+                    app:layout_constraintTop_toTopOf="@+id/HomeHeadImage" />
+
+                <TextView
+                    android:id="@+id/HomedIntroduce"
+                    style="@style/Theme.BaseTextView"
+                    android:text="@string/Products_give"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/HomeHeadImage"
+                    app:layout_constraintStart_toStartOf="@+id/HomeName"
+                    app:layout_constraintTop_toBottomOf="@+id/HomeName" />
+
+                <TextView
+                    android:id="@+id/PhotoPostLine2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/base_page"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/HomeHeadImage"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/PhotoPostLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shopp_white_top"
+                    android:paddingBottom="@dimen/_20sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/PhotoPostLine2">
+
+                    <TextView
+                        android:id="@+id/HomeAddPictures"
+                        style="@style/Theme.BaseTitleTextView"
+                        android:padding="@dimen/base_page"
+                        android:textSize="16sp"
+                        android:text="@string/label_Add_Photos"
+                        android:drawableRight="@mipmap/post_main"
+                        android:textColor="#FF000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/PhotoModify"
+                        style="@style/Theme.BaseTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/iv_modify"
+                        android:padding="@dimen/base_page"
+                        android:text="@string/lab_Edit"
+                        android:textColor="#ff9d9d9d"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/HomeAddPictures"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/HomeAddPictures" />
+
+                    <LinearLayout
+                        android:id="@+id/llPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_98sdp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/HomeAddPictures">
+
+                        <com.earth.libbase.view.ShapedImageView
+                            android:id="@+id/ivBaseAddPhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_98sdp"
+                            android:layout_marginLeft="@dimen/base_page"
+                            android:layout_marginRight="@dimen/base_page"
+                            android:background="@drawable/bg_dot_line"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/publish_new"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/HomeAddPictures" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/AddPictureRlv"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_98sdp"
+                            android:layout_marginLeft="@dimen/base_page"
+                            android:layout_marginRight="@dimen/base_page"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/HomeAddPictures">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/HomeWhatThis"
+                        style="@style/Theme.BaseTitleTextView"
+                        android:padding="@dimen/base_page"
+                        android:text="@string/Products_What"
+                        android:textSize="16sp"
+                        android:textColor="#FF000000"
+                        android:drawableRight="@mipmap/post_main"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llPhoto" />
+
+                    <TextView
+                        android:id="@+id/WhatThisModify"
+                        style="@style/Theme.BaseTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/iv_modify"
+                        android:padding="@dimen/base_page"
+                        android:text="@string/lab_Edit"
+                        android:gravity="center"
+                        android:textColor="#ff9d9d9d"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/HomeWhatThis"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/HomeWhatThis" />
+
+                    <androidx.constraintlayout.helper.widget.Layer
+                        android:id="@+id/PhotoTitleLy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+
+                        android:background="@drawable/bg_regist_8"
+                        app:constraint_referenced_ids="PhotoTitle,etPhoneTitle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/HomeWhatThis">
+
+                    </androidx.constraintlayout.helper.widget.Layer>
+
+                    <ImageView
+                        android:id="@+id/PhotoTitle"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_page"
+                        android:paddingLeft="@dimen/page_space"
+                        app:layout_constraintBottom_toBottomOf="@+id/etPhoneTitle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/etPhoneTitle" />
+
+                    <TextView
+                        android:id="@+id/etPhoneTitle"
+                        style="@style/UserSign.InputText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/base_page"
+                        android:fontFamily="@font/mm_avenirnext_medium"
+                        android:hint="@string/Products_Think"
+                        android:inputType="number"
+                        android:padding="@dimen/page_space"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="#FF9D9D9D"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/PhotoTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/HomeWhatThis" />
+                    <TextView
+                        android:paddingTop="@dimen/base_page"
+                        android:paddingBottom="@dimen/base_page"
+                        android:id="@+id/ProductDetails"
+                        style="@style/Theme.BaseTitleTextView"
+                        android:layout_marginLeft="@dimen/base_page"
+                        android:text="@string/Product_Details"
+                        android:drawableRight="@mipmap/post_main"
+                        android:textSize="16sp"
+                        android:textColor="#FF000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/etPhoneTitle"  />
+                    <com.earth.libbase.view.CustomLayoutView
+                        android:layout_marginLeft="@dimen/_28sdp"
+                        android:layout_marginRight="@dimen/base_page"
+                        android:id="@+id/postCond"
+                        app:title_text="@string/base_Condition"
+                        app:arrow_resource="@mipmap/base_condition"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ProductDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <com.earth.libbase.view.CustomLayoutView
+                        android:layout_marginLeft="@dimen/_28sdp"
+                        android:layout_marginRight="@dimen/base_page"
+                        android:id="@+id/postCate"
+                        app:title_text="@string/base_Category"
+                        app:arrow_resource="@mipmap/base_category"
+                        app:layout_constraintStart_toStartOf="@+id/postCond"
+                        app:layout_constraintTop_toBottomOf="@+id/postCond"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <com.earth.libbase.view.CustomLayoutView
+                        android:layout_marginLeft="@dimen/_28sdp"
+                        android:layout_marginRight="@dimen/base_page"
+                        android:id="@+id/postEco"
+                        app:title_text="@string/label_Eco_Credit"
+                        app:arrow_resource="@mipmap/eco_credit"
+
+                        app:layout_constraintStart_toStartOf="@+id/postCate"
+                        app:layout_constraintTop_toBottomOf="@+id/postCate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:id="@+id/PhotoDetails"
+                        style="@style/Theme.BaseTitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/page_space"
+                        android:text="@string/Details_Are"
+                        android:textSize="16sp"
+                        android:textColor="#FF000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvPhotoDetails"
+                        app:layout_constraintTop_toTopOf="@+id/tvPhotoDetails" />
+
+                    <TextView
+                        android:id="@+id/tvPhotoDetails"
+                        style="@style/Theme.BaseTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/iv_modify"
+                        android:padding="@dimen/base_page"
+                        android:text="@string/lab_Edit"
+                        android:gravity="center"
+                        android:textColor="#ff9d9d9d"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/PhotoDetails"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/postEco" />
+
+                    <androidx.constraintlayout.helper.widget.Layer
+                        android:id="@+id/PhotoDetailsly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_white_8_side"
+                        app:constraint_referenced_ids="ivPhotoDetails,etPhoneDetails"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/HomeWhatThis">
+
+                    </androidx.constraintlayout.helper.widget.Layer>
+
+                    <ImageView
+                        android:id="@+id/ivPhotoDetails"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_page"
+                        android:paddingLeft="@dimen/page_space"
+                        app:layout_constraintBottom_toBottomOf="@+id/etPhoneDetails"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/etPhoneDetails" />
+
+                    <TextView
+                        android:id="@+id/etPhoneDetails"
+                        style="@style/UserSign.InputText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/page_space"
+                        android:layout_marginRight="@dimen/base_page"
+                        android:fontFamily="@font/mm_avenirnext_medium"
+                        android:hint="@string/products_Add"
+                        android:inputType="number"
+                        android:padding="@dimen/page_space"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="#FF9D9D9D"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ivPhotoDetails"
+                        app:layout_constraintTop_toBottomOf="@+id/PhotoDetails" />
+                    <TextView
+                        android:id="@+id/tvAssociated"
+                        style="@style/Theme.BaseTitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/page_space"
+                        android:text="@string/Associated"
+                        android:textSize="16sp"
+                        android:textColor="#FF000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvAssociatedEd"
+                        app:layout_constraintTop_toTopOf="@+id/tvAssociatedEd" />
+                    <TextView
+                        android:id="@+id/tvAssociatedEd"
+                        style="@style/Theme.BaseTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/iv_modify"
+                        android:padding="@dimen/base_page"
+                        android:text="@string/lab_Edit"
+                        android:gravity="center"
+                        android:textColor="#ff9d9d9d"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvAssociated"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/etPhoneDetails" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/llAssociated"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ivPhotoDetails"
+                        app:layout_constraintTop_toBottomOf="@+id/tvAssociatedEd"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/base_page"
+                        android:layout_marginRight="@dimen/base_page"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/etAssociated"
+                            style="@style/UserSign.InputText"
+                            android:background="@drawable/bg_white_8_side"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mm_avenirnext_medium"
+                            android:hint="Select community"
+                            android:inputType="number"
+                            android:padding="@dimen/page_space"
+                            android:textColor="@color/text_color"
+                            android:textColorHint="#FF9D9D9D"
+                            android:textSize="16sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/ivPhotoDetails"
+                            app:layout_constraintTop_toBottomOf="@+id/tvAssociatedEd" />
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rlvGroupPost"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/tvPostAGift"
+                        style="@style/BaseUserSign.LoginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_page"
+                        android:layout_marginTop="@dimen/_36sdp"
+                        android:layout_marginRight="@dimen/base_page"
+                        android:background="@drawable/base_theme_button_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/_12sdp"
+                        android:text="@string/label_Publish_Now"
+                        android:textColor="#ffffffff"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llAssociated" />
+
+                    <TextView
+                        android:id="@+id/tvSaveDraft"
+                        style="@style/Theme.BaseTitleTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_page"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/base_page"
+                        android:background="@drawable/bg_corners_shopp_28_side"
+                        android:gravity="center"
+                        android:padding="@dimen/_12sdp"
+                        android:text="Save Draft"
+                        android:textColor="#FF6CC24B"
+                        android:textSize="18sp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPostAGift" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="@dimen/base_page" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="@dimen/base_page" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

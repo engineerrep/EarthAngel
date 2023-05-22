@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="com.earth.libmine.ui.LibMineCollectActivity" />
+
+        <variable
+            name="handler"
+            type="com.earth.libmine.ui.LibMineCollectActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_white"
+        android:orientation="vertical"
+        tools:context=".ui.LibMineCollectActivity">
+
+        <include layout="@layout/libmine_titlebar" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/LibMineCollectTl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlLibMineBar"
+            app:tabGravity="fill"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="0px"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="-1dp"
+            app:tabPaddingStart="-1dp"
+            app:tabSelectedTextColor="@color/BaseThemColor"
+            app:tabTextAppearance="@style/LibBaseTabLayoutText"
+            app:tabTextColor="#FF9D9D9D" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.5"
+            android:background="@color/base_login_un"
+            app:layout_constraintBottom_toBottomOf="@+id/LibMineCollectTl"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:background="@color/BaseThemColor"
+            app:layout_constraintBottom_toBottomOf="@+id/LibMineCollectTl"
+            app:layout_constraintEnd_toStartOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:background="@color/BaseThemColor"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/LibMineCollectTl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view1" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/LibMineCollectVp2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LibMineCollectTl" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/margin10"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="@dimen/base_page"
+        android:layout_marginLeft="@dimen/base_page"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/itemArticleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="April 8th"
+        android:textColor="#ff9d9d9d"
+        android:textSize="18sp"
+        />
+    <com.earth.libbase.view.ShapedImageView
+        android:id="@+id/itemArticleIv"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginRight="@dimen/base_page"
+        android:layout_marginLeft="@dimen/base_page"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@mipmap/base_img_loding"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="327:230"
+        app:round_radius="@dimen/radius"
+        app:shape_mode="round_rect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemArticleTv" />
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:visibility="gone"
+        android:background="@drawable/article_bottom_bg"
+        android:alpha="0.5"
+        android:id="@+id/itemArticleLy"
+        app:constraint_referenced_ids="itemArticleDetTv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </androidx.constraintlayout.helper.widget.Layer>
+
+    <TextView
+        android:paddingTop="@dimen/margin6"
+        android:paddingBottom="@dimen/margin6"
+        android:paddingRight="@dimen/margin10"
+        android:paddingLeft="@dimen/margin10"
+        android:id="@+id/itemArticleDetTv"
+        app:layout_constraintBottom_toBottomOf="@+id/itemArticleIv"
+        app:layout_constraintEnd_toEndOf="@+id/itemArticleIv"
+        app:layout_constraintStart_toStartOf="@+id/itemArticleIv"
+        android:layout_width="0dp"
+        style="@style/AppTheme.BaseEditText"
+        android:lines="2"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:text=""
+        android:textColor="@color/base_white"
+        android:textSize="16sp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

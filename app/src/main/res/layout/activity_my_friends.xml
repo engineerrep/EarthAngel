@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.earth.angel.user.ui.MyFriendsActivity" />
+
+        <variable
+            name="handler"
+            type="MyFriendsActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_top_bar"></include>
+
+        <com.earth.angel.user.side.ClearEditText
+            android:id="@+id/filter_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/page_space"
+            android:layout_marginRight="@dimen/page_space"
+            android:background="@drawable/shape_sider_bg"
+            android:drawableLeft="@mipmap/search"
+            android:hint="   Search Friend Name"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            android:paddingLeft="8dp"
+            android:textSize="15dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.earth.angel.view.CustomTextView
+            android:layout_weight="1"
+            android:id="@+id/ctRequests"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ctPhone"
+            app:left_resource="@mipmap/efriend_rquests"
+            app:title_text="@string/lab_Friend_Requests"
+            app:line="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvNumFriend"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:gravity="center"
+                android:textSize="8sp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:background="@drawable/circle_red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ctiSendMine"
+                app:layout_constraintBottom_toBottomOf="@+id/ctiSendMine"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:layout_width="@dimen/message_size"
+                android:layout_height="@dimen/message_size"/>
+        </LinearLayout>
+
+            <com.earth.angel.view.CustomTextView
+                android:id="@+id/ctContacts"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ctPhone"
+                app:left_resource="@mipmap/friend_contacts"
+                app:title_text="@string/lab_Contacts"
+                app:line="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        <com.earth.angel.view.CustomTextView
+            android:id="@+id/ctGroups"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ctPhone"
+            app:left_resource="@mipmap/friend_group"
+            app:title_text="@string/lab_Eco_Gift_Groups"
+            app:line="false"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="#9DDE76"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="30dp"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+        <com.earth.angel.user.side.SideBar
+            android:layout_marginBottom="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/sideBar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

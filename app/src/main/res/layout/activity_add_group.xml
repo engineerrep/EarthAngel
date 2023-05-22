@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="handler"
+            type="com.earth.angel.gift.ui.AddGroupActivity" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gift.ui.AddGroupActivity">
+    <include layout="@layout/include_top_bar"></include>
+    <View
+        app:layout_constraintTop_toBottomOf="@+id/rlTopToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/line"
+        android:layout_below="@+id/tvLeftTool"
+        android:background="@color/bar_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"></View>
+    <com.earth.libbase.view.ShapedImageView
+        android:id="@+id/add_group_iv"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:scaleType="centerCrop"
+        app:round_radius="@dimen/_8sdp"
+        app:shape_mode="round_rect"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@mipmap/add_group_iv"
+        android:layout_width="85dp"
+        android:layout_height="85dp"/>
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/tvContent"
+        android:layout_marginLeft="@dimen/_45sdp"
+        android:layout_marginRight="@dimen/_45sdp"
+        app:layout_constraintTop_toBottomOf="@+id/add_group_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload an eco-gift exchange photo. Or you can leave it alone, the system will automatically assign one to you."
+        android:textColor="#ff666666"
+        android:textSize="12sp"
+        />
+
+    <EditText
+        android:id="@+id/etGroupName"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_45sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:background="@drawable/shape_corner_group_joined"
+        app:layout_constraintTop_toBottomOf="@+id/tvContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/AppTheme.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:hint="Enter the name of eco-gift exchange"
+        android:textColor="#ff999999"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/tvExaple"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/etGroupName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For example: pet item exchange, fitness item exchange"
+        android:textColor="#ff666666"
+        android:textSize="12sp"
+        />
+
+    <Button
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvExaple"
+        android:id="@+id/bt_save"
+        style="@style/UserSign.LoginButton"
+        android:background="@drawable/theme_button_bg"
+        android:paddingLeft="@dimen/_80sdp"
+        android:paddingRight="@dimen/_80sdp"
+        android:text="Create" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

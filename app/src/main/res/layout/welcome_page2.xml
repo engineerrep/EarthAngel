@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_marginLeft="@dimen/base_page"
+        android:id="@+id/tvSend"
+        android:fontFamily="@font/avenirnext_latobolditalic"
+        style="@style/Theme.BaseTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ivPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Eco Credit"
+        android:textColor="#ff090909"
+        android:textSize="28sp"
+        />
+    <TextView
+        app:layout_constraintStart_toStartOf="@+id/tvSend"
+        android:layout_marginTop="@dimen/margin12"
+        app:layout_constraintTop_toBottomOf="@+id/tvSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Eco credit to exchange for more quality items."
+        android:textColor="#ff9d9d9d"
+        android:textSize="14sp"
+        />
+    <ImageView
+        android:id="@+id/ivPhoto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@mipmap/luobo_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@mipmap/lunbo_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

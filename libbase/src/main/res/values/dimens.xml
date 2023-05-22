@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radius">@dimen/_16sdp</dimen>
+    <dimen name="bigText">28sp</dimen>
+    <dimen name="titleText">18sp</dimen>
+    <dimen name="contentText">14sp</dimen>
+    <dimen name="noteText">12sp</dimen>
+    <dimen name="new_image_width">100dp</dimen>
+    <dimen name="image_width">156dp</dimen>
+    <dimen name="base_page">18dp</dimen>
+    <dimen name="head_image">58dp</dimen>
+    <dimen name="head_message">33dp</dimen>
+    <dimen name="head_gift">44dp</dimen>
+    <dimen name="head_record">66dp</dimen>
+
+    <dimen name="btn_margin">14dp</dimen>
+    <dimen name="bar_min_height">@dimen/_40sdp</dimen>
+
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="margin1">1dp</dimen>
+    <dimen name="margin2">2dp</dimen>
+
+    <dimen name="margin4">4dp</dimen>
+    <dimen name="margin6">6dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="margin12">12dp</dimen>
+    <dimen name="margin14">14dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="margin18">18dp</dimen>
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="margin24">24dp</dimen>
+    <dimen name="margin26">26dp</dimen>
+    <dimen name="margin28">28dp</dimen>
+    <dimen name="margin36">36dp</dimen>
+
+    <dimen name="margin40">40dp</dimen>
+    <dimen name="margin42">42dp</dimen>
+
+    <dimen name="margin48">48dp</dimen>
+    <dimen name="margin50">50dp</dimen>
+
+    <dimen name="margin54">54dp</dimen>
+
+
+    <dimen name="margin30">30dp</dimen>
+
+    <dimen name="margin60">60dp</dimen>
+    <dimen name="margin76">76dp</dimen>
+    <dimen name="margin80">80dp</dimen>
+    <dimen name="margin88">88dp</dimen>
+    <dimen name="margin100">100dp</dimen>
+    <dimen name="margin110">110dp</dimen>
+    <dimen name="margin304">404dp</dimen>
+    <dimen name="margin322">322dp</dimen>
+    <dimen name="margin362dp">362dp</dimen>
+
+    <dimen name="margin230">230dp</dimen>
+
+    <dimen name="titleMain">40dp</dimen>
+    <dimen name="contentMain">20dp</dimen>
+
+    <dimen name="userMain">30dp</dimen>
+
+    <dimen name="etMain">16dp</dimen>
+
+    <dimen name="sp14">14sp</dimen>
+
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/LibMineShoppCl"
+        android:background="@mipmap/pop_shar_edit_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            app:layout_constraintBottom_toTopOf="@+id/tvLibMinePocket"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/LibMinePopBg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <androidx.constraintlayout.helper.widget.Layer
+            android:id="@+id/LibMineLy"
+            android:background="@drawable/bg_shopp_white_top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/libMineShoppRlvLine"
+            app:constraint_referenced_ids="tvLibMinePocket,libMineShoppRlv,tvLibMineDeletetv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.constraintlayout.helper.widget.Layer>
+        <TextView
+            android:paddingTop="@dimen/base_page"
+            android:paddingBottom="@dimen/base_page"
+            android:layout_marginTop="@dimen/base_page"
+            android:layout_marginLeft="@dimen/base_page"
+            android:id="@+id/tvLibMinePocket"
+            android:layout_marginBottom="@dimen/_60sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/libMineShoppRlvLine"
+            style="@style/Theme.BaseTitleTextView"
+            android:text="@string/base_Cart"
+            android:textColor="#FF000000"
+            />
+
+        <TextView
+            android:visibility="invisible"
+            android:gravity="center"
+            android:id="@+id/tvLibMineDeletetv"
+            style="@style/Theme.BaseTextView"
+            android:layout_marginTop="@dimen/base_page"
+            android:layout_marginRight="@dimen/base_page"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvLibMinePocket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/delete_shop"
+            android:text="Empty"
+            android:textColor="#ff9d9d9d"
+            android:textSize="14sp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingLeft="@dimen/base_page"
+            android:paddingRight="@dimen/base_page"
+            android:id="@+id/libMineShoppRlv"
+            android:focusable="false"
+            android:background="@color/base_white"
+            app:layout_constraintTop_toBottomOf="@+id/tvLibMinePocket"
+            app:layout_constraintBottom_toTopOf="@+id/libMineShoppRlvLine"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <View
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/libMineShoppRlvLine"
+            android:background="#FFF7F7F7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

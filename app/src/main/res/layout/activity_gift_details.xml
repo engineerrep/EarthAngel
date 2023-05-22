@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="handler"
+            type="com.earth.angel.gift.ui.GiftDetailsActivity" />
+
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gift.ui.GiftDetailsActivity">
+
+
+    <com.earth.angel.view.xrecylerview.XRecyclerView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/clComment"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/rlvComment"
+        android:layout_width="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_height="0dp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#FFEFF3F4"
+        android:id="@+id/clComment">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginRight="@dimen/_15sdp"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/etComment"
+            style="@style/UserSign.InputText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivCommGiftMesssage"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Comment..."
+            android:singleLine="true"
+            android:textColor="#FF9A9A9A"
+            android:textSize="14sp"
+            android:imeOptions="actionSend"
+            android:maxLines="1"
+            />
+        <com.earth.libbase.view.ShapedImageView
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/ivCommGiftShare"
+            android:src="@mipmap/chat_send_enable"
+            app:layout_constraintTop_toTopOf="@+id/etComment"
+            app:layout_constraintBottom_toBottomOf="@+id/etComment"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.earth.libbase.view.ShapedImageView
+            android:visibility="gone"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/ivCommGiftMesssage"
+            android:src="@mipmap/gift_messsage"
+            app:layout_constraintTop_toTopOf="@+id/ivCommGiftShare"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCommGiftShare"
+            app:layout_constraintEnd_toStartOf="@+id/ivCommGiftShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

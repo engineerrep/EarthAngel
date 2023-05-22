@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="dialog"
+            type="com.earth.angel.dialog.DialogCommon" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.helper.widget.Layer
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_top"
+            app:constraint_referenced_ids="tvContent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:id="@+id/tvContent"
+            style="@style/AppTheme.TextView"
+            android:text="@string/lab_report"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color"
+            app:layout_constraintTop_toBottomOf="@id/tvContent" />
+        <TextView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:id="@+id/tvItems"
+            style="@style/AppTheme.TextView"
+            android:text="@string/text_Items"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewDivider"/>
+        <View
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/viewDivider3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color"
+            app:layout_constraintTop_toBottomOf="@id/tvItems" />
+        <TextView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:id="@+id/tvFraud"
+            style="@style/AppTheme.TextView"
+            android:text="@string/text_Fraud"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewDivider3"/>
+        <View
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/viewDivider4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color"
+            app:layout_constraintTop_toBottomOf="@id/tvFraud" />
+        <TextView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:id="@+id/tvSpam"
+            style="@style/AppTheme.TextView"
+            android:text="@string/text_Spam"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewDivider4"/>
+        <View
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/viewDivider5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color"
+            app:layout_constraintTop_toBottomOf="@id/tvSpam" />
+        <TextView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:id="@+id/tvInappropriate"
+            style="@style/AppTheme.TextView"
+            android:text="@string/text_Inappropriate"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewDivider5"/>
+        <View
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/viewDivider6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color"
+            app:layout_constraintTop_toBottomOf="@id/tvInappropriate" />
+        <TextView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:id="@+id/tvOther"
+            style="@style/AppTheme.TextView"
+            android:text="@string/text_Other"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_white_bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewDivider6"/>
+        <View
+            android:visibility="invisible"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/viewDivider1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color"
+            app:layout_constraintTop_toBottomOf="@id/tvOther" />
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:id="@+id/tvCancel"
+            style="@style/AppTheme.TextView"
+            android:text="@string/lab_Cancel"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_white_bottom_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewDivider1"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

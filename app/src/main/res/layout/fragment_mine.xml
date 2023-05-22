@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<data>
+    <variable
+        name="handler"
+        type="com.earth.angel.mine.MineFragment" />
+</data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ivMineBg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/mine_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/tvLeftTool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp"
+        android:src="@mipmap/bank" />
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/llUser"
+        app:layout_constraintTop_toTopOf="@+id/ivHead"
+        app:layout_constraintStart_toStartOf="parent"
+        app:constraint_referenced_ids="ivHead,llName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.constraintlayout.helper.widget.Layer>
+    <com.earth.libbase.view.ShapedImageView
+        android:layout_marginLeft="@dimen/_36sdp"
+        android:id="@+id/ivHead"
+        app:layout_constraintTop_toBottomOf="@+id/tvLeftTool"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="centerCrop"
+        app:round_radius="@dimen/_8sdp"
+        app:shape_mode="circle"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"/>
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="@+id/ivHead"
+        app:layout_constraintEnd_toEndOf="@+id/ivHead"
+        android:src="@mipmap/edit_mine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+    <LinearLayout
+        android:id="@+id/llName"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHead"
+        app:layout_constraintTop_toTopOf="@+id/ivHead"
+        app:layout_constraintStart_toEndOf="@+id/ivHead"
+        app:layout_constraintEnd_toStartOf="@+id/ivSet"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="#ff333333"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:id="@+id/tvNameID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text=""
+            android:lines="1"
+            android:textColor="#ff666666"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:padding="@dimen/_15sdp"
+        android:id="@+id/ivSet"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHead"
+        app:layout_constraintTop_toTopOf="@+id/ivHead"
+        app:layout_constraintEnd_toEndOf="@+id/ivMineBg"
+        android:src="@mipmap/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.earth.angel.view.CustomTextView
+        android:id="@+id/ctMyGiftMine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMineBg"
+        app:left_resource="@mipmap/check_mine"
+        app:title_text="@string/lab_others"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ctMyGiftMine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:id="@+id/ivMyGiftMine"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@mipmap/phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_marginLeft="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="@+id/ivMyGiftMine"
+            app:layout_constraintBottom_toBottomOf="@+id/ivMyGiftMine"
+            app:layout_constraintStart_toEndOf="@+id/ivMyGiftMine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.TextView"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="@string/lab_My_Phone_Number"
+            android:textColor="#ff333333"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/tvTitlePhone"
+            android:layout_marginLeft="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="@+id/ivMyGiftMine"
+            app:layout_constraintBottom_toBottomOf="@+id/ivMyGiftMine"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="@dimen/page_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.TextView"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="#666666"
+            android:textSize="12sp"
+            />
+        <View
+            android:visibility="invisible"
+            android:id="@+id/ivMyGiftMineLine"
+            android:background="@color/themColor"
+            app:layout_constraintTop_toBottomOf="@+id/ivMyGiftMine"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.earth.angel.view.CustomTextView
+        android:id="@+id/ctProfileAddPeople"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ctPhone"
+        app:left_resource="@mipmap/profile_addpeople"
+        app:title_text="@string/lab_Add_People_You_Know"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvNumFriend"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:gravity="center"
+        android:textSize="8sp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:background="@drawable/circle_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ctProfileAddPeople"
+        app:layout_constraintBottom_toBottomOf="@+id/ctProfileAddPeople"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_width="@dimen/message_size"
+        android:layout_height="@dimen/message_size"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

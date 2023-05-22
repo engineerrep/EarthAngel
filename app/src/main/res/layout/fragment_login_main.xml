@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="com.earth.angel.regist.ui.LoginMainFragment"/>
+        <variable
+            name="handler"
+            type="LoginMainFragment" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".regist.ui.LoginMainFragment">
+        <ImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/AppBank"
+            android:padding="@dimen/base_page"
+            android:src="@mipmap/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ImageView>
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/AppBank"
+            android:layout_marginTop="@dimen/margin40"
+            android:id="@+id/tvlibLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Earth Angel"
+            android:textColor="#ff090909"
+            style="@style/Theme.BaseTextView"
+            android:fontFamily="@font/avenirnext_latobolditalic"
+            android:textSize="@dimen/bigText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/base_page"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/margin10"
+            android:id="@+id/tvPhoneAccount"
+            android:layout_marginBottom="@dimen/margin30"
+            android:layout_marginLeft="@dimen/base_page"
+            app:layout_constraintTop_toBottomOf="@+id/tvlibLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Theme.BaseTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_Log_IN"
+            android:textColor="#ff9d9d9d"
+            android:textSize="14sp"
+            />
+        <com.earth.libbase.util.EmailAutoCompleteTextView
+            android:layout_marginTop="@dimen/margin30"
+            android:id="@+id/etPhoneLogin"
+            style="@style/UserSign.InputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/base_page"
+            android:fontFamily="@font/avenirnext_regular"
+            android:hint="@string/label_hint_Email"
+            android:paddingLeft="@dimen/margin20"
+            android:paddingTop="@dimen/etMain"
+            android:paddingBottom="@dimen/etMain"
+            android:textColor="#FF555555"
+            android:layout_marginLeft="@dimen/base_page"
+            android:background="@drawable/bg_regist_8"
+            android:textColorHint="#FF9D9D9D"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhoneAccount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin20"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginRight="@dimen/base_page"
+            android:orientation="horizontal"
+            android:id="@+id/etPhonePasswordLL"
+            android:background="@drawable/bg_regist_8"
+            app:layout_constraintTop_toBottomOf="@+id/etPhoneLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_weight="1"
+                android:id="@+id/etPhonePassword"
+                style="@style/UserSign.InputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenirnext_regular"
+                android:hint="Password"
+                android:paddingLeft="@dimen/margin20"
+                android:paddingTop="@dimen/etMain"
+                android:paddingBottom="@dimen/etMain"
+                android:textColor="#FF555555"
+                android:textColorHint="#FF9D9D9D"
+                android:textSize="16sp"
+                android:text=""
+                android:paddingRight="@dimen/base_page"
+                app:layout_constraintTop_toBottomOf="@+id/etPhoneLogin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_password_see"
+                android:paddingRight="@dimen/_4sdp"
+                android:paddingLeft="@dimen/_4sdp"
+                style="@style/LoginSee"
+                app:layout_constraintBottom_toBottomOf="@+id/etPhonePassword"
+                app:layout_constraintTop_toTopOf="@+id/etPhonePassword"
+                app:layout_constraintEnd_toEndOf="@+id/etPhonePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_marginBottom="@dimen/margin36"
+            app:layout_constraintBottom_toTopOf="@+id/nextBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CoordinatorLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:paddingBottom="@dimen/base_page"
+            android:paddingTop="@dimen/base_page"
+            app:layout_constraintTop_toBottomOf="@+id/etPhonePasswordLL"
+            app:layout_constraintEnd_toEndOf="@+id/etPhonePasswordLL"
+            style="@style/Theme.BaseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:textColor="#ff6cc24b"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_marginBottom="@dimen/margin100"
+            android:paddingTop="@dimen/btn_margin"
+            android:paddingBottom="@dimen/btn_margin"
+            android:layout_marginRight="@dimen/base_page"
+            android:layout_marginLeft="@dimen/base_page"
+            android:background="@drawable/bg_corners_shopp_28"
+            android:gravity="center"
+            android:fontFamily="@font/avenirnext_latobold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/nextBtn"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_Log_IN" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

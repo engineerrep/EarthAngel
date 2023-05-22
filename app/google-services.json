@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "320687548016",
+    "project_id": "earthangel-203b6",
+    "storage_bucket": "earthangel-203b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320687548016:android:5c283d3b43fbbf7514f6b5",
+        "android_client_info": {
+          "package_name": "com.earth.angel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320687548016-b2kkabuu4pudfslpendajh40ps4fcvn3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoORLUrA5Ky7h8KRYxHWbkuZJnhBidN2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320687548016-b2kkabuu4pudfslpendajh40ps4fcvn3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "320687548016-nd9f6594gu6q1s7qkppfo5gsa3e0e225.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.earth.angel",
+                "app_store_id": "1566256743"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

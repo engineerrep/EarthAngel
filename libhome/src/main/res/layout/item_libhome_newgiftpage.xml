@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.earth.libbase.view.ShapedImageView
+        android:id="@+id/ivImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        app:round_radius="@dimen/radius"
+        app:shape_mode="round_rect"
+        android:src="@mipmap/base_img_loding"
+        android:layout_width="@dimen/new_image_width"
+        android:layout_height="@dimen/new_image_width"/>
+    <TextView
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        style="@style/Theme.BaseTextView"
+        app:layout_constraintTop_toTopOf="@+id/ivImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivImage"
+        android:id="@+id/tvText"
+        android:layout_width="0dp"
+        android:lines="3"
+        android:ellipsize="end"
+        android:gravity="left|top"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF090909"
+        android:textSize="14sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

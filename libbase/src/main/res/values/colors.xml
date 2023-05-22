@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="BaseThemColor">#FF6CC24B</color>
+
+    <color name="theme_secondary_text_color">#FF6CC24B</color>
+
+    <color name="base_white">#FFFFFFFF</color>
+    <color name="red_normal">#FF0000</color>
+    <color name="red_pressed">#FF6666</color>
+    <color name="text_error">#FFFE6985</color>
+    <color name="transparent">#00000000</color>
+    <color name="base_black">#FF000000</color>
+    <color name="base_text_theme_hint">#ff869498</color>
+    <color name="base_login_hint">#DDCED8</color>
+    <color name="base_login_un">#FF9D9D9D</color>
+    <color name="base_line">#FFF0F0F0</color>
+    <color name="line">#FFF0F0F0</color>
+
+    <color name="default_selected_dot_color">#FF6CC24B</color>
+    <color name="default_dot_color">#e8e8e8</color>
+    <color name="color_email_auto_complete_first">#FFFFFF</color>
+    <color name="color_email_auto_complete_other">#FFFFFF</color>
+
+    <color name="text_black">#FF555555</color>
+    <color name="text_Unblack">#FF9D9D9D</color>
+    <color name="order_bg">#FFF7F7F7</color>
+    <color name="textExpired">#FFAAAAAA</color>
+
+</resources>

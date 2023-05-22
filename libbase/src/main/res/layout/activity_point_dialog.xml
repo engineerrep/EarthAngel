@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".dialog.PointDialogActivity">
+        <ImageView
+            android:id="@+id/viewBank"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/base_page"
+            app:layout_constraintBottom_toTopOf="@+id/viewLine"
+            android:src="@mipmap/point_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.constraintlayout.helper.widget.Layer
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shopp_white_top"
+            app:constraint_referenced_ids="viewLine,tvCredit,tvOneContent"
+            app:layout_constraintBottom_toTopOf="@+id/tvAccumulative"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+
+            android:id="@+id/viewLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tvCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin20"/>
+        <ImageView
+
+            android:layout_marginTop="@dimen/margin10"
+            app:layout_constraintBottom_toTopOf="@+id/tvCredit"
+            android:src="@mipmap/point_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvCredit"
+            style="@style/Theme.BaseTextView"
+            android:paddingTop="@dimen/margin10"
+            android:paddingBottom="@dimen/margin10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tvAccumulative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Log in every day to get Eco Credit "
+            android:textColor="#ff9d9d9d"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/tvAccumulative"
+            android:layout_marginBottom="@dimen/margin10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/rlDay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Theme.BaseTitleTextView"
+            android:text=" Accumulative login 1 day "
+            android:textColor="#ff090909"
+            android:textSize="18sp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rlDay1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginBottom="@dimen/margin10"
+            android:background="@drawable/base_biankuang_chatme_8"
+            app:layout_constraintBottom_toTopOf="@+id/rlDay5"
+            app:layout_constraintEnd_toStartOf="@+id/rlDay2"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                style="@style/Theme.BaseTitleTextView"
+                android:id="@+id/tvDay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin14"
+                android:text="DAY1"
+                android:textColor="#ff9d9d9d"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/tvDay1Iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDay1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin6"
+                android:layout_marginBottom="@dimen/margin14"
+                android:src="@mipmap/point_10" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="@dimen/margin4"
+            android:layout_marginRight="@dimen/margin4"
+            app:layout_constraintTop_toTopOf="@+id/rlDay1"
+            app:layout_constraintEnd_toEndOf="@+id/rlDay1"
+            android:id="@+id/tvDay1view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"/>
+        <ImageView
+            android:id="@+id/ivDay1Yes"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDay1view"
+            app:layout_constraintTop_toTopOf="@+id/tvDay1view"
+            app:layout_constraintStart_toStartOf="@+id/tvDay1view"
+            app:layout_constraintEnd_toEndOf="@+id/tvDay1view"
+            android:src="@mipmap/point_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/rlDay2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@drawable/base_biankuang_chatme_8"
+            app:layout_constraintTop_toTopOf="@id/rlDay1"
+            app:layout_constraintStart_toEndOf="@+id/rlDay1"
+            app:layout_constraintEnd_toStartOf="@+id/rlDay3">
+
+            <TextView
+                style="@style/Theme.BaseTitleTextView"
+                android:id="@+id/tvDay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin14"
+                android:text="DAY2"
+                android:textColor="#ff9d9d9d"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/tvDay2Iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDay2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin6"
+                android:layout_marginBottom="@dimen/margin14"
+                android:src="@mipmap/point_10" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="@dimen/margin4"
+            android:layout_marginRight="@dimen/margin4"
+            app:layout_constraintTop_toTopOf="@+id/rlDay2"
+            app:layout_constraintEnd_toEndOf="@+id/rlDay2"
+            android:id="@+id/tvDay2view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"/>
+        <ImageView
+            android:id="@+id/ivDay2Yes"
+
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDay2view"
+            app:layout_constraintTop_toTopOf="@+id/tvDay2view"
+            app:layout_constraintStart_toStartOf="@+id/tvDay2view"
+            app:layout_constraintEnd_toEndOf="@+id/tvDay2view"
+            android:src="@mipmap/point_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/rlDay3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+
+            android:background="@drawable/base_biankuang_chatme_8"
+            app:layout_constraintTop_toTopOf="@id/rlDay1"
+            app:layout_constraintStart_toEndOf="@+id/rlDay2"
+            app:layout_constraintEnd_toStartOf="@+id/rlDay4">
+
+            <TextView
+                style="@style/Theme.BaseTitleTextView"
+                android:id="@+id/tvDay3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin14"
+                android:text="DAY3"
+                android:textColor="#ff9d9d9d"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/tvDay3Iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDay3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin6"
+                android:layout_marginBottom="@dimen/margin14"
+                android:src="@mipmap/point_20" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="@dimen/margin4"
+            android:layout_marginRight="@dimen/margin4"
+            app:layout_constraintTop_toTopOf="@+id/rlDay3"
+            app:layout_constraintEnd_toEndOf="@+id/rlDay3"
+            android:id="@+id/tvDay3view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"/>
+        <ImageView
+            android:id="@+id/ivDay3Yes"
+
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDay3view"
+            app:layout_constraintTop_toTopOf="@+id/tvDay3view"
+            app:layout_constraintStart_toStartOf="@+id/tvDay3view"
+            app:layout_constraintEnd_toEndOf="@+id/tvDay3view"
+            android:src="@mipmap/point_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_marginRight="@dimen/base_page"
+            android:id="@+id/rlDay4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+
+            android:background="@drawable/base_biankuang_chatme_8"
+           app:layout_constraintTop_toTopOf="@id/rlDay1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rlDay3">
+
+            <TextView
+                style="@style/Theme.BaseTitleTextView"
+                android:id="@+id/tvDay4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin14"
+                android:text="DAY4"
+                android:textColor="#ff9d9d9d"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/tvDay4Iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDay4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin6"
+                android:layout_marginBottom="@dimen/margin14"
+                android:src="@mipmap/point_30" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="@dimen/margin4"
+            android:layout_marginRight="@dimen/margin4"
+            app:layout_constraintTop_toTopOf="@+id/rlDay4"
+            app:layout_constraintEnd_toEndOf="@+id/rlDay4"
+            android:id="@+id/tvDay4view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"/>
+        <ImageView
+            android:id="@+id/ivDay4Yes"
+
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDay4view"
+            app:layout_constraintTop_toTopOf="@+id/tvDay4view"
+            app:layout_constraintStart_toStartOf="@+id/tvDay4view"
+            app:layout_constraintEnd_toEndOf="@+id/tvDay4view"
+            android:src="@mipmap/point_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rlDay5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginBottom="@dimen/margin30"
+            android:background="@drawable/base_biankuang_chatme_8"
+            app:layout_constraintBottom_toTopOf="@+id/tvThreeContent"
+            app:layout_constraintEnd_toStartOf="@+id/rlDay6"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                style="@style/Theme.BaseTitleTextView"
+                android:id="@+id/tvDay5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin14"
+                android:text="DAY5"
+                android:textColor="#ff9d9d9d"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/tvDay5Iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDay5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin6"
+                android:layout_marginBottom="@dimen/margin14"
+                android:src="@mipmap/point_40" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="@dimen/margin4"
+            android:layout_marginRight="@dimen/margin4"
+            app:layout_constraintTop_toTopOf="@+id/rlDay5"
+            app:layout_constraintEnd_toEndOf="@+id/rlDay5"
+            android:id="@+id/tvDay5view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"/>
+        <ImageView
+            android:id="@+id/ivDay5Yes"
+
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDay5view"
+            app:layout_constraintTop_toTopOf="@+id/tvDay5view"
+            app:layout_constraintStart_toStartOf="@+id/tvDay5view"
+            app:layout_constraintEnd_toEndOf="@+id/tvDay5view"
+            android:src="@mipmap/point_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/rlDay6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginBottom="@dimen/margin30"
+            android:background="@drawable/base_biankuang_chatme_8"
+            app:layout_constraintBottom_toTopOf="@+id/tvThreeContent"
+            app:layout_constraintEnd_toStartOf="@+id/rlDay7"
+            app:layout_constraintStart_toEndOf="@+id/rlDay5">
+
+            <TextView
+                android:id="@+id/tvDay6"
+                style="@style/Theme.BaseTitleTextView"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin14"
+                android:text="DAY6"
+                android:textColor="#ff9d9d9d"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/tvDay6Iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDay6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin6"
+                android:layout_marginBottom="@dimen/margin14"
+                android:src="@mipmap/point_40" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="@dimen/margin4"
+            android:layout_marginRight="@dimen/margin4"
+            app:layout_constraintTop_toTopOf="@+id/rlDay6"
+            app:layout_constraintEnd_toEndOf="@+id/rlDay6"
+            android:id="@+id/tvDay6view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"/>
+        <ImageView
+            android:id="@+id/ivDay6Yes"
+
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDay6view"
+            app:layout_constraintTop_toTopOf="@+id/tvDay6view"
+            app:layout_constraintStart_toStartOf="@+id/tvDay6view"
+            app:layout_constraintEnd_toEndOf="@+id/tvDay6view"
+            android:src="@mipmap/point_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/rlDay7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginRight="@dimen/base_page"
+            android:layout_marginBottom="@dimen/margin30"
+            android:background="@drawable/base_biankuang_chatme_8"
+            app:layout_constraintBottom_toTopOf="@+id/tvThreeContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rlDay6">
+
+            <TextView
+                style="@style/Theme.BaseTitleTextView"
+                android:id="@+id/tvDay7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin14"
+                android:text="DAY7"
+                android:textColor="#ff9d9d9d"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/tvDay7Iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDay7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin6"
+                android:layout_marginBottom="@dimen/margin14"
+                android:src="@mipmap/point_50" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="@dimen/margin4"
+            android:layout_marginRight="@dimen/margin4"
+            app:layout_constraintTop_toTopOf="@+id/rlDay7"
+            app:layout_constraintEnd_toEndOf="@+id/rlDay7"
+            android:id="@+id/tvDay7view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"/>
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/ivDay7Yes"
+
+            app:layout_constraintBottom_toBottomOf="@+id/tvDay7view"
+            app:layout_constraintTop_toTopOf="@+id/tvDay7view"
+            app:layout_constraintStart_toStartOf="@+id/tvDay7view"
+            app:layout_constraintEnd_toEndOf="@+id/tvDay7view"
+            android:src="@mipmap/point_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvThree"
+            android:layout_width="@dimen/margin4"
+            android:layout_height="@dimen/margin4"
+            android:layout_marginLeft="@dimen/base_page"
+            android:background="@drawable/circle_line"
+            android:gravity="center"
+            android:textColor="@color/base_white"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvThreeContent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvThreeContent" />
+
+        <TextView
+            android:id="@+id/tvThreeContent"
+            style="@style/Theme.BaseTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginRight="@dimen/base_page"
+            android:layout_marginBottom="@dimen/margin10"
+            android:fontFamily="@font/avenirnext_latobold"
+            android:text="Eco Credit can be exchanged stuff with others freely"
+            android:textColor="#ff9d9d9d"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvTwoContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvOne" />
+
+        <TextView
+            android:id="@+id/tvTwo"
+            android:layout_width="@dimen/margin4"
+            android:layout_height="@dimen/margin4"
+            android:layout_marginLeft="@dimen/base_page"
+            android:background="@drawable/circle_line"
+            android:gravity="center"
+            android:textColor="@color/base_white"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTwoContent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvTwoContent" />
+
+        <TextView
+            android:id="@+id/tvTwoContent"
+            style="@style/Theme.BaseTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginRight="@dimen/base_page"
+            android:fontFamily="@font/avenirnext_latobold"
+            android:text="Login starts from the dawn every day"
+            android:textColor="#ff9d9d9d"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvOneContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvOne" />
+
+        <TextView
+            android:id="@+id/tvOne"
+            android:layout_width="@dimen/margin4"
+            android:layout_height="@dimen/margin4"
+            android:layout_marginLeft="@dimen/base_page"
+            android:background="@drawable/circle_line"
+            android:gravity="center"
+            android:textColor="@color/base_white"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvOneContent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvOneContent" />
+
+        <TextView
+            android:paddingTop="@dimen/margin10"
+            android:paddingBottom="@dimen/margin10"
+            android:id="@+id/tvOneContent"
+            style="@style/Theme.BaseTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginRight="@dimen/base_page"
+            android:fontFamily="@font/avenirnext_latobold"
+            android:text="You need an ongoing 7-days login, or you'll be restarted"
+            android:textColor="#ff9d9d9d"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/viewBottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvOne" />
+        <View
+            android:id="@+id/viewBottom"
+            android:background="@color/base_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin20"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

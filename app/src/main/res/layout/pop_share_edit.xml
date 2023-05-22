@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/pop_shar_edit_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/page_space"
+        android:id="@+id/ivBank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/photo_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_35sdp"
+
+        android:layout_marginRight="@dimen/page_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/llShareSave"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_grid_image_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:id="@+id/tvJoined"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab_Save"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etContent"
+        style="@style/AppTheme.EditText"
+        android:textSize="18sp"
+        android:gravity="top|left"
+        android:lines="5"
+        android:layout_margin="@dimen/_15sdp"
+        android:padding="@dimen/_10sdp"
+        android:scrollbars="vertical"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llShareSave" />
+</androidx.constraintlayout.widget.ConstraintLayout>

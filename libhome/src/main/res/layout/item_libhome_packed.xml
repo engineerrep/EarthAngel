@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_30sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/ItemLibHomePacketName"
+        app:layout_constraintTop_toTopOf="@+id/ItemLibHomePacketMore"
+        app:layout_constraintBottom_toBottomOf="@+id/ItemLibHomePacketMore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ItemLibHomePacketMore"
+        style="@style/Theme.BaseTitleTextView"
+        android:layout_width="0dp"
+        android:lines="1"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ff000000"
+        android:textSize="18sp"
+        />
+<ImageView
+    android:visibility="invisible"
+    android:padding="@dimen/_10sdp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/ItemLibHomePacketMore"
+    android:src="@mipmap/base_packet_more"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></ImageView>
+    <com.earth.libbase.view.BaseNoScrollRecyclerView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/ItemLibHomePacketRlv"
+        app:layout_constraintTop_toBottomOf="@+id/ItemLibHomePacketMore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.earth.libbase.view.BaseNoScrollRecyclerView>
+
+    <TextView
+        android:layout_marginTop="@dimen/_30sdp"
+        android:id="@+id/ItemLibHomePacketInt"
+        android:paddingTop="@dimen/btn_margin"
+        android:paddingBottom="@dimen/btn_margin"
+        android:background="@drawable/bg_corners_shopp_28"
+        app:layout_constraintTop_toBottomOf="@+id/ItemLibHomePacketRlv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        style="@style/Theme.BaseTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Package Intention"
+        android:textColor="#ffffffff"
+        android:textSize="18sp"
+        />
+    <View
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintTop_toBottomOf="@+id/ItemLibHomePacketInt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/base_line"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

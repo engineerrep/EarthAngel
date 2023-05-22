@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="com.earth.libmine.point.PointActivity"/>
+        <import type="com.earth.libbase.view.loadingstatus.LoadingStatusCode" />
+
+        <variable
+            name="handler"
+            type="com.earth.libmine.point.PointActivity" />
+        <variable
+            name="statusCode"
+            type="LoadingStatusCode" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".point.PointActivity">
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/point_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:padding="@dimen/margin6"
+            android:id="@+id/LibArrowRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/white_arrow_right"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvCurrent"
+            app:layout_constraintTop_toBottomOf="@+id/LibArrowRight"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/margin20"
+            android:layout_marginLeft="@dimen/margin24"
+            android:layout_width="0dp"
+            style="@style/Theme.BaseTitleTextView"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Current eco credit "
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/margin6"
+            android:id="@+id/tvPoint"
+            app:layout_constraintStart_toStartOf="@+id/tvCurrent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCurrent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/base_white"
+            android:textSize="36sp"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pointContent"
+            android:layout_marginTop="@dimen/margin20"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginRight="@dimen/base_page"
+            android:background="@drawable/base_white_20"
+            android:layout_marginBottom="@dimen/base_page"
+            app:layout_constraintTop_toBottomOf="@+id/tvPoint"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+            <TextView
+                style="@style/Theme.BaseTitleTextView"
+                android:id="@+id/tvPointDetails"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="@dimen/base_page"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eco credit details"
+                android:textColor="#ff000000"
+                android:textSize="18sp"
+                />
+            <com.scwang.smart.refresh.layout.SmartRefreshLayout
+                android:id="@+id/libHomeSrl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPointDetails"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="@dimen/base_page"
+                android:layout_width="0dp"
+                android:layout_height="0dp">
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/rlvPoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+            <com.earth.libbase.view.loadingstatus.LoadingStatusView
+                android:layout_width="match_parent"
+                bind:requestStatusCode="@{statusCode}"
+                android:layout_height="match_parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_marginTop="@dimen/margin26"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/pointContent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <ImageView
+            android:layout_marginRight="@dimen/margin36"
+            android:src="@mipmap/point_three"
+            app:layout_constraintBottom_toBottomOf="@+id/viewLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

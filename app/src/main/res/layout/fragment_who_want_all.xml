@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="handler"
+            type="com.earth.angel.mine.fragment.WhoWantAllFragment" />
+
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<com.earth.angel.view.NestedScrollableHost
+    bind:layout_constraintTop_toTopOf="parent"
+    bind:layout_constraintStart_toStartOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/srf"
+        bind:layout_constraintTop_toTopOf="parent"
+        bind:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        bind:layout_constraintTop_toTopOf="parent"
+        bind:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/rvList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</com.earth.angel.view.NestedScrollableHost>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

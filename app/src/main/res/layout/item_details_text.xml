@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingBottom="@dimen/_12sdp"
+        android:id="@+id/ChooseCl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginTop="@dimen/_12sdp"
+        android:id="@+id/ChooseIv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/base_page"
+        android:src="@mipmap/photo_text_un"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <TextView
+            android:fontFamily="@font/avenirnext_semibold"
+            style="@style/Theme.BaseTextView"
+            android:layout_marginLeft="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="@+id/ChooseIv"
+            app:layout_constraintBottom_toBottomOf="@+id/ChooseIv"
+            app:layout_constraintStart_toEndOf="@+id/ChooseIv"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/ChooseTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ff555555"
+            android:textSize="16sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

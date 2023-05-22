@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="com.earth.libmine.set.LibMineShippingAddressActivity" />
+
+        <variable
+            name="handler"
+            type="com.earth.libmine.set.LibMineShippingAddressActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_white"
+        tools:context=".set.LibMineShippingAddressActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/libmine_titlebar"></include>
+
+                <androidx.constraintlayout.helper.widget.Layer
+                    android:id="@+id/LibMineSAAddLy"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_regist_8"
+                    app:constraint_referenced_ids="LibMineSAAddBj,LibMineSAAdd,LibMineSAAddIv"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/rlLibMineBar">
+
+                </androidx.constraintlayout.helper.widget.Layer>
+
+                <ImageView
+                    android:id="@+id/LibMineSAAddBj"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:src="@mipmap/base_bianji"
+                    app:layout_constraintBottom_toBottomOf="@id/LibMineSAAdd"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/rlLibMineBar"></ImageView>
+
+                <TextView
+                    android:id="@+id/LibMineSAAdd"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_13sdp"
+                    android:paddingBottom="@dimen/_13sdp"
+                    android:text="@string/label_Address"
+                    android:textColor="#ff555555"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/LibMineSAAddBj"
+                    app:layout_constraintTop_toBottomOf="@+id/rlLibMineBar" />
+
+                <ImageView
+                    android:id="@+id/LibMineSAAddIv"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:src="@mipmap/base_left"
+                    app:layout_constraintBottom_toBottomOf="@id/LibMineSAAdd"
+                    app:layout_constraintEnd_toEndOf="@id/guideline2"
+                    app:layout_constraintTop_toTopOf="@id/LibMineSAAdd"></ImageView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:visibility="gone"
+
+                    android:id="@+id/LibMineSACl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSAAdd">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/LibMineSAName"
+                        style="@style/BaseUserSign.InputText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_page"
+                        android:layout_marginRight="@dimen/base_page"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/bg_regist_8"
+                        android:fontFamily="@font/avenirnext_regular"
+                        android:hint="Name"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="#FF9D9D9D"
+                        android:textColorHint="#FF555555"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/LibMineSAStreetAddress"
+                        style="@style/BaseUserSign.InputText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_page"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/base_page"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/bg_regist_8"
+                        android:fontFamily="@font/avenirnext_regular"
+                        android:hint="Street Address"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="#FF9D9D9D"
+                        android:textColorHint="#FF555555"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/LibMineSAName" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/LibMineSADistrict"
+                        style="@style/BaseUserSign.InputText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_page"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/base_page"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/bg_regist_8"
+                        android:fontFamily="@font/avenirnext_regular"
+                        android:hint="City"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="#FF9D9D9D"
+                        android:textColorHint="#FF555555"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/LibMineSAStreetAddress" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/LibMineSAProvince"
+                        style="@style/BaseUserSign.InputText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_page"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/base_page"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/bg_regist_8"
+                        android:fontFamily="@font/avenirnext_regular"
+                        android:hint="State"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="#FF9D9D9D"
+                        android:textColorHint="#FF555555"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/LibMineSADistrict" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/LibMineSAZipCode"
+                        style="@style/BaseUserSign.InputText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_page"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/base_page"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/bg_regist_8"
+                        android:fontFamily="@font/avenirnext_regular"
+                        android:hint="Zip Code"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="#FF9D9D9D"
+                        android:textColorHint="#FF555555"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/LibMineSAProvince" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/LibMineSAPhoneNumber"
+                        style="@style/BaseUserSign.InputText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_page"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/base_page"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/bg_regist_8"
+                        android:fontFamily="@font/avenirnext_regular"
+                        android:hint="Phone Number"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="#FF9D9D9D"
+                        android:textColorHint="#FF555555"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/LibMineSAZipCode" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/LibMineSAAddRl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_regist_8"
+                    android:paddingTop="@dimen/base_page"
+                    android:paddingBottom="@dimen/base_page"
+                    app:layout_constraintEnd_toEndOf="@id/guideline2"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSACl">
+
+                    <TextView
+                        android:layout_toLeftOf="@+id/LibMineSANameEdIV"
+                        android:id="@+id/LibMineSANameEd"
+                        style="@style/Theme.BaseTitleTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:text=""
+                        android:textColor="#ff555555"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:id="@+id/LibMineSASA"
+                        style="@style/Theme.BaseTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/LibMineSANameEd"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_toLeftOf="@+id/LibMineSANameEdIV"
+                        android:text=""
+                        android:textColor="#ff9d9d9d"
+                        android:textSize="14sp" />
+
+
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:id="@+id/LibMineSAP"
+                        style="@style/Theme.BaseTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/LibMineSASA"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_toLeftOf="@+id/LibMineSANameEdIV"
+                        android:text=""
+                        android:textColor="#ff9d9d9d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:id="@+id/LibMineSAZ"
+
+                        style="@style/Theme.BaseTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/LibMineSAP"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_toLeftOf="@+id/LibMineSANameEdIV"
+                        android:text=""
+                        android:textColor="#ff9d9d9d"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/LibMineSANameEdIV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@mipmap/base_added"></ImageView>
+                </RelativeLayout>
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/nextBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_page"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/base_page"
+                    android:background="@drawable/bg_corners_shopp_28"
+                    android:fontFamily="@font/avenirnext_latobold"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/btn_margin"
+                    android:paddingBottom="@dimen/btn_margin"
+                    android:text="Done"
+                    android:textAllCaps="false"
+                    android:textColor="@color/base_white"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/LibMineSAAddRl" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="@dimen/base_page" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="@dimen/base_page" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="handler"
+            type="com.earth.angel.regist.ui.RegistEmailFragment" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        tools:context=".regist.ui.RegistEmailFragment">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/huanyingtu"
+            app:layout_constraintBottom_toTopOf="@+id/tvlibLogoLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.helper.widget.Layer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:background="@drawable/bg_white_top"
+            app:constraint_referenced_ids="tvlibLogo,tvPhoneAccount,etPhoneLogin,etPhonePassword,nextBtn,RegistLoginLL"
+            app:layout_constraintBottom_toTopOf="@+id/tvPhoneAccount"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </androidx.constraintlayout.helper.widget.Layer>
+
+        <TextView
+            android:id="@+id/tvlibLogoLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/base_page"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvlibLogo" />
+
+        <TextView
+            android:id="@+id/tvlibLogo"
+            style="@style/Theme.BaseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:fontFamily="@font/avenirnext_latobolditalic"
+            android:paddingTop="@dimen/base_page"
+            android:paddingBottom="@dimen/margin10"
+            android:text="Earth Angel"
+            android:textColor="#ff090909"
+            android:textSize="@dimen/bigText"
+            app:layout_constraintBottom_toTopOf="@+id/tvPhoneAccount"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPhoneAccount"
+            style="@style/Theme.BaseTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginBottom="@dimen/margin30"
+            android:text="Create new account"
+            android:textColor="#ff9d9d9d"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/etPhoneLogin"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.earth.libbase.util.EmailAutoCompleteTextView
+            android:id="@+id/etPhoneLogin"
+            style="@style/UserSign.InputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginRight="@dimen/base_page"
+            android:layout_marginBottom="@dimen/margin10"
+            android:background="@drawable/bg_regist_8"
+            android:fontFamily="@font/avenirnext_regular"
+            android:hint="@string/label_hint_Email"
+            android:paddingLeft="@dimen/margin20"
+            android:textColor="#FF555555"
+            android:textColorHint="#FF9D9D9D"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/etPhonePassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhonePassword"
+            style="@style/UserSign.InputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginRight="@dimen/base_page"
+            android:layout_marginBottom="@dimen/margin10"
+            android:background="@drawable/bg_regist_8"
+            android:fontFamily="@font/avenirnext_regular"
+            android:hint="Password"
+            android:paddingLeft="@dimen/margin20"
+            android:textColor="#FF555555"
+            android:textColorHint="#FF9D9D9D"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/etPhoneCode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhoneCode"
+            style="@style/UserSign.InputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginRight="@dimen/base_page"
+            android:layout_marginBottom="@dimen/margin20"
+            android:background="@drawable/base_biankuang_white_8"
+            android:fontFamily="@font/avenirnext_regular"
+            android:hint="Invitation code"
+            android:paddingLeft="@dimen/margin20"
+            android:textColor="#FFCBCBCB"
+            android:textColorHint="#FFCBCBCB"
+            android:textSize="16sp"
+            android:text="156256356"
+            app:layout_constraintBottom_toTopOf="@+id/nextBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginRight="@dimen/base_page"
+            android:background="@drawable/bg_corners_themcolor_25"
+            android:fontFamily="@font/avenirnext_semibold"
+            android:gravity="center"
+            android:paddingTop="@dimen/btn_margin"
+            android:paddingBottom="@dimen/btn_margin"
+            android:text="@string/lib_base_register"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/RegistLoginLL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/RegistLoginLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@mipmap/base_login_left"></ImageView>
+
+            <TextView
+                style="@style/Theme.BaseTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:text="Already have an account?"
+                android:textColor="#ff9d9d9d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/logintBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10"
+                android:paddingTop="@dimen/base_page"
+                android:paddingBottom="@dimen/base_page"
+                android:text="@string/label_Log_IN"
+                android:textColor="@color/BaseThemColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@mipmap/base_login_right"></ImageView>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

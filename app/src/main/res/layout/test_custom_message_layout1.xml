@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/base_white_8">
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/CustomTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This Gift Is Unavailable."
+        style="@style/Theme.BaseTitleTextView"
+        android:textColor="#FF090909"
+        android:textSize="16sp"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/CustomListContent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_24sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:background="@drawable/base_biankuang_chatme_8"
+        app:layout_constraintTop_toBottomOf="@+id/CustomTitle"
+        app:layout_constraintStart_toStartOf="@+id/CustomTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <com.earth.angel.view.NoScrollRecyclerView
+           android:layout_marginLeft="@dimen/_10sdp"
+           android:id="@+id/CustomList"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/CustomListAddress"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Theme.BaseTextView"
+            android:text=""
+            android:textColor="#ff9d9d9d"
+            android:textSize="14sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/CustomListempty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CustomListContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/CustomListText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CustomListempty"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please pick-up from this address."
+        style="@style/Theme.BaseTitleTextView"
+        android:textColor="#ff090909"
+        android:textSize="14sp"
+        />
+    <View
+        android:visibility="gone"
+
+        android:id="@+id/CustomListLine"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#FFF7F7F7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CustomListText"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"/>
+    <TextView
+        android:visibility="gone"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:id="@+id/CustomListCopy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CustomListLine"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Copy"
+        style="@style/Theme.BaseTextView"
+
+        android:textColor="#ff6cc24b"
+        android:textSize="16sp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

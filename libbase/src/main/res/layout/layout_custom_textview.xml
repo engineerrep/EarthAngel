@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:id="@+id/CategoryIV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/base_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/CategoryTV"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@+id/CategoryIV"
+        app:layout_constraintTop_toTopOf="@+id/CategoryIV"
+        app:layout_constraintBottom_toBottomOf="@+id/CategoryIV"
+        android:fontFamily="@font/avenirnext_semibold"
+        style="@style/Theme.BaseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/base_Category"
+        android:textColor="#ff555555"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/CategoryContent"
+        android:paddingRight="@dimen/_10sdp"
+        android:fontFamily="@font/avenirnext_semibold"
+        style="@style/Theme.BaseTextView"
+        app:layout_constraintTop_toTopOf="@+id/CategoryIV"
+        app:layout_constraintBottom_toBottomOf="@+id/CategoryIV"
+        app:layout_constraintStart_toEndOf="@+id/CategoryTV"
+        app:layout_constraintEnd_toStartOf="@+id/CategoryIVNext"
+        android:layout_width="0dp"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ff9d9d9d"
+        android:textSize="14sp"
+        />
+    <ImageView
+        android:id="@+id/CategoryIVNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CategoryIV"
+        app:layout_constraintBottom_toBottomOf="@+id/CategoryIV"
+        android:src="@mipmap/base_post_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

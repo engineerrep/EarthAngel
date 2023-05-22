@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="handler"
+            type="com.earth.angel.share.ShareActivity" />
+    </data>
+    <RelativeLayout
+        android:id="@+id/rlShareMain"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".share.ShareActivity">
+        <RelativeLayout
+            android:id="@+id/rlShareTopToolbar"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/tool_bar_min_height">
+
+            <ImageView
+                android:id="@+id/tvShareLeftTool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/bank" />
+
+            <TextView
+                android:id="@+id/tvShareTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF111111"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="PREVIEW" />
+
+            <TextView
+                android:id="@+id/toolbarShareTabRight"
+                style="@style/Theme.ToolBar.MenuTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="#FF656565"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp" />
+
+            <ImageView
+                android:src="@mipmap/share_home"
+                android:id="@+id/ivShareRightTool"
+                style="@style/Theme.ToolBar.MenuImageView"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:fillViewport="true"
+            android:layout_below="@+id/rlShareTopToolbar"
+            android:id="@+id/mAutoScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/fragment_share_edit"></include>
+                <include layout="@layout/layout_share_user"></include>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:id="@+id/llShare"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center"
+            android:background="@drawable/shape_corner_group_joined"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/post_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+            <TextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/themColor"
+                android:textSize="16sp"
+                android:text="@string/label_Share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

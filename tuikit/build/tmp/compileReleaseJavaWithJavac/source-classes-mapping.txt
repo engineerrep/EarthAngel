@@ -1,0 +1,1023 @@
+com/tencent/qcloud/tim/uikit/component/face/CustomFaceGroup.java
+ com.tencent.qcloud.tim.uikit.component.face.CustomFaceGroup
+com/tencent/qcloud/tim/uikit/modules/group/info/GroupInfoPresenter.java
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoPresenter
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoPresenter$1
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoPresenter$2
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoPresenter$3
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoPresenter$4
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoPresenter$5
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoPresenter$6
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoPresenter$7
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoPresenter$8
+com/tencent/qcloud/tim/uikit/component/video/state/BorrowVideoState.java
+ com.tencent.qcloud.tim.uikit.component.video.state.BorrowVideoState
+com/tencent/qcloud/tim/uikit/modules/chat/interfaces/IMessageProperties.java
+ com.tencent.qcloud.tim.uikit.modules.chat.interfaces.IMessageProperties
+com/tencent/qcloud/tim/uikit/modules/search/view/PageRecycleView.java
+ com.tencent.qcloud.tim.uikit.modules.search.view.PageRecycleView
+ com.tencent.qcloud.tim.uikit.modules.search.view.PageRecycleView$OnLoadMoreHandler
+com/tencent/qcloud/tim/uikit/modules/chat/base/InputMoreActionUnit.java
+ com.tencent.qcloud.tim.uikit.modules.chat.base.InputMoreActionUnit
+ com.tencent.qcloud.tim.uikit.modules.chat.base.InputMoreActionUnit$OnActionClickListener
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/MessageLayoutUI.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageLayoutUI
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageLayoutUI$Properties
+com/tencent/qcloud/tim/uikit/modules/forward/message/ForwardMessageListAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageListAdapter
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageListAdapter$1
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageListAdapter$2
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageListAdapter$3
+com/tencent/qcloud/tim/uikit/modules/search/groupinterface/TUISearchGroupParam.java
+ com.tencent.qcloud.tim.uikit.modules.search.groupinterface.TUISearchGroupParam
+ com.tencent.qcloud.tim.uikit.modules.search.groupinterface.TUISearchGroupParam$TUISearchGroupMatchField
+ com.tencent.qcloud.tim.uikit.modules.search.groupinterface.TUISearchGroupParam$TUISearchGroupMemberMatchField
+com/tencent/qcloud/tim/uikit/modules/conversation/base/DynamicConversationIconView.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.base.DynamicConversationIconView
+com/tencent/qcloud/tim/uikit/modules/chat/layout/inputmore/InputMoreFragment.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.inputmore.InputMoreFragment
+com/tencent/qcloud/tim/uikit/component/gatherimage/DynamicLayoutView.java
+ com.tencent.qcloud.tim.uikit.component.gatherimage.DynamicLayoutView
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/holder/ICustomMessageViewGroup.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.ICustomMessageViewGroup
+com/tencent/qcloud/tim/uikit/modules/forward/holder/ForwardBaseHolder.java
+ com.tencent.qcloud.tim.uikit.modules.forward.holder.ForwardBaseHolder
+com/tencent/qcloud/tim/uikit/modules/group/member/IGroupMemberChangedCallback.java
+ com.tencent.qcloud.tim.uikit.modules.group.member.IGroupMemberChangedCallback
+com/tencent/qcloud/tim/uikit/component/gatherimage/UserIconView.java
+ com.tencent.qcloud.tim.uikit.component.gatherimage.UserIconView
+com/tencent/qcloud/tim/uikit/modules/search/model/SearchDataBean.java
+ com.tencent.qcloud.tim.uikit.modules.search.model.SearchDataBean
+ com.tencent.qcloud.tim.uikit.modules.search.model.SearchDataBean$1
+com/tencent/qcloud/tim/uikit/component/photoview/OnPhotoTapListener.java
+ com.tencent.qcloud.tim.uikit.component.photoview.OnPhotoTapListener
+com/tencent/qcloud/tim/uikit/utils/NetWorkUtils.java
+ com.tencent.qcloud.tim.uikit.utils.NetWorkUtils
+com/tencent/qcloud/tim/uikit/component/gatherimage/DynamicChatUserIconView.java
+ com.tencent.qcloud.tim.uikit.component.gatherimage.DynamicChatUserIconView
+com/tencent/qcloud/tim/uikit/component/video/state/BorrowPictureState.java
+ com.tencent.qcloud.tim.uikit.component.video.state.BorrowPictureState
+com/tencent/qcloud/tim/uikit/modules/group/apply/GroupApplyManagerLayout.java
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyManagerLayout
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyManagerLayout$1
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyManagerLayout$2
+com/tencent/qcloud/tim/uikit/modules/group/member/GroupMemberInviteFragment.java
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberInviteFragment
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberInviteFragment$1
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/holder/MessageBaseHolder.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageBaseHolder
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageBaseHolder$Factory
+com/tencent/qcloud/tim/uikit/component/gatherimage/ShadeImageView.java
+ com.tencent.qcloud.tim.uikit.component.gatherimage.ShadeImageView
+com/tencent/qcloud/tim/uikit/component/picture/imageEngine/impl/GlideEngine.java
+ com.tencent.qcloud.tim.uikit.component.picture.imageEngine.impl.GlideEngine
+com/tencent/qcloud/tim/uikit/component/photoview/OnViewTapListener.java
+ com.tencent.qcloud.tim.uikit.component.photoview.OnViewTapListener
+com/tencent/qcloud/tim/uikit/component/video/util/CheckPermission.java
+ com.tencent.qcloud.tim.uikit.component.video.util.CheckPermission
+com/tencent/qcloud/tim/uikit/utils/MD5Utils.java
+ com.tencent.qcloud.tim.uikit.utils.MD5Utils
+com/tencent/qcloud/tim/uikit/component/indexlib/IndexBar/helper/IndexBarDataHelperImpl.java
+ com.tencent.qcloud.tim.uikit.component.indexlib.IndexBar.helper.IndexBarDataHelperImpl
+ com.tencent.qcloud.tim.uikit.component.indexlib.IndexBar.helper.IndexBarDataHelperImpl$1
+com/tencent/qcloud/tim/uikit/modules/chat/base/ChatProvider.java
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatProvider
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatProvider$TypingListener
+com/tencent/qcloud/tim/uikit/component/video/state/CameraMachine.java
+ com.tencent.qcloud.tim.uikit.component.video.state.CameraMachine
+com/tencent/qcloud/tim/uikit/component/video/VideoViewActivity.java
+ com.tencent.qcloud.tim.uikit.component.video.VideoViewActivity
+ com.tencent.qcloud.tim.uikit.component.video.VideoViewActivity$1
+ com.tencent.qcloud.tim.uikit.component.video.VideoViewActivity$2
+ com.tencent.qcloud.tim.uikit.component.video.VideoViewActivity$3
+com/tencent/qcloud/tim/uikit/base/IBaseInfo.java
+ com.tencent.qcloud.tim.uikit.base.IBaseInfo
+com/tencent/qcloud/tim/uikit/component/video/CaptureLayout.java
+ com.tencent.qcloud.tim.uikit.component.video.CaptureLayout
+ com.tencent.qcloud.tim.uikit.component.video.CaptureLayout$1
+ com.tencent.qcloud.tim.uikit.component.video.CaptureLayout$2
+ com.tencent.qcloud.tim.uikit.component.video.CaptureLayout$3
+ com.tencent.qcloud.tim.uikit.component.video.CaptureLayout$4
+ com.tencent.qcloud.tim.uikit.component.video.CaptureLayout$5
+ com.tencent.qcloud.tim.uikit.component.video.CaptureLayout$6
+ com.tencent.qcloud.tim.uikit.component.video.CaptureLayout$7
+com/tencent/qcloud/tim/uikit/component/video/util/CameraParamUtil.java
+ com.tencent.qcloud.tim.uikit.component.video.util.CameraParamUtil
+ com.tencent.qcloud.tim.uikit.component.video.util.CameraParamUtil$1
+ com.tencent.qcloud.tim.uikit.component.video.util.CameraParamUtil$CameraSizeComparator
+com/tencent/qcloud/tim/uikit/modules/chat/base/AbsChatLayout.java
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$1
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$1$1
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$10
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$11
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$12
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$13
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$14
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$15
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$16
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$17
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$18
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$19
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$2
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$20
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$20$1
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$3
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$4
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$5
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$6
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$6$1
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$6$2
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$6$3
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$6$4
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$6$5
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$6$6
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$7
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$8
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$9
+ com.tencent.qcloud.tim.uikit.modules.chat.base.AbsChatLayout$onForwardSelectActivityListener
+com/tencent/qcloud/tim/uikit/modules/group/member/GroupMemberManagerLayout.java
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerLayout
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerLayout$1
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerLayout$2
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerLayout$3
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerLayout$4
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerLayout$5
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerLayout$6
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerLayout$7
+com/tencent/qcloud/tim/uikit/modules/search/SearchMoreListActivity.java
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreListActivity
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreListActivity$1
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreListActivity$10
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreListActivity$2
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreListActivity$3
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreListActivity$4
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreListActivity$5
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreListActivity$5$1
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreListActivity$6
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreListActivity$7
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreListActivity$7$1
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreListActivity$8
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreListActivity$9
+com/tencent/qcloud/tim/uikit/modules/chat/GroupChatManagerKit.java
+ com.tencent.qcloud.tim.uikit.modules.chat.GroupChatManagerKit
+ com.tencent.qcloud.tim.uikit.modules.chat.GroupChatManagerKit$1
+ com.tencent.qcloud.tim.uikit.modules.chat.GroupChatManagerKit$2
+ com.tencent.qcloud.tim.uikit.modules.chat.GroupChatManagerKit$2$1
+ com.tencent.qcloud.tim.uikit.modules.chat.GroupChatManagerKit$GroupNotifyHandler
+com/tencent/qcloud/tim/uikit/base/TUIKitListenerManager.java
+ com.tencent.qcloud.tim.uikit.base.TUIKitListenerManager
+com/tencent/qcloud/tim/uikit/component/photoview/OnViewDragListener.java
+ com.tencent.qcloud.tim.uikit.component.photoview.OnViewDragListener
+com/tencent/qcloud/tim/uikit/utils/ToastUtil.java
+ com.tencent.qcloud.tim.uikit.utils.ToastUtil
+ com.tencent.qcloud.tim.uikit.utils.ToastUtil$1
+ com.tencent.qcloud.tim.uikit.utils.ToastUtil$2
+com/tencent/qcloud/tim/uikit/modules/group/info/GroupInfoFragment.java
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoFragment
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoFragment$1
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoFragment$2
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoFragment$2$1
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoFragment$GroupMembersListener
+com/tencent/qcloud/tim/uikit/component/video/view/CameraView.java
+ com.tencent.qcloud.tim.uikit.component.video.view.CameraView
+com/tencent/qcloud/tim/uikit/modules/chat/base/BaseInputFragment.java
+ com.tencent.qcloud.tim.uikit.modules.chat.base.BaseInputFragment
+com/tencent/qcloud/tim/uikit/modules/chat/base/OfflineMessageContainerBean.java
+ com.tencent.qcloud.tim.uikit.modules.chat.base.OfflineMessageContainerBean
+com/tencent/qcloud/tim/uikit/modules/conversation/interfaces/ILoadConversationCallback.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.interfaces.ILoadConversationCallback
+com/tencent/qcloud/tim/uikit/modules/forward/ForwardSelectListAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectListAdapter
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectListAdapter$1
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectListAdapter$2
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectListAdapter$3
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectListAdapter$4
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectListAdapter$5
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectListAdapter$6
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectListAdapter$7
+com/tencent/qcloud/tim/uikit/component/face/FaceManager.java
+ com.tencent.qcloud.tim.uikit.component.face.FaceManager
+ com.tencent.qcloud.tim.uikit.component.face.FaceManager$1
+com/tencent/qcloud/tim/uikit/modules/group/info/StartGroupMemberSelectActivity.java
+ com.tencent.qcloud.tim.uikit.modules.group.info.StartGroupMemberSelectActivity
+ com.tencent.qcloud.tim.uikit.modules.group.info.StartGroupMemberSelectActivity$1
+ com.tencent.qcloud.tim.uikit.modules.group.info.StartGroupMemberSelectActivity$2
+ com.tencent.qcloud.tim.uikit.modules.group.info.StartGroupMemberSelectActivity$3
+ com.tencent.qcloud.tim.uikit.modules.group.info.StartGroupMemberSelectActivity$4
+com/tencent/qcloud/tim/uikit/base/BaseActvity.java
+ com.tencent.qcloud.tim.uikit.base.BaseActvity
+com/tencent/qcloud/tim/uikit/modules/contact/interfaces/IContactLayout.java
+ com.tencent.qcloud.tim.uikit.modules.contact.interfaces.IContactLayout
+com/tencent/qcloud/tim/uikit/component/video/proxy/MediaPlayerProxy.java
+ com.tencent.qcloud.tim.uikit.component.video.proxy.MediaPlayerProxy
+com/tencent/qcloud/tim/uikit/utils/PopWindowUtil.java
+ com.tencent.qcloud.tim.uikit.utils.PopWindowUtil
+ com.tencent.qcloud.tim.uikit.utils.PopWindowUtil$1
+ com.tencent.qcloud.tim.uikit.utils.PopWindowUtil$2
+ com.tencent.qcloud.tim.uikit.utils.PopWindowUtil$3
+ com.tencent.qcloud.tim.uikit.utils.PopWindowUtil$4
+ com.tencent.qcloud.tim.uikit.utils.PopWindowUtil$EnsureListener
+com/tencent/qcloud/tim/uikit/component/SelectionActivity.java
+ com.tencent.qcloud.tim.uikit.component.SelectionActivity
+ com.tencent.qcloud.tim.uikit.component.SelectionActivity$1
+ com.tencent.qcloud.tim.uikit.component.SelectionActivity$2
+ com.tencent.qcloud.tim.uikit.component.SelectionActivity$OnResultReturnListener
+com/tencent/qcloud/tim/uikit/modules/chat/layout/input/InputLayoutUI.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayoutUI
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayoutUI$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayoutUI$2
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayoutUI$3
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/holder/IOnCustomMessageDrawListener.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.IOnCustomMessageDrawListener
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/holder/MessageFileHolder.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageFileHolder
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageFileHolder$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageFileHolder$2
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageFileHolder$2$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageFileHolder$2$1$1
+com/tencent/qcloud/tim/uikit/utils/ButtonUtils.java
+ com.tencent.qcloud.tim.uikit.utils.ButtonUtils
+com/tencent/qcloud/tim/uikit/modules/group/info/GroupInfo.java
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfo
+com/tencent/qcloud/tim/uikit/component/video/UIKitVideoView.java
+ com.tencent.qcloud.tim.uikit.component.video.UIKitVideoView
+ com.tencent.qcloud.tim.uikit.component.video.UIKitVideoView$1
+ com.tencent.qcloud.tim.uikit.component.video.UIKitVideoView$2
+ com.tencent.qcloud.tim.uikit.component.video.UIKitVideoView$3
+ com.tencent.qcloud.tim.uikit.component.video.UIKitVideoView$4
+ com.tencent.qcloud.tim.uikit.component.video.UIKitVideoView$5
+ com.tencent.qcloud.tim.uikit.component.video.UIKitVideoView$6
+com/tencent/qcloud/tim/uikit/component/photoview/Util.java
+ com.tencent.qcloud.tim.uikit.component.photoview.Util
+ com.tencent.qcloud.tim.uikit.component.photoview.Util$1
+com/tencent/qcloud/tim/uikit/modules/chat/layout/input/TIMMentionEditText.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.TIMMentionEditText
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.TIMMentionEditText$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.TIMMentionEditText$HackInputConnection
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.TIMMentionEditText$MentionTextWatcher
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.TIMMentionEditText$OnMentionInputListener
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.TIMMentionEditText$Range
+com/tencent/qcloud/tim/uikit/modules/forward/message/ForwardMessageBaseHolder.java
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageBaseHolder
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageBaseHolder$ForwardFactory
+com/tencent/qcloud/tim/uikit/modules/group/member/GroupMemberDeleteLayout.java
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberDeleteLayout
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberDeleteLayout$1
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberDeleteLayout$1$1
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberDeleteLayout$1$1$1
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberDeleteLayout$2
+com/tencent/qcloud/tim/uikit/component/indexlib/IndexBar/helper/IIndexBarDataHelper.java
+ com.tencent.qcloud.tim.uikit.component.indexlib.IndexBar.helper.IIndexBarDataHelper
+com/tencent/qcloud/tim/uikit/component/gatherimage/TeamHeadSynthesizer.java
+ com.tencent.qcloud.tim.uikit.component.gatherimage.TeamHeadSynthesizer
+ com.tencent.qcloud.tim.uikit.component.gatherimage.TeamHeadSynthesizer$1
+ com.tencent.qcloud.tim.uikit.component.gatherimage.TeamHeadSynthesizer$2
+ com.tencent.qcloud.tim.uikit.component.gatherimage.TeamHeadSynthesizer$2$1
+ com.tencent.qcloud.tim.uikit.component.gatherimage.TeamHeadSynthesizer$2$2
+ com.tencent.qcloud.tim.uikit.component.gatherimage.TeamHeadSynthesizer$Callback
+com/tencent/qcloud/tim/uikit/component/video/CameraInterface.java
+ com.tencent.qcloud.tim.uikit.component.video.CameraInterface
+ com.tencent.qcloud.tim.uikit.component.video.CameraInterface$1
+ com.tencent.qcloud.tim.uikit.component.video.CameraInterface$2
+ com.tencent.qcloud.tim.uikit.component.video.CameraInterface$3
+ com.tencent.qcloud.tim.uikit.component.video.CameraInterface$CameraOpenOverCallback
+ com.tencent.qcloud.tim.uikit.component.video.CameraInterface$ErrorCallback
+ com.tencent.qcloud.tim.uikit.component.video.CameraInterface$FocusCallback
+ com.tencent.qcloud.tim.uikit.component.video.CameraInterface$StopRecordCallback
+ com.tencent.qcloud.tim.uikit.component.video.CameraInterface$TakePictureCallback
+com/tencent/qcloud/tim/uikit/modules/message/MessageTyping.java
+ com.tencent.qcloud.tim.uikit.modules.message.MessageTyping
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/holder/MessageAudioHolder.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageAudioHolder
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageAudioHolder$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageAudioHolder$1$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageAudioHolder$1$1$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageAudioHolder$2
+com/tencent/qcloud/tim/uikit/modules/forward/ForwardSelectActivity.java
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectActivity
+com/tencent/qcloud/tim/uikit/modules/contact/ContactListView.java
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactListView
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactListView$1
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactListView$2
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactListView$3
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactListView$3$1
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactListView$4
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactListView$5
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactListView$6
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactListView$DataSource
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactListView$OnItemClickListener
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactListView$OnSelectChangedListener
+com/tencent/qcloud/tim/uikit/component/TitleBarLayout.java
+ com.tencent.qcloud.tim.uikit.component.TitleBarLayout
+ com.tencent.qcloud.tim.uikit.component.TitleBarLayout$1
+com/tencent/qcloud/tim/uikit/modules/group/info/GroupInfoActivity.java
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoActivity
+com/tencent/qcloud/tim/uikit/base/IBaseAction.java
+ com.tencent.qcloud.tim.uikit.base.IBaseAction
+com/tencent/qcloud/tim/uikit/component/face/FaceGroupIcon.java
+ com.tencent.qcloud.tim.uikit.component.face.FaceGroupIcon
+com/tencent/qcloud/tim/uikit/modules/conversation/holder/ConversationCustomHolder.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.holder.ConversationCustomHolder
+com/tencent/qcloud/tim/uikit/modules/chat/interfaces/IMessageLayout.java
+ com.tencent.qcloud.tim.uikit.modules.chat.interfaces.IMessageLayout
+com/tencent/qcloud/tim/uikit/component/gatherimage/SynthesizedImageView.java
+ com.tencent.qcloud.tim.uikit.component.gatherimage.SynthesizedImageView
+com/tencent/qcloud/tim/uikit/component/video/proxy/IPlayer.java
+ com.tencent.qcloud.tim.uikit.component.video.proxy.IPlayer
+ com.tencent.qcloud.tim.uikit.component.video.proxy.IPlayer$OnCompletionListener
+ com.tencent.qcloud.tim.uikit.component.video.proxy.IPlayer$OnErrorListener
+ com.tencent.qcloud.tim.uikit.component.video.proxy.IPlayer$OnInfoListener
+ com.tencent.qcloud.tim.uikit.component.video.proxy.IPlayer$OnPreparedListener
+ com.tencent.qcloud.tim.uikit.component.video.proxy.IPlayer$OnVideoSizeChangedListener
+com/tencent/qcloud/tim/uikit/modules/forward/message/ForwardMessageImageHolder.java
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageImageHolder
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageImageHolder$1
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageImageHolder$1$1
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageImageHolder$2
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageImageHolder$3
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageImageHolder$4
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageImageHolder$5
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageImageHolder$5$1
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageImageHolder$6
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageImageHolder$6$1
+com/tencent/qcloud/tim/uikit/modules/conversation/base/ConversationIconView.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.base.ConversationIconView
+ com.tencent.qcloud.tim.uikit.modules.conversation.base.ConversationIconView$1
+ com.tencent.qcloud.tim.uikit.modules.conversation.base.ConversationIconView$2
+ com.tencent.qcloud.tim.uikit.modules.conversation.base.ConversationIconView$3
+com/tencent/qcloud/tim/uikit/modules/forward/ForwardContactSelectorAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.forward.ContactViewHolder
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardContactSelectorAdapter
+com/tencent/qcloud/tim/uikit/component/photoview/OnGestureListener.java
+ com.tencent.qcloud.tim.uikit.component.photoview.OnGestureListener
+com/tencent/qcloud/tim/uikit/component/picture/imageEngine/impl/CornerTransform.java
+ com.tencent.qcloud.tim.uikit.component.picture.imageEngine.impl.CornerTransform
+com/tencent/qcloud/tim/uikit/modules/forward/holder/ForwardCommonHolder.java
+ com.tencent.qcloud.tim.uikit.modules.forward.holder.ForwardCommonHolder
+com/tencent/qcloud/tim/uikit/utils/FileUtil.java
+ com.tencent.qcloud.tim.uikit.utils.FileUtil
+ com.tencent.qcloud.tim.uikit.utils.FileUtil$1
+ com.tencent.qcloud.tim.uikit.utils.FileUtil$2
+com/tencent/qcloud/tim/uikit/modules/forward/holder/ForwardSelectHolder.java
+ com.tencent.qcloud.tim.uikit.modules.forward.holder.ForwardSelectHolder
+com/tencent/qcloud/tim/uikit/component/indexlib/suspension/ISuspensionInterface.java
+ com.tencent.qcloud.tim.uikit.component.indexlib.suspension.ISuspensionInterface
+com/tencent/qcloud/tim/uikit/component/photoview/OnScaleChangedListener.java
+ com.tencent.qcloud.tim.uikit.component.photoview.OnScaleChangedListener
+com/tencent/qcloud/tim/uikit/modules/forward/message/ForwardMessageCustomHolder.java
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageCustomHolder
+com/tencent/qcloud/tim/uikit/modules/forward/ForwardSelectFragment.java
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectFragment
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectFragment$1
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectFragment$2
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectFragment$3
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectFragment$4
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectFragment$5
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectFragment$6
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectFragment$7
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectFragment$8
+com/tencent/qcloud/tim/uikit/TUIKitImpl.java
+ com.tencent.qcloud.tim.uikit.TUIKitImpl
+ com.tencent.qcloud.tim.uikit.TUIKitImpl$1
+ com.tencent.qcloud.tim.uikit.TUIKitImpl$2
+ com.tencent.qcloud.tim.uikit.TUIKitImpl$3
+ com.tencent.qcloud.tim.uikit.TUIKitImpl$4
+ com.tencent.qcloud.tim.uikit.TUIKitImpl$5
+ com.tencent.qcloud.tim.uikit.TUIKitImpl$6
+com/tencent/qcloud/tim/uikit/component/video/TypeButton.java
+ com.tencent.qcloud.tim.uikit.component.video.TypeButton
+com/tencent/qcloud/tim/uikit/modules/conversation/interfaces/IConversationLayout.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.interfaces.IConversationLayout
+com/tencent/qcloud/tim/uikit/component/video/CameraActivity.java
+ com.tencent.qcloud.tim.uikit.component.video.CameraActivity
+ com.tencent.qcloud.tim.uikit.component.video.CameraActivity$1
+ com.tencent.qcloud.tim.uikit.component.video.CameraActivity$2
+ com.tencent.qcloud.tim.uikit.component.video.CameraActivity$3
+ com.tencent.qcloud.tim.uikit.component.video.CameraActivity$4
+com/tencent/qcloud/tim/uikit/component/face/Emoji.java
+ com.tencent.qcloud.tim.uikit.component.face.Emoji
+com/tencent/qcloud/tim/uikit/component/photoview/OnMatrixChangedListener.java
+ com.tencent.qcloud.tim.uikit.component.photoview.OnMatrixChangedListener
+com/tencent/qcloud/tim/uikit/modules/search/model/SearchResultAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.search.model.SearchResultAdapter
+ com.tencent.qcloud.tim.uikit.modules.search.model.SearchResultAdapter$1
+ com.tencent.qcloud.tim.uikit.modules.search.model.SearchResultAdapter$ContactViewHolder
+ com.tencent.qcloud.tim.uikit.modules.search.model.SearchResultAdapter$ConversationViewHolder
+ com.tencent.qcloud.tim.uikit.modules.search.model.SearchResultAdapter$onItemClickListener
+com/tencent/qcloud/tim/uikit/base/GroupListenerConstants.java
+ com.tencent.qcloud.tim.uikit.base.GroupListenerConstants
+com/tencent/qcloud/tim/uikit/modules/group/info/GroupInfoProvider.java
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$1
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$10
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$11
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$12
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$13
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$2
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$3
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$4
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$5
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$6
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$7
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$8
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$9
+com/tencent/qcloud/tim/uikit/component/photoview/CustomGestureDetector.java
+ com.tencent.qcloud.tim.uikit.component.photoview.CustomGestureDetector
+ com.tencent.qcloud.tim.uikit.component.photoview.CustomGestureDetector$1
+com/tencent/qcloud/tim/uikit/component/video/JCameraView.java
+ com.tencent.qcloud.tim.uikit.component.video.JCameraView
+ com.tencent.qcloud.tim.uikit.component.video.JCameraView$1
+ com.tencent.qcloud.tim.uikit.component.video.JCameraView$2
+ com.tencent.qcloud.tim.uikit.component.video.JCameraView$2$1
+ com.tencent.qcloud.tim.uikit.component.video.JCameraView$3
+ com.tencent.qcloud.tim.uikit.component.video.JCameraView$4
+ com.tencent.qcloud.tim.uikit.component.video.JCameraView$5
+ com.tencent.qcloud.tim.uikit.component.video.JCameraView$6
+ com.tencent.qcloud.tim.uikit.component.video.JCameraView$7
+ com.tencent.qcloud.tim.uikit.component.video.JCameraView$8
+ com.tencent.qcloud.tim.uikit.component.video.JCameraView$9
+com/tencent/qcloud/tim/uikit/component/face/RecentEmojiManager.java
+ com.tencent.qcloud.tim.uikit.component.face.RecentEmojiManager
+com/tencent/qcloud/tim/uikit/modules/conversation/interfaces/IConversationListLayout.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.interfaces.IConversationListLayout
+com/tencent/qcloud/tim/uikit/modules/group/member/GroupMemberManagerAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerAdapter
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerAdapter$1
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerAdapter$1$1
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerAdapter$1$1$1
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerAdapter$2
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerAdapter$MyViewHolder
+com/tencent/qcloud/tim/uikit/utils/ImageUtil.java
+ com.tencent.qcloud.tim.uikit.utils.ImageUtil
+ com.tencent.qcloud.tim.uikit.utils.ImageUtil$CopyImageInfo
+com/tencent/qcloud/tim/uikit/component/face/FaceFragment.java
+ com.tencent.qcloud.tim.uikit.component.face.FaceFragment
+ com.tencent.qcloud.tim.uikit.component.face.FaceFragment$1
+ com.tencent.qcloud.tim.uikit.component.face.FaceFragment$2
+ com.tencent.qcloud.tim.uikit.component.face.FaceFragment$3
+ com.tencent.qcloud.tim.uikit.component.face.FaceFragment$FaceGVAdapter
+ com.tencent.qcloud.tim.uikit.component.face.FaceFragment$FaceGVAdapter$ViewHolder
+ com.tencent.qcloud.tim.uikit.component.face.FaceFragment$FaceVPAdapter
+ com.tencent.qcloud.tim.uikit.component.face.FaceFragment$OnEmojiClickListener
+com/tencent/qcloud/tim/uikit/component/indexlib/IndexBar/bean/BaseIndexPinyinBean.java
+ com.tencent.qcloud.tim.uikit.component.indexlib.IndexBar.bean.BaseIndexPinyinBean
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/holder/MessageTipsHolder.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageTipsHolder
+com/tencent/qcloud/tim/uikit/modules/chat/C2CChatManagerKit.java
+ com.tencent.qcloud.tim.uikit.modules.chat.C2CChatManagerKit
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/holder/MessageContentHolder.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageContentHolder
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageContentHolder$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageContentHolder$2
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageContentHolder$3
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageContentHolder$4
+com/tencent/qcloud/tim/uikit/component/video/util/AngleUtil.java
+ com.tencent.qcloud.tim.uikit.component.video.util.AngleUtil
+com/tencent/qcloud/tim/uikit/modules/message/MessageRevokedManager.java
+ com.tencent.qcloud.tim.uikit.modules.message.MessageRevokedManager
+ com.tencent.qcloud.tim.uikit.modules.message.MessageRevokedManager$MessageRevokeHandler
+com/tencent/qcloud/tim/uikit/modules/contact/ContactItemBean.java
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactItemBean
+com/tencent/qcloud/tim/uikit/modules/search/SearchMainActivity.java
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMainActivity
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMainActivity$1
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMainActivity$10
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMainActivity$11
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMainActivity$12
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMainActivity$2
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMainActivity$3
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMainActivity$4
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMainActivity$5
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMainActivity$6
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMainActivity$7
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMainActivity$8
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMainActivity$9
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMainActivity$9$1
+com/tencent/qcloud/tim/uikit/modules/group/member/GroupMemberDeleteFragment.java
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberDeleteFragment
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberDeleteFragment$1
+com/tencent/qcloud/tim/uikit/component/photoview/PhotoViewAttacher.java
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewAttacher
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewAttacher$1
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewAttacher$2
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewAttacher$3
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewAttacher$4
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewAttacher$AnimatedZoomRunnable
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewAttacher$FlingRunnable
+com/tencent/qcloud/tim/uikit/modules/forward/ForwardSelectGroupActivity.java
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectGroupActivity
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectGroupActivity$1
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectGroupActivity$2
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectGroupActivity$3
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectGroupActivity$4
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectGroupActivity$5
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectGroupActivity$6
+com/tencent/qcloud/tim/uikit/modules/contact/ContactLayout.java
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactLayout
+com/tencent/qcloud/tim/uikit/component/video/util/DeviceUtil.java
+ com.tencent.qcloud.tim.uikit.component.video.util.DeviceUtil
+com/tencent/qcloud/tim/uikit/modules/group/apply/GroupApplyAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyAdapter
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyAdapter$1
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyAdapter$2
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyAdapter$3
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyAdapter$4
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyAdapter$5
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyAdapter$MyViewHolder
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyAdapter$OnItemClickListener
+com/tencent/qcloud/tim/uikit/modules/group/member/GroupMemberManagerFragment.java
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerFragment
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerFragment$1
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerFragment$2
+com/tencent/qcloud/tim/uikit/component/dialog/TUIKitDialog.java
+ com.tencent.qcloud.tim.uikit.component.dialog.TUIKitDialog
+ com.tencent.qcloud.tim.uikit.component.dialog.TUIKitDialog$1
+ com.tencent.qcloud.tim.uikit.component.dialog.TUIKitDialog$2
+ com.tencent.qcloud.tim.uikit.component.dialog.TUIKitDialog$3
+com/tencent/qcloud/tim/uikit/component/gatherimage/Synthesizer.java
+ com.tencent.qcloud.tim.uikit.component.gatherimage.Synthesizer
+com/tencent/qcloud/tim/uikit/component/video/state/State.java
+ com.tencent.qcloud.tim.uikit.component.video.state.State
+com/tencent/qcloud/tim/uikit/component/action/PopMenuAction.java
+ com.tencent.qcloud.tim.uikit.component.action.PopMenuAction
+com/tencent/qcloud/tim/uikit/utils/BackgroundTasks.java
+ com.tencent.qcloud.tim.uikit.utils.BackgroundTasks
+com/tencent/qcloud/tim/uikit/base/ITitleBarLayout.java
+ com.tencent.qcloud.tim.uikit.base.ITitleBarLayout
+ com.tencent.qcloud.tim.uikit.base.ITitleBarLayout$POSITION
+com/tencent/qcloud/tim/uikit/base/INoticeLayout.java
+ com.tencent.qcloud.tim.uikit.base.INoticeLayout
+com/tencent/qcloud/tim/uikit/base/TUIConversationControllerListener.java
+ com.tencent.qcloud.tim.uikit.base.TUIConversationControllerListener
+com/tencent/qcloud/tim/uikit/component/LineControllerView.java
+ com.tencent.qcloud.tim.uikit.component.LineControllerView
+com/tencent/qcloud/tim/uikit/modules/contact/FriendProfileLayout.java
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$1
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$10
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$10$1
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$11
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$12
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$13
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$14
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$15
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$16
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$17
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$18
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$19
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$2
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$2$1
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$20
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$21
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$22
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$23
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$3
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$4
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$5
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$6
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$7
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$8
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$9
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$9$1
+ com.tencent.qcloud.tim.uikit.modules.contact.FriendProfileLayout$OnButtonClickListener
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/holder/MessageForwardHolder.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageForwardHolder
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageForwardHolder$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageForwardHolder$2
+com/tencent/qcloud/tim/uikit/component/video/listener/TypeListener.java
+ com.tencent.qcloud.tim.uikit.component.video.listener.TypeListener
+com/tencent/qcloud/tim/uikit/modules/chat/layout/inputmore/InputMoreLayout.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.inputmore.InputMoreLayout
+com/tencent/qcloud/tim/uikit/modules/search/groupinterface/TUISearchGroupDataProvider.java
+ com.tencent.qcloud.tim.uikit.modules.search.groupinterface.TUISearchGroupDataProvider
+ com.tencent.qcloud.tim.uikit.modules.search.groupinterface.TUISearchGroupDataProvider$1
+ com.tencent.qcloud.tim.uikit.modules.search.groupinterface.TUISearchGroupDataProvider$2
+com/tencent/qcloud/tim/uikit/modules/group/member/GroupMemberInviteLayout.java
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberInviteLayout
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberInviteLayout$1
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberInviteLayout$1$1
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberInviteLayout$2
+com/tencent/qcloud/tim/uikit/modules/forward/ForwardSelectListLayout.java
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectListLayout
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectListLayout$OnItemClickListener
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectListLayout$OnItemLongClickListener
+com/tencent/qcloud/tim/uikit/modules/chat/base/ChatManagerKit.java
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$1
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$10
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$11
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$11$1
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$12
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$13
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$14
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$15
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$16
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$2
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$3
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$4
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$5
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$6
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$7
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$8
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$9
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatManagerKit$MessageReadReportHandler
+com/tencent/qcloud/tim/uikit/BuildConfig.java
+ com.tencent.qcloud.tim.uikit.BuildConfig
+com/tencent/qcloud/tim/uikit/component/photoview/PhotoView.java
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoView
+com/tencent/qcloud/tim/uikit/utils/TUIKitFileProvider.java
+ com.tencent.qcloud.tim.uikit.utils.TUIKitFileProvider
+com/tencent/qcloud/tim/uikit/modules/search/SearchMoreMsgListActivity.java
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreMsgListActivity
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreMsgListActivity$1
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreMsgListActivity$2
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreMsgListActivity$3
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreMsgListActivity$4
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreMsgListActivity$4$1
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreMsgListActivity$5
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreMsgListActivity$6
+ com.tencent.qcloud.tim.uikit.modules.search.SearchMoreMsgListActivity$7
+com/tencent/qcloud/tim/uikit/utils/TUIKitConstants.java
+ com.tencent.qcloud.tim.uikit.utils.TUIKitConstants
+ com.tencent.qcloud.tim.uikit.utils.TUIKitConstants$ActivityRequest
+ com.tencent.qcloud.tim.uikit.utils.TUIKitConstants$Group
+ com.tencent.qcloud.tim.uikit.utils.TUIKitConstants$GroupType
+ com.tencent.qcloud.tim.uikit.utils.TUIKitConstants$ProfileType
+ com.tencent.qcloud.tim.uikit.utils.TUIKitConstants$Selection
+com/tencent/qcloud/tim/uikit/utils/TUIKitLog.java
+ com.tencent.qcloud.tim.uikit.utils.TUIKitLog
+com/tencent/qcloud/tim/uikit/modules/chat/interfaces/IChatProvider.java
+ com.tencent.qcloud.tim.uikit.modules.chat.interfaces.IChatProvider
+com/tencent/qcloud/tim/uikit/modules/conversation/base/ConversationInfo.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.base.ConversationInfo
+com/tencent/qcloud/tim/uikit/utils/ThreadHelper.java
+ com.tencent.qcloud.tim.uikit.utils.ThreadHelper
+com/tencent/qcloud/tim/uikit/modules/conversation/ConversationManagerKit.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit$1
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit$1$1
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit$2
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit$3
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit$4
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit$5
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit$6
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit$7
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit$MessageUnreadWatcher
+com/tencent/qcloud/tim/uikit/modules/group/interfaces/IGroupMemberLayout.java
+ com.tencent.qcloud.tim.uikit.modules.group.interfaces.IGroupMemberLayout
+com/tencent/qcloud/tim/uikit/modules/chat/interfaces/IInputLayout.java
+ com.tencent.qcloud.tim.uikit.modules.chat.interfaces.IInputLayout
+com/tencent/qcloud/tim/uikit/modules/forward/base/ConversationBean.java
+ com.tencent.qcloud.tim.uikit.modules.forward.base.ConversationBean
+ com.tencent.qcloud.tim.uikit.modules.forward.base.ConversationBean$1
+com/tencent/qcloud/tim/uikit/config/TUIKitConfigs.java
+ com.tencent.qcloud.tim.uikit.config.TUIKitConfigs
+com/tencent/qcloud/tim/uikit/modules/group/apply/GroupApplyInfo.java
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyInfo
+com/tencent/qcloud/tim/uikit/component/CircleImageView.java
+ com.tencent.qcloud.tim.uikit.component.CircleImageView
+com/tencent/qcloud/tim/uikit/component/gatherimage/MultiImageData.java
+ com.tencent.qcloud.tim.uikit.component.gatherimage.MultiImageData
+com/tencent/qcloud/tim/uikit/modules/chat/layout/input/InputLayout.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$10
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$11
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$12
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$13
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$14
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$15
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$2
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$3
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$4
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$4$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$5
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$6
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$7
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$8
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$9
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$ChatInputHandler
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$MessageHandler
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.input.InputLayout$OnStartActivityListener
+com/tencent/qcloud/tim/uikit/modules/chat/base/OfflineMessageBean.java
+ com.tencent.qcloud.tim.uikit.modules.chat.base.OfflineMessageBean
+com/tencent/qcloud/tim/uikit/modules/forward/message/ForwardMessageTextHolder.java
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageTextHolder
+com/tencent/qcloud/tim/uikit/component/action/PopMenuAdapter.java
+ com.tencent.qcloud.tim.uikit.component.action.PopMenuAdapter
+ com.tencent.qcloud.tim.uikit.component.action.PopMenuAdapter$1
+ com.tencent.qcloud.tim.uikit.component.action.PopMenuAdapter$ViewHolder
+com/tencent/qcloud/tim/uikit/modules/conversation/ConversationProvider.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationProvider
+com/tencent/qcloud/tim/uikit/modules/chat/base/ChatInfo.java
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatInfo
+com/tencent/qcloud/tim/uikit/modules/forward/message/ForwardMessageAudioHolder.java
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageAudioHolder
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageAudioHolder$1
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageAudioHolder$1$1
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageAudioHolder$1$1$1
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageAudioHolder$2
+com/tencent/qcloud/tim/uikit/modules/forward/ForwardSelectLayout.java
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectLayout
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardSelectLayout$1
+com/tencent/qcloud/tim/uikit/modules/forward/holder/ForwardLableHolder.java
+ com.tencent.qcloud.tim.uikit.modules.forward.holder.ForwardLableHolder
+com/tencent/qcloud/tim/uikit/base/IMEventListener.java
+ com.tencent.qcloud.tim.uikit.base.IMEventListener
+com/tencent/qcloud/tim/uikit/component/action/PopActionClickListener.java
+ com.tencent.qcloud.tim.uikit.component.action.PopActionClickListener
+com/tencent/qcloud/tim/uikit/utils/TUIKitUtils.java
+ com.tencent.qcloud.tim.uikit.utils.TUIKitUtils
+com/tencent/qcloud/tim/uikit/component/video/proxy/IjkMediaPlayerWrapper.java
+ com.tencent.qcloud.tim.uikit.component.video.proxy.IjkMediaPlayerWrapper
+ com.tencent.qcloud.tim.uikit.component.video.proxy.IjkMediaPlayerWrapper$1
+ com.tencent.qcloud.tim.uikit.component.video.proxy.IjkMediaPlayerWrapper$ListenerHandler
+com/tencent/qcloud/tim/uikit/component/video/listener/ResultListener.java
+ com.tencent.qcloud.tim.uikit.component.video.listener.ResultListener
+com/tencent/qcloud/tim/uikit/modules/group/apply/GroupApplyMemberActivity.java
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyMemberActivity
+com/tencent/qcloud/tim/uikit/utils/ScreenUtil.java
+ com.tencent.qcloud.tim.uikit.utils.ScreenUtil
+com/tencent/qcloud/tim/uikit/component/video/state/PreviewState.java
+ com.tencent.qcloud.tim.uikit.component.video.state.PreviewState
+ com.tencent.qcloud.tim.uikit.component.video.state.PreviewState$1
+ com.tencent.qcloud.tim.uikit.component.video.state.PreviewState$2
+com/tencent/qcloud/tim/uikit/component/video/proxy/SystemMediaPlayerWrapper.java
+ com.tencent.qcloud.tim.uikit.component.video.proxy.SystemMediaPlayerWrapper
+ com.tencent.qcloud.tim.uikit.component.video.proxy.SystemMediaPlayerWrapper$1
+ com.tencent.qcloud.tim.uikit.component.video.proxy.SystemMediaPlayerWrapper$2
+ com.tencent.qcloud.tim.uikit.component.video.proxy.SystemMediaPlayerWrapper$3
+ com.tencent.qcloud.tim.uikit.component.video.proxy.SystemMediaPlayerWrapper$4
+ com.tencent.qcloud.tim.uikit.component.video.proxy.SystemMediaPlayerWrapper$5
+com/tencent/qcloud/tim/uikit/modules/message/MessageInfoUtil.java
+ com.tencent.qcloud.tim.uikit.modules.message.MessageInfoUtil
+ com.tencent.qcloud.tim.uikit.modules.message.MessageInfoUtil$1
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/holder/MessageImageHolder.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageImageHolder
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageImageHolder$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageImageHolder$1$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageImageHolder$2
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageImageHolder$3
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageImageHolder$4
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageImageHolder$5
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageImageHolder$5$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageImageHolder$6
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageImageHolder$6$1
+com/tencent/qcloud/tim/uikit/component/indexlib/suspension/SuspensionDecoration.java
+ com.tencent.qcloud.tim.uikit.component.indexlib.suspension.SuspensionDecoration
+com/tencent/qcloud/tim/uikit/base/BaseFragment.java
+ com.tencent.qcloud.tim.uikit.base.BaseFragment
+com/tencent/qcloud/tim/uikit/component/video/ReturnButton.java
+ com.tencent.qcloud.tim.uikit.component.video.ReturnButton
+com/tencent/qcloud/tim/uikit/component/CustomLinearLayoutManager.java
+ com.tencent.qcloud.tim.uikit.component.CustomLinearLayoutManager
+com/tencent/qcloud/tim/uikit/base/OnClick.java
+ com.tencent.qcloud.tim.uikit.base.OnClick
+ com.tencent.qcloud.tim.uikit.base.OnClick$1
+com/tencent/qcloud/tim/uikit/component/action/PopDialogAdapter.java
+ com.tencent.qcloud.tim.uikit.component.action.PopDialogAdapter
+ com.tencent.qcloud.tim.uikit.component.action.PopDialogAdapter$1
+ com.tencent.qcloud.tim.uikit.component.action.PopDialogAdapter$ViewHolder
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/holder/MessageEmptyHolder.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageEmptyHolder
+com/tencent/qcloud/tim/uikit/component/GridViewInScrollView.java
+ com.tencent.qcloud.tim.uikit.component.GridViewInScrollView
+com/tencent/qcloud/tim/uikit/base/IBaseMessageSender.java
+ com.tencent.qcloud.tim.uikit.base.IBaseMessageSender
+com/tencent/qcloud/tim/uikit/component/video/listener/ClickListener.java
+ com.tencent.qcloud.tim.uikit.component.video.listener.ClickListener
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/MessageListAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageListAdapter
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageListAdapter$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageListAdapter$1$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageListAdapter$2
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageListAdapter$3
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageListAdapter$4
+com/tencent/qcloud/tim/uikit/modules/forward/message/ForwardMessageFileHolder.java
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageFileHolder
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageFileHolder$1
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageFileHolder$2
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageFileHolder$2$1
+ com.tencent.qcloud.tim.uikit.modules.forward.message.ForwardMessageFileHolder$2$1$1
+com/tencent/qcloud/tim/uikit/component/video/listener/CaptureListener.java
+ com.tencent.qcloud.tim.uikit.component.video.listener.CaptureListener
+com/tencent/qcloud/tim/uikit/modules/chat/layout/inputmore/ActionsPagerAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.inputmore.ActionsPagerAdapter
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.inputmore.ActionsPagerAdapter$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.inputmore.ActionsPagerAdapter$2
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.inputmore.ActionsPagerAdapter$3
+com/tencent/qcloud/tim/uikit/component/video/CaptureButton.java
+ com.tencent.qcloud.tim.uikit.component.video.CaptureButton
+ com.tencent.qcloud.tim.uikit.component.video.CaptureButton$1
+ com.tencent.qcloud.tim.uikit.component.video.CaptureButton$2
+ com.tencent.qcloud.tim.uikit.component.video.CaptureButton$3
+ com.tencent.qcloud.tim.uikit.component.video.CaptureButton$4
+ com.tencent.qcloud.tim.uikit.component.video.CaptureButton$5
+ com.tencent.qcloud.tim.uikit.component.video.CaptureButton$LongPressRunnable
+ com.tencent.qcloud.tim.uikit.component.video.CaptureButton$RecordCountDownTimer
+com/tencent/qcloud/tim/uikit/component/PopupList.java
+ com.tencent.qcloud.tim.uikit.component.PopupList
+ com.tencent.qcloud.tim.uikit.component.PopupList$1
+ com.tencent.qcloud.tim.uikit.component.PopupList$2
+ com.tencent.qcloud.tim.uikit.component.PopupList$AdapterPopupListListener
+ com.tencent.qcloud.tim.uikit.component.PopupList$PopupListListener
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/holder/MessageHeaderHolder.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageHeaderHolder
+com/tencent/qcloud/tim/uikit/component/indexlib/IndexBar/widget/IndexBar.java
+ com.tencent.qcloud.tim.uikit.component.indexlib.IndexBar.widget.IndexBar
+ com.tencent.qcloud.tim.uikit.component.indexlib.IndexBar.widget.IndexBar$1
+ com.tencent.qcloud.tim.uikit.component.indexlib.IndexBar.widget.IndexBar$onIndexPressedListener
+com/tencent/qcloud/tim/uikit/modules/message/MessageCustom.java
+ com.tencent.qcloud.tim.uikit.modules.message.MessageCustom
+com/tencent/qcloud/tim/uikit/component/face/EmojiIndicatorView.java
+ com.tencent.qcloud.tim.uikit.component.face.EmojiIndicatorView
+ com.tencent.qcloud.tim.uikit.component.face.EmojiIndicatorView$1
+com/tencent/qcloud/tim/uikit/component/photoview/PhotoViewActivity.java
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewActivity
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewActivity$1
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewActivity$1$1
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewActivity$1$1$1
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewActivity$2
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewActivity$3
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewActivity$MatrixChangeListener
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewActivity$PhotoTapListener
+ com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewActivity$SingleFlingListener
+com/tencent/qcloud/tim/uikit/base/TUIChatControllerListener.java
+ com.tencent.qcloud.tim.uikit.base.TUIChatControllerListener
+com/tencent/qcloud/tim/uikit/config/CustomFaceConfig.java
+ com.tencent.qcloud.tim.uikit.config.CustomFaceConfig
+com/tencent/qcloud/tim/uikit/component/video/listener/ErrorListener.java
+ com.tencent.qcloud.tim.uikit.component.video.listener.ErrorListener
+com/tencent/qcloud/tim/uikit/TUIKit.java
+ com.tencent.qcloud.tim.uikit.TUIKit
+com/tencent/qcloud/tim/uikit/modules/search/SearchFuntionUtils.java
+ com.tencent.qcloud.tim.uikit.modules.search.SearchFuntionUtils
+ com.tencent.qcloud.tim.uikit.modules.search.SearchFuntionUtils$1
+ com.tencent.qcloud.tim.uikit.modules.search.SearchFuntionUtils$2
+ com.tencent.qcloud.tim.uikit.modules.search.SearchFuntionUtils$3
+ com.tencent.qcloud.tim.uikit.modules.search.SearchFuntionUtils$4
+ com.tencent.qcloud.tim.uikit.modules.search.SearchFuntionUtils$5
+com/tencent/qcloud/tim/uikit/component/video/FoucsView.java
+ com.tencent.qcloud.tim.uikit.component.video.FoucsView
+com/tencent/qcloud/tim/uikit/modules/group/info/GroupInfoAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoAdapter
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoAdapter$1
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoAdapter$2
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoAdapter$3
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoAdapter$MyViewHolder
+com/tencent/qcloud/tim/uikit/modules/conversation/interfaces/IConversationProvider.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.interfaces.IConversationProvider
+com/tencent/qcloud/tim/uikit/utils/DateTimeUtil.java
+ com.tencent.qcloud.tim.uikit.utils.DateTimeUtil
+com/tencent/qcloud/tim/uikit/modules/conversation/holder/ConversationCommonHolder.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.holder.ConversationCommonHolder
+ com.tencent.qcloud.tim.uikit.modules.conversation.holder.ConversationCommonHolder$1
+ com.tencent.qcloud.tim.uikit.modules.conversation.holder.ConversationCommonHolder$EmojiData
+com/tencent/qcloud/tim/uikit/component/photoview/OnOutsidePhotoTapListener.java
+ com.tencent.qcloud.tim.uikit.component.photoview.OnOutsidePhotoTapListener
+com/tencent/qcloud/tim/uikit/modules/forward/ForwardConversationSelectorAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.forward.ConversationViewHolder
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardConversationSelectorAdapter
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardConversationSelectorAdapter$1
+ com.tencent.qcloud.tim.uikit.modules.forward.ForwardConversationSelectorAdapter$OnItemClickListener
+com/tencent/qcloud/tim/uikit/modules/message/MessageInfo.java
+ com.tencent.qcloud.tim.uikit.modules.message.MessageInfo
+ com.tencent.qcloud.tim.uikit.modules.message.MessageInfo$1
+com/tencent/qcloud/tim/uikit/modules/group/member/IGroupMemberRouter.java
+ com.tencent.qcloud.tim.uikit.modules.group.member.IGroupMemberRouter
+com/tencent/qcloud/tim/uikit/component/AudioPlayer.java
+ com.tencent.qcloud.tim.uikit.component.AudioPlayer
+ com.tencent.qcloud.tim.uikit.component.AudioPlayer$1
+ com.tencent.qcloud.tim.uikit.component.AudioPlayer$2
+ com.tencent.qcloud.tim.uikit.component.AudioPlayer$Callback
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/holder/MessageCustomHolder.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageCustomHolder
+com/tencent/qcloud/tim/uikit/component/indexlib/IndexBar/bean/BaseIndexBean.java
+ com.tencent.qcloud.tim.uikit.component.indexlib.IndexBar.bean.BaseIndexBean
+com/tencent/qcloud/tim/uikit/modules/conversation/holder/ConversationBaseHolder.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.holder.ConversationBaseHolder
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/holder/MessageTextHolder.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageTextHolder
+com/tencent/qcloud/tim/uikit/modules/chat/ChatLayout.java
+ com.tencent.qcloud.tim.uikit.modules.chat.ChatLayout
+ com.tencent.qcloud.tim.uikit.modules.chat.ChatLayout$1
+ com.tencent.qcloud.tim.uikit.modules.chat.ChatLayout$2
+ com.tencent.qcloud.tim.uikit.modules.chat.ChatLayout$3
+com/tencent/qcloud/tim/uikit/component/picture/imageEngine/ImageEngine.java
+ com.tencent.qcloud.tim.uikit.component.picture.imageEngine.ImageEngine
+com/tencent/qcloud/tim/uikit/modules/chat/interfaces/IChatLayout.java
+ com.tencent.qcloud.tim.uikit.modules.chat.interfaces.IChatLayout
+com/tencent/qcloud/tim/uikit/utils/SoftKeyBoardUtil.java
+ com.tencent.qcloud.tim.uikit.utils.SoftKeyBoardUtil
+ com.tencent.qcloud.tim.uikit.utils.SoftKeyBoardUtil$1
+ com.tencent.qcloud.tim.uikit.utils.SoftKeyBoardUtil$2
+ com.tencent.qcloud.tim.uikit.utils.SoftKeyBoardUtil$SoftKeyboardStateListener
+com/tencent/qcloud/tim/uikit/component/face/CustomFace.java
+ com.tencent.qcloud.tim.uikit.component.face.CustomFace
+com/tencent/qcloud/tim/uikit/utils/SharedPreferenceUtils.java
+ com.tencent.qcloud.tim.uikit.utils.SharedPreferenceUtils
+ com.tencent.qcloud.tim.uikit.utils.SharedPreferenceUtils$UriSerializer
+com/tencent/qcloud/tim/uikit/modules/conversation/ConversationListAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationListAdapter
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationListAdapter$1
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationListAdapter$2
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationListAdapter$FooterViewHolder
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationListAdapter$HeaderViewHolder
+com/tencent/qcloud/tim/uikit/modules/search/model/SearchMoreMsgAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.search.model.SearchMoreMsgAdapter
+ com.tencent.qcloud.tim.uikit.modules.search.model.SearchMoreMsgAdapter$1
+ com.tencent.qcloud.tim.uikit.modules.search.model.SearchMoreMsgAdapter$MessageViewHolder
+ com.tencent.qcloud.tim.uikit.modules.search.model.SearchMoreMsgAdapter$onItemClickListener
+com/tencent/qcloud/tim/uikit/modules/group/member/GroupMemberDeleteAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberDeleteAdapter
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberDeleteAdapter$1
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberDeleteAdapter$2
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberDeleteAdapter$MyViewHolder
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberDeleteAdapter$OnSelectChangedListener
+com/tencent/qcloud/tim/uikit/component/video/listener/JCameraListener.java
+ com.tencent.qcloud.tim.uikit.component.video.listener.JCameraListener
+com/tencent/qcloud/tim/uikit/component/NoticeLayout.java
+ com.tencent.qcloud.tim.uikit.component.NoticeLayout
+com/tencent/qcloud/tim/uikit/modules/search/groupinterface/TUISearchGroupResult.java
+ com.tencent.qcloud.tim.uikit.modules.search.groupinterface.TUISearchGroupResult
+ com.tencent.qcloud.tim.uikit.modules.search.groupinterface.TUISearchGroupResult$TUISearchGroupMemberMatchResult
+com/tencent/qcloud/tim/uikit/component/UnreadCountTextView.java
+ com.tencent.qcloud.tim.uikit.component.UnreadCountTextView
+com/tencent/qcloud/tim/uikit/base/IUIKitCallBack.java
+ com.tencent.qcloud.tim.uikit.base.IUIKitCallBack
+com/tencent/qcloud/tim/uikit/modules/group/info/GroupInfoLayout.java
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$1
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$10
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$11
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$12
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$13
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$14
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$2
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$2$1
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$3
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$3$1
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$4
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$5
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$6
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$7
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$8
+ com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoLayout$9
+com/tencent/qcloud/tim/uikit/modules/chat/layout/inputmore/ActionsGridViewAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.inputmore.ActionsGridViewAdapter
+com/tencent/qcloud/tim/uikit/config/GeneralConfig.java
+ com.tencent.qcloud.tim.uikit.config.GeneralConfig
+com/tencent/qcloud/tim/uikit/modules/contact/ContactAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactAdapter
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactAdapter$1
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactAdapter$2
+ com.tencent.qcloud.tim.uikit.modules.contact.ContactAdapter$ViewHolder
+com/tencent/qcloud/tim/uikit/component/face/FaceGroup.java
+ com.tencent.qcloud.tim.uikit.component.face.FaceGroup
+com/tencent/qcloud/tim/uikit/modules/chat/base/ChatLayoutUI.java
+ com.tencent.qcloud.tim.uikit.modules.chat.base.ChatLayoutUI
+com/tencent/qcloud/tim/uikit/base/IBaseViewHolder.java
+ com.tencent.qcloud.tim.uikit.base.IBaseViewHolder
+com/tencent/qcloud/tim/uikit/modules/conversation/base/DraftInfo.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.base.DraftInfo
+com/tencent/qcloud/tim/uikit/component/photoview/OnSingleFlingListener.java
+ com.tencent.qcloud.tim.uikit.component.photoview.OnSingleFlingListener
+com/tencent/qcloud/tim/uikit/modules/chat/layout/message/MessageLayout.java
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageLayout
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageLayout$1
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageLayout$2
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageLayout$3
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageLayout$4
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageLayout$5
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageLayout$6
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageLayout$7
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageLayout$OnEmptySpaceClickListener
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageLayout$OnItemLongClickListener
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageLayout$OnLoadMoreHandler
+ com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageLayout$OnPopActionClickListener
+com/tencent/qcloud/tim/uikit/modules/group/member/GroupMemberInfo.java
+ com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberInfo
+com/tencent/qcloud/tim/uikit/modules/conversation/ConversationListLayout.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationListLayout
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationListLayout$1
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationListLayout$OnItemClickListener
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationListLayout$OnItemLongClickListener
+com/tencent/qcloud/tim/uikit/utils/PermissionUtils.java
+ com.tencent.qcloud.tim.uikit.utils.PermissionUtils
+ com.tencent.qcloud.tim.uikit.utils.PermissionUtils$1
+ com.tencent.qcloud.tim.uikit.utils.PermissionUtils$2
+com/tencent/qcloud/tim/uikit/modules/conversation/interfaces/IConversationAdapter.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.interfaces.IConversationAdapter
+com/tencent/qcloud/tim/uikit/component/video/listener/ReturnListener.java
+ com.tencent.qcloud.tim.uikit.component.video.listener.ReturnListener
+com/tencent/qcloud/tim/uikit/component/video/util/AudioUtil.java
+ com.tencent.qcloud.tim.uikit.component.video.util.AudioUtil
+com/tencent/qcloud/tim/uikit/modules/conversation/ConversationLayout.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.ConversationLayout
+com/tencent/qcloud/tim/uikit/modules/group/apply/GroupApplyManagerActivity.java
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyManagerActivity
+com/tencent/qcloud/tim/uikit/base/ILayout.java
+ com.tencent.qcloud.tim.uikit.base.ILayout
+com/tencent/qcloud/tim/uikit/component/photoview/Compat.java
+ com.tencent.qcloud.tim.uikit.component.photoview.Compat

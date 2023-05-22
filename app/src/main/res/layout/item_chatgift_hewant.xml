@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="data"
+            type="com.earth.libbase.baseentity.BaseGiftEntity" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPopularity"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPopularityBg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_1sdp"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.earth.libbase.view.ShapedImageView
+                android:id="@+id/sivHeadimg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="h,1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:round_radius="@dimen/_8sdp"
+                app:shape_mode="round_rect" />
+
+            <ImageView
+                android:id="@+id/sivHeadimgEx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/base_shixiao"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/sivHeadimg"
+                app:layout_constraintEnd_toEndOf="@+id/sivHeadimg"
+                app:layout_constraintStart_toStartOf="@+id/sivHeadimg"
+                app:layout_constraintTop_toTopOf="@+id/sivHeadimg" />
+
+            <com.earth.libbase.view.ShapedImageView
+                android:id="@+id/sivHeadimgDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/product_delete"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+            <TextView
+                android:id="@+id/sivHeadimgPoint"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:scaleType="centerCrop"
+                android:background="@mipmap/point_iv"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                style="@style/Theme.BaseTextView"
+                app:layout_constraintBottom_toBottomOf="@+id/sivHeadimg"
+                app:layout_constraintEnd_toEndOf="@+id/sivHeadimg" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

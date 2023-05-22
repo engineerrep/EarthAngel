@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_3sdp"
+    android:paddingBottom="@dimen/_3sdp"
+    android:paddingLeft="@dimen/_15sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<com.earth.libbase.view.ShapedImageView
+    android:id="@+id/iv"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_width="@dimen/_48sdp"
+    android:layout_height="@dimen/_48sdp"/>
+    <TextView
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/tvmessage"
+        app:layout_constraintTop_toTopOf="@+id/iv"
+        app:layout_constraintStart_toEndOf="@+id/iv"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tinai’s  ID: 875"
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:layout_constraintStart_toEndOf="@+id/iv"
+        android:id="@+id/tvmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[22 people]"
+        android:textColor="#FF676767"
+        android:textSize="13sp"
+        />
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/lyJoined"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:constraint_referenced_ids="tvJoined,ivGroup"
+        android:layout_width="wrap_content"
+        android:background="@drawable/shape_corner_group_join"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/ivGroup"
+        android:paddingLeft="@dimen/_15sdp"
+        app:layout_constraintTop_toTopOf="@+id/iv"
+        app:layout_constraintBottom_toBottomOf="@+id/iv"
+        app:layout_constraintEnd_toStartOf="@+id/tvJoined"
+        android:src="@mipmap/group_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginRight="@dimen/_16sdp"
+
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        android:paddingRight="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv"
+        app:layout_constraintBottom_toBottomOf="@+id/iv"
+        android:id="@+id/tvJoined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

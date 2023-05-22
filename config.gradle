@@ -1,0 +1,12 @@
+ext{
+    android = [
+            compileSdkVersion: 30,
+            buildToolsVersion: "30.0.3",
+            applicationId    : "com.earth.angel",
+            minSdkVersion    : 21,
+            targetSdkVersion : 31,
+            versionCode      : 37,
+            versionName      : "2.5"
+    ]
+
+}

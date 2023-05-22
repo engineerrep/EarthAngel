@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPopularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp">
+
+
+        <com.earth.libbase.view.ShapedImageView
+            android:id="@+id/sivHeadimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"
+            app:round_radius="@dimen/_8sdp"
+            app:shape_mode="circle"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"/>
+        <TextView
+            android:id="@+id/chativ"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:lines="1"
+            android:ellipsize="end"
+            app:layout_constraintTop_toBottomOf="@+id/sivHeadimg"
+            app:layout_constraintEnd_toEndOf="@id/sivHeadimg"
+            app:layout_constraintStart_toStartOf="@+id/sivHeadimg"
+            tools:text="sssssssss" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

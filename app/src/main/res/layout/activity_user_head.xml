@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.earth.angel.login.UserHeadActivity" />
+
+        <variable
+            name="handler"
+            type="UserHeadActivity" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <include layout="@layout/include_top_bar" />
+
+        <TextView
+            android:id="@+id/tvConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/page_space"
+            android:layout_marginRight="@dimen/page_space"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/text_enter_your_head"
+            android:textColor="@color/rank_un"
+            style="@style/AppTheme.TextView"
+            android:gravity="left"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlTopToolbar" />
+
+        <com.earth.libbase.view.ShapedImageView
+            android:id="@+id/ivHead"
+            app:layout_constraintTop_toBottomOf="@+id/tvConfirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleType="centerCrop"
+            app:round_radius="@dimen/_8sdp"
+            app:shape_mode="circle"
+            android:src="@mipmap/head_loding"
+            android:layout_width="@dimen/_68sdp"
+            android:layout_height="@dimen/_68sdp"/>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/page_space"
+            app:layout_constraintTop_toBottomOf="@+id/ivHead"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/tvRecommended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended for you"
+            android:textColor="@color/rank_un"
+            android:textSize="16sp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/page_space"
+            app:layout_constraintTop_toBottomOf="@+id/tvRecommended"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/rlHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_84sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_84sdp"
+            android:background="@drawable/shape_corner_group_join"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/lab_Next"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlHead" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

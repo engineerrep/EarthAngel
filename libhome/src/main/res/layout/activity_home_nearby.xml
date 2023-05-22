@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="com.earth.libhome.ui.HomeNearbyActivity"/>
+        <variable
+            name="handler"
+            type="com.earth.libhome.ui.HomeNearbyActivity" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.HomeNearbyActivity">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingTop="@dimen/base_page"
+            android:paddingBottom="@dimen/base_page"
+            android:id="@+id/LibHomeNearByLL"
+            android:background="#FF6CC24B"
+            android:gravity="center|top"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="horizontal"
+            android:src="@mipmap/arrow_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/LibHomeNearByTitle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/LibHomeNearByBank"
+                    android:padding="@dimen/base_page"
+                    android:src="@mipmap/white_arrow_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="What’s Nearby"
+                    android:textColor="#ffffffff"
+                    android:lines="1"
+                    style="@style/Theme.BaseTextView"
+                    android:fontFamily="@font/avenirnext_latobolditalic"
+                    android:textSize="@dimen/bigText"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LibHomeNearByLocationLL"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeNearByTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/LibHomeNearByLocationIv"
+                    android:layout_marginLeft="@dimen/base_page"
+                    android:src="@mipmap/nearby_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/LibHomeNearByLocationTv"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/avenirnext_medium"
+                    style="@style/Theme.BaseTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+            <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="@dimen/base_page"
+                android:src="@mipmap/nearby_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/LibHomeNearByLine"
+            android:layout_marginBottom="@dimen/base_page"
+            app:layout_constraintBottom_toBottomOf="@+id/LibHomeNearByLL"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></TextView>
+        <LinearLayout
+            android:background="@drawable/bg_shopp_white_top"
+            app:layout_constraintTop_toTopOf="@+id/LibHomeNearByLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+            <com.scwang.smart.refresh.layout.SmartRefreshLayout
+                android:id="@+id/libHomeNearBySrl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/libHomeNearByRlv"
+                    android:layout_margin="@dimen/base_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/base_page" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/base_page" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

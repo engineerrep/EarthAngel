@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="com.earth.libhome.gift.HomeGiftDetailsActivity"/>
+        <variable
+            name="handler"
+            type="com.earth.libhome.gift.HomeGiftDetailsActivity" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/base_white"
+    android:id="@+id/Root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/libHomeSrl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/libHomeGiftDetailscl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:descendantFocusability="blocksDescendants"
+            android:id="@+id/libHomeGiftDetailsRlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+
+    <TextView
+        android:alpha="0"
+        android:background="@color/base_white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/libHomeTopTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:alpha="0"
+        android:background="@color/base_white"
+        android:paddingBottom="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@+id/libHomeTopTV"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:id="@+id/libHomeTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/LibHomeUserArrowRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:src="@mipmap/base_product_back1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/LibHomeGiftMoreIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/btn_margin"
+            android:src="@mipmap/base_gift_more"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/LibHomeUserArrowRight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/LibHomeUserArrowRight" />
+
+        <ImageView
+            android:id="@+id/LibHomeGiftShareIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/btn_margin"
+            android:src="@mipmap/base_gift_share1"
+            app:layout_constraintBottom_toBottomOf="@+id/LibHomeUserArrowRight"
+            app:layout_constraintEnd_toStartOf="@+id/LibHomeGiftMoreIv"
+            app:layout_constraintTop_toTopOf="@+id/LibHomeUserArrowRight" />
+
+        <ImageView
+            android:id="@+id/LibHomeGiftPakgeIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/btn_margin"
+            android:src="@mipmap/base_gift_pakge1"
+            app:layout_constraintBottom_toBottomOf="@+id/LibHomeUserArrowRight"
+            app:layout_constraintEnd_toStartOf="@+id/LibHomeGiftShareIv"
+            app:layout_constraintTop_toTopOf="@+id/LibHomeUserArrowRight" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/libHomeGiftDetailsll"
+        android:background="@color/base_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="@dimen/margin12"
+            android:layout_marginBottom="@dimen/margin12"
+            app:layout_constraintTop_toTopOf="@+id/HomeGiftMessageHead"
+            app:layout_constraintBottom_toBottomOf="@+id/HomeGiftMessageHead"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/HomeGiftMessageHead"
+            android:id="@+id/libHomeGiftDetailsEt"
+            style="@style/UserSign.InputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenirnext_regular"
+            android:hint="Leave a comment about why you want this"
+            android:paddingLeft="@dimen/margin12"
+            android:paddingTop="@dimen/margin12"
+            android:paddingBottom="@dimen/margin12"
+            android:textColor="#FF9D9D9D"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin20"
+            android:background="@drawable/bg_regist_8"
+            android:textColorHint="#FF9D9D9D"
+            android:imeOptions="actionSend"
+            android:textSize="12sp" />
+        <ImageView
+            android:id="@+id/libHomeGiftDetailsSend"
+            android:layout_marginRight="@dimen/margin10"
+            android:paddingLeft="@dimen/margin12"
+            android:paddingRight="@dimen/margin10"
+            android:src="@mipmap/base_message_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/base_white"
+        android:id="@+id/libHomeGiftDetailscl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:visibility="gone"
+            android:id="@+id/LibHomeDetalisEtCl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginTop="@dimen/base_page"
+            android:layout_marginRight="@dimen/base_page"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <View
+                android:id="@+id/LibHomeDetalisEtLine"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></View>
+
+
+
+            <ImageView
+                android:id="@+id/LibHomeDetalisEtIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/base_page"
+                android:paddingTop="@dimen/base_page"
+                android:paddingRight="@dimen/base_page"
+                android:paddingBottom="@dimen/_4sdp"
+                android:src="@mipmap/base_giftdet_et"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeDetalisEtLine" />
+
+            <TextView
+                android:paddingBottom="@dimen/_10sdp"
+                android:id="@+id/LibHomeDetalisEtTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="#ff555555"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/LibHomeDetalisEtIV"
+                app:layout_constraintStart_toStartOf="@+id/LibHomeDetalisEtIV"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeDetalisEtIV" />
+
+
+            <ImageView
+                android:id="@+id/LibHomeDetalisShareIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/base_page"
+                android:paddingTop="@dimen/base_page"
+                android:paddingRight="@dimen/base_page"
+                android:paddingBottom="@dimen/_4sdp"
+                android:src="@mipmap/base_giftdet_share"
+                app:layout_constraintStart_toEndOf="@+id/LibHomeDetalisEtIV"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeDetalisEtLine" />
+
+            <TextView
+                android:paddingBottom="@dimen/_10sdp"
+                android:id="@+id/LibHomeDetalisShareTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="#ff555555"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/LibHomeDetalisShareIV"
+                app:layout_constraintStart_toStartOf="@+id/LibHomeDetalisShareIV"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeDetalisShareIV" />
+
+            <TextView
+                android:id="@+id/LibHomeDetalisOffIV"
+                style="@style/Theme.BaseTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_corners_shopp_28"
+                android:paddingLeft="@dimen/base_page"
+                android:paddingTop="@dimen/btnMargin"
+                android:paddingRight="@dimen/base_page"
+                android:paddingBottom="@dimen/btnMargin"
+                android:text=" Off This Product"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/LibHomeDetalisEtTV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeDetalisEtLine" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:visibility="gone"
+            android:id="@+id/LibHomeDetalisDElCl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginTop="@dimen/base_page"
+            android:layout_marginRight="@dimen/base_page"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <View
+                android:id="@+id/LibHomeDetalisDelLine"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></View>
+
+            <ImageView
+                android:id="@+id/LibHomeDetalisDelIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/base_page"
+                android:paddingTop="@dimen/base_page"
+                android:paddingRight="@dimen/base_page"
+                android:paddingBottom="@dimen/_4sdp"
+                android:src="@mipmap/base_giftdet_del"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeDetalisDelLine" />
+
+            <TextView
+                android:id="@+id/LibHomeDetalisDelTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textColor="#ff555555"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/LibHomeDetalisDelIV"
+                app:layout_constraintStart_toStartOf="@+id/LibHomeDetalisDelIV"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeDetalisDelIV" />
+
+            <TextView
+                android:id="@+id/LibHomeDetalisRelaunchTV"
+                style="@style/Theme.BaseTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_corners_shopp_28"
+                android:paddingLeft="@dimen/base_page"
+                android:paddingTop="@dimen/_10sdp"
+
+                android:paddingRight="@dimen/base_page"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="Relaunch"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/LibHomeDetalisDelTV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeDetalisDelLine" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,180 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">EarthAngel</string>
+
+    <string name="title_home">首页</string>
+    <string name="title_project">消息</string>
+    <string name="title_navi">导航</string>
+    <string name="title_tree">体系</string>
+    <string name="title_mine">我的</string>
+    <string name="text_100">/ 100</string>
+    <string name="text_500">/ 500</string>
+    <string name="text_15">/ 15</string>
+    <string name="text_9">/ 7</string>
+    <string name="text_0">0</string>
+    <string name="text_5">5</string>
+    <string name="text_share_save">Post &amp; Share</string>
+    <string name="photo_upload">Upload</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="TellOwnerIWantThis">Tell Owner I Want This</string>
+    <string name="tips_Comment">Please input Comment</string>
+
+    <string name="tips_code_request">Please input your country code.</string>
+    <string name="tips_number_request">Please input your phone number.</string>
+    <string name="tips_photo_num">Please input your phone number.</string>
+    <string name="tips_hint_photo_num">Enter phone number</string>
+    <string name="tips_hint_code">Enter Code</string>
+
+    <string name="exitapp">Press again to exit</string>
+    <string name="Eco_Gift_Konw">Eco Gift of People You May Know</string>
+    <string name="Eco_Gift_Near">Eco Gift Groups Near You</string>
+
+    <string name="Post_Eco_Gift">Post An Eco-gift</string>
+    <string name="Choose_photo_title">Make sure to show your face!</string>
+    <string name="Choose_photo_title_tip">Use two fingers to adjust photo size .</string>
+    <string name="text_Upload">Upload Eco gift photos for others to pick</string>
+    <string name="text_shape"> Eco gifts are used items of yours in good shape</string>
+
+    <string name="text_you_name">Your name</string>
+    <string name="text_info">Contact info</string>
+    <string name="text_message">Message</string>
+    <string name="text_Items">Items required to change</string>
+    <string name="text_Fraud">Suspected fraud</string>
+    <string name="text_Spam">Spam</string>
+    <string name="text_Inappropriate">Inappropriate content</string>
+    <string name="text_Other">Other</string>
+    <string name="text_photo_upload">Upload gift photos for friends to pick \n Eco gifts are used items of yours in good shape</string>
+    <string name="text_photo_description">Description</string>
+    <string name="text_item_value">Item value (optional)</string>
+    <string name="text_Eco_Gifts_I_Wanted">Eco Gifts I Wanted</string>
+    <string name="text_Considering">My Favorite Eco Gifts</string>
+    <string name="text_success">Reported successfully</string>
+    <string name="text_you_know">Eco Gifts of People You May Know</string>
+    <string name="text_dialog_contacts">“EarthAngel” Would like to access your Contacts</string>
+    <string name="text_dialog_contacts_detsil">Enable contacts access to find people you know to follow and make eco gift exchanges! You contacts will be uploaded to find
+people you know.
+</string>
+    <string name="text_Go_Confirm">Confirm</string>
+
+    <string name="text_edit_picture">Tap photo to erase background. To move the photo, tap and hold it. </string>
+    <string name="text_write_description">If the eco gift is brand new, you should write in the description.</string>
+
+    <string name="default_notification_channel_id">EarthAngel</string>
+
+    <string name="text_New_Chat">New Chat</string>
+    <string name="text_Add_Contacts">Add Contacts</string>
+    <string name="text_Status">Status Updates Aren\'t Available</string>
+    <string name="text_Allow">Allow EarthAngel access to your contacts so you
+can send and receive their status updates. To do
+this, tap Settings and turn on Contacts.</string>
+    <string name="text_Settings">Settings</string>
+    <string name="text_search_hint"> Search Mobile / EarthAngel ID</string>
+    <string name="text_search_content"> Search Mobile / EarthAngel ID: </string>
+
+    <string name="text_I_want_this"> I WANT THIS</string>
+    <string name="text_I_Tell_this"> Tell me more about this</string>
+    <string name="text_Check_my"> Check my eco gifts for you. </string>
+    <string name="text_Chat_about_this"> Chat about this </string>
+    <string name="text_Chat_item"> Chat item </string>
+    <string name="text_Strictly">Please make sure you take clear photos of gifts.</string>
+
+    <string name="text_Describe">Describe the eco gift.</string>
+    <string name="text_phone_Confirm">If you add your phone number, then people who know you, could search for your phone number and apply as your friend.</string>
+    <string name="text_photo_Transaction">Transaction method (optional)</string>
+    <string name="text_enter_your_name"> Enter your name or username so that friends can recognize you </string>
+    <string name="text_enter_your_head">Upload profile photo so that friends can recognize you</string>
+
+    <string name="text_Least">At least 3 characters</string>
+    <string name="text_Description_Least">Description at least 3 characters</string>
+    <string name="text_Recommended">Recommended for you</string>
+
+    <string name="hint_Username_UserID"> Username,user ID </string>
+
+    <string name="label_voice">Press to talk</string>
+    <string name="label_album">Album</string>
+    <string name="label_camera">Camera</string>
+    <string name="label_Share">SHARE</string>
+    <string name="label_Post">POST AN ECO GIFT</string>
+    <string name="label_Copy_link">Copy link to friends</string>
+    <string name="label_Click_link">Tap to send to friends</string>
+
+    <string name="label_Post_Share">SEND ECO GIFTS</string>
+    <string name="label_Username_Length">Your username should contain 3 -15 characters.</string>
+    <string name="label_group_Length">Group Name should contain 3 -20 characters.</string>
+
+    <string name="label_Enter_your_name">Enter your name</string>
+    <string name="label_Username">USERNAME</string>
+
+    <string name="lab_avatar">Please select your avatar</string>
+
+    <string name="lab_Favorite">Like</string>
+    <string name="lab_Favored">Cancel</string>
+    <string name="lab_others">ECO GIFTS I UPLOADED</string>
+    <string name="lab_who_want">Who Requested My Eco Gifts?</string>
+    <string name="lab_I_want">Eco Gifts I Requested</string>
+    <string name="lab_considering">Eco Gifts I’m still Considering</string>
+    <string name="lab_Add_People_You_Know">MY FRIENDS</string>
+    <string name="lab_Cancel">Cancel</string>
+    <string name="lab_Confirm">Confirm</string>
+    <string name="lab_report">REPORT</string>
+    <string name="lab_Save">SAVE</string>
+    <string name="lab_Login">LOGIN</string>
+    <string name="lab_Submit">Submit</string>
+    <string name="lab_Notification">NOTIFICATION</string>
+
+    <string name="lab_Edit">Edit</string>
+    <string name="lab_Unlist">Unlist</string>
+    <string name="lab_Repost">Repost</string>
+    <string name="lab_Messages">MESSAGE</string>
+    <string name="lab_Add">ADD FRIEND</string>
+    <string name="lab_Next">NEXT</string>
+    <string name="lab_Cancel_Request">CANCEL MY REQUEST</string>
+    <string name="lab_post">POST</string>
+
+    <string name="lab_Delete">Delete </string>
+    <string name="lab_Unlisted">Unlisted</string>
+    <string name="lab_Done">Done</string>
+    <string name="lab_Invite_title">Invite</string>
+
+    <string name="lab_My_Phone_Number">MY PHONE NUMBER</string>
+    <string name="lab_ok">OK</string>
+    <string name="lab_Contacts">CONTACTS</string>
+    <string name="lab_Invite">Invite People You Know</string>
+    <string name="lab_Privacy">Privacy Policy</string>
+    <string name="lab_Terms">Terms of Use</string>
+    <string name="lab_About">About Us</string>
+    <string name="lab_Settings">SETTINGS</string>
+
+    <string name="lab_Shake">Shake</string>
+    <string name="lab_Exit">Exit</string>
+    <string name="lab_Email_Us">Email Us</string>
+    <string name="lab_Friend_Requests">FRIEND REQUESTS</string>
+    <string name="lab_Group_Name">Group Name</string>
+    <string name="lab_Eco_Gift_Groups">ECO GIFT GROUPS</string>
+    <string name="lab_Eco_Gift_Group">ECO GIFT GROUP</string>
+    <string name="lab_Details">DETAILS</string>
+
+    <string name="welcome_tip">Thank you for joining Instant Messaging!</string>
+    <string name="test_custom_action">Custom Messages</string>
+    <string name="test_custom_message">View Details>></string>
+    <string name="test_excluded_from_unread_count_action">Message excluded from unread count</string>
+    <string name="no_support_msg">Unsupported custom messages</string>
+    <string name="test_Success">Added</string>
+    <string name="lab_Success">Success</string>
+    <string name="lab_Enable_contacts">Enable contacts access to invite them! You contacts will be uploaded to find people you know.</string>
+    <string name="lab_friend_request">You have not received any new friend request </string>
+    <string name="lab_posted_empty">The user hasn\'t posted any items yet </string>
+    <string name="lab_group_empty">You haven\'t joined eco gift group</string>
+    <string name="lab_upGift_empty">You haven\'t uploaded an eco gift</string>
+    <string name="lab_group_details_empty">No friends have uploaded eco gifts! Try to post some items to give to friends first.</string>
+    <string name="lab_phone_userid_empty">Please enter phone number or user id</string>
+
+    <string name="dialog_repost">Confirm to repost?</string>
+    <string name="dialog_delete">Confirm to delete?</string>
+    <string name="dialog_Upload_continue">Upload an eco gift to continue to see more people nearby</string>
+    <string name="dialog_tell">You can tell them "I want this" after adding them.</string>
+    <string name="dialog_sent">Do you confirm this item has been sent?</string>
+    <string name="dialog_Unlist">Confirm Unlist?</string>
+    <string name="dialog_removed">Do you confirm that the eco gift is unlisted from the gifts? After it is unlisted, the eco gift will not be visible to others.</string>
+
+</resources>

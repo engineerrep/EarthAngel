@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.earth.libhome">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application>
+        <activity android:name=".group.GroupNameActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".group.GoogleMapActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".group.GroupAssociatedActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".group.GroupMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".group.GroupCreateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".group.GroupListActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".packet.HomePackingBagActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".gift.HomeGiftDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.HomeNearbyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.HomeNewGiftActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyANo6OrFZnO8Uyzj7-twSGtz0k-IgrI2ZY" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

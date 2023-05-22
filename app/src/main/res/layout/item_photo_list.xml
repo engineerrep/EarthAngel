@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPopularity"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <com.earth.libbase.view.ShapedImageView
+            android:layout_marginLeft="@dimen/margin16"
+            android:id="@+id/sivHeadimg"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"
+            app:round_radius="8dp"
+            app:shape_mode="round_rect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            app:layout_constraintEnd_toEndOf="@id/sivHeadimg"
+            app:layout_constraintTop_toTopOf="@id/sivHeadimg"
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@mipmap/pop_share_delete" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

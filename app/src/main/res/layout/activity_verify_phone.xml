@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.earth.angel.mine.ui.VerifyPhoneActivity" />
+
+        <variable
+            name="handler"
+            type="VerifyPhoneActivity" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include layout="@layout/include_top_bar"/>
+        <View
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlTopToolbar"
+            android:id="@+id/line"
+            android:background="@color/line_bg"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/page_space"
+            android:layout_marginLeft="@dimen/page_space"
+            app:layout_constraintTop_toBottomOf="@+id/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/tvPhoneConfirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_phone_Confirm"
+            android:textColor="#ff676767"
+            android:textSize="16sp"
+            />
+        <androidx.constraintlayout.helper.widget.Layer
+            android:id="@+id/llCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="ivContry,code"
+            app:layout_constraintBottom_toBottomOf="@+id/code"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/code">
+
+        </androidx.constraintlayout.helper.widget.Layer>
+
+        <ImageView
+            android:id="@+id/ivContry"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/code"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/code"></ImageView>
+
+        <TextView
+            android:background="@drawable/et_underline_selected"
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:minWidth="@dimen/_45sdp"
+            android:padding="@dimen/_10sdp"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="@color/text_color"
+            app:layout_constraintStart_toEndOf="@+id/ivContry"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhoneConfirm" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhone"
+            style="@style/UserSign.InputText"
+            android:background="@drawable/edittext_bg_selector"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:hint="@string/tips_hint_photo_num"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="@+id/code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/code"
+            app:layout_constraintTop_toTopOf="@+id/code" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginLeft="@dimen/page_space"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/etCode"
+            style="@style/UserSign.InputText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/edittext_bg_selector"
+
+            android:hint="@string/tips_hint_code"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/codeSend"
+            app:layout_constraintTop_toBottomOf="@+id/code" />
+        <Button
+            android:background="@drawable/theme_button_bg"
+            android:layout_marginRight="@dimen/page_space"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/codeSend"
+            app:layout_constraintBottom_toBottomOf="@+id/etCode"
+            app:layout_constraintTop_toTopOf="@+id/etCode"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+        <Button
+            android:id="@+id/btSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_84sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_84sdp"
+            android:background="@drawable/theme_button_bg"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/lab_Save"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etCode" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

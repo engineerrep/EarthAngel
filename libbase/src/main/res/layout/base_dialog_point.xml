@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="dialog"
+            type="com.earth.libbase.dialog.PointDialogCommon" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingBottom="@dimen/margin30"
+            android:paddingTop="@dimen/margin30"
+            android:background="@drawable/base_white_20"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/dialogIv"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@mipmap/dialog_point_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                app:layout_constraintTop_toTopOf="@+id/dialogIv"
+                app:layout_constraintStart_toEndOf="@+id/dialogIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+10"
+                android:textColor="#ff6cc24b"
+                style="@style/Theme.BaseTitleTextView"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/dialogTv"
+                android:layout_marginTop="@dimen/margin30"
+                style="@style/Theme.BaseTextView"
+                app:layout_constraintTop_toBottomOf="@+id/dialogIv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Get 10 Eco credit for first \n sharing every day."
+                android:textColor="#ff555555"
+                android:textSize="17sp"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/margin24"
+                android:layout_marginBottom="@dimen/margin100"
+                android:paddingTop="@dimen/btn_margin"
+                android:paddingBottom="@dimen/btn_margin"
+                android:layout_marginRight="@dimen/base_page"
+                android:layout_marginLeft="@dimen/base_page"
+                android:background="@drawable/bg_corners_shopp_28"
+                android:gravity="center"
+                android:fontFamily="@font/avenirnext_latobold"
+                app:layout_constraintTop_toBottomOf="@+id/dialogTv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/nextBtn"
+                android:textSize="18sp"
+                android:textColor="@color/base_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

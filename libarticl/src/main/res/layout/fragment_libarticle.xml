@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.earth.libarticl.LibArticleFragment"/>
+        <variable
+            name="handler"
+            type="com.earth.libarticl.LibArticleFragment" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:descendantFocusability="blocksDescendants"
+            android:id="@+id/LibArticleRlv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tvMainPost"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <Button
+            android:layout_marginBottom="@dimen/base_page"
+            android:id="@+id/tvMainPost"
+            style="@style/BaseUserSign.LoginButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginTop="@dimen/_36sdp"
+            android:layout_marginRight="@dimen/base_page"
+            android:background="@drawable/base_theme_button_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/btn_margin"
+            android:fontFamily="@font/avenirnext_latobold"
+            android:paddingTop="@dimen/btn_margin"
+            android:text="Post"
+            android:textColor="#ffffffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

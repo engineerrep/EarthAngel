@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:clickable="false">
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/themColor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="13:00" />
+
+
+        <com.earth.libbase.view.ShapedImageView
+            android:id="@+id/ivLeftHeadImage"
+            android:layout_width="@dimen/head_image"
+            android:layout_height="@dimen/head_image"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:contentDescription="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"
+            app:shape_mode="circle"
+            android:src="@mipmap/icon_place_holder"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/tvLeftContext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:background="@drawable/chat_textbox_user"
+            android:maxWidth="@dimen/_180sdp"
+            android:paddingStart="@dimen/_18sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:gravity="center|left"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textColor="#FF333333"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toEndOf="@id/ivLeftHeadImage"
+            app:layout_constraintTop_toTopOf="@id/ivLeftHeadImage"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/tvLeftVoice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:background="@drawable/chat_textbox_user"
+            android:gravity="center|right"
+            android:maxEms="1"
+            android:minWidth="@dimen/chat_voice_mix_w"
+            android:paddingStart="@dimen/_18sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textColor="#FF333333"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/ivLeftHeadImage"
+            app:layout_constraintTop_toTopOf="@id/ivLeftHeadImage"
+            tools:text="30''" />
+
+        <ImageView
+            android:id="@+id/ivLeftVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:background="@mipmap/icon_chat_left_voice3"
+            app:layout_constraintBottom_toBottomOf="@id/tvLeftVoice"
+            app:layout_constraintStart_toStartOf="@id/tvLeftVoice"
+            app:layout_constraintTop_toTopOf="@id/tvLeftVoice" />
+
+        <ImageView
+            android:id="@+id/ivLeftImage"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@id/ivLeftHeadImage"
+            app:layout_constraintTop_toTopOf="@id/ivLeftHeadImage"
+            tools:src="@mipmap/icon_place_holder" />
+
+
+        <com.earth.libbase.view.ShapedImageView
+            android:id="@+id/ivRightHeadImage"
+            android:layout_width="@dimen/head_image"
+            android:layout_height="@dimen/head_image"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:scaleType="centerCrop"
+            app:shape_mode="circle"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@mipmap/icon_place_holder"
+            android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/ivRightImage"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toStartOf="@id/ivRightHeadImage"
+            app:layout_constraintTop_toTopOf="@id/ivRightHeadImage"
+            tools:src="@mipmap/icon_place_holder" />
+
+
+        <TextView
+            android:id="@+id/tvRightContext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/chat_textbox_me"
+            android:maxWidth="@dimen/_180sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_18sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center|right"
+            app:layout_constraintEnd_toStartOf="@id/ivRightHeadImage"
+            app:layout_constraintTop_toTopOf="@id/ivRightHeadImage"
+            tools:text=""
+            />
+
+        <TextView
+            android:id="@+id/tvRightVoice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/chat_textbox_me"
+            android:gravity="center_vertical"
+            android:minWidth="@dimen/chat_voice_mix_w"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_18sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@id/ivRightHeadImage"
+            app:layout_constraintTop_toTopOf="@id/ivRightHeadImage"
+            tools:text="30''" />
+
+        <ImageView
+            android:id="@+id/ivRightVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@mipmap/icon_chat_right_voice3"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="@id/tvRightVoice"
+            app:layout_constraintEnd_toEndOf="@id/tvRightVoice"
+            app:layout_constraintTop_toTopOf="@id/tvRightVoice" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="com.earth.libhome.packet.HomePackingBagActivity"/>
+        <variable
+            name="handler"
+            type="com.earth.libhome.packet.HomePackingBagActivity" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/base_white"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".packet.HomePackingBagActivity">
+        <include layout="@layout/libhome_titlebar"></include>
+        <androidx.recyclerview.widget.RecyclerView
+            app:layout_constraintTop_toBottomOf="@+id/rlLibHomeBar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginRight="@dimen/base_page"
+            android:id="@+id/HomePaketRlv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </androidx.recyclerview.widget.RecyclerView>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/HomePaketEmpty"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/rlLibHomeBar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/base_empty_pocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/Theme.BaseTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/base_cart_title"
+                android:textColor="#ff555555"
+                android:textSize="24sp"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginRight="@dimen/_39sdp"
+                android:layout_marginLeft="@dimen/_39sdp"
+                style="@style/Theme.BaseTextView"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/base_cart_empty"
+                android:textColor="#ff9d9d9d"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

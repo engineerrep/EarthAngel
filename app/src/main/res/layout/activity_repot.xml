@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="handler"
+            type="com.earth.angel.gift.ui.RepotActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".gift.ui.RepotActivity">
+       <include layout="@layout/include_top_bar"/>
+        <LinearLayout
+            android:gravity="center|top"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlTopToolbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#F6F6F6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="@dimen/page_space"
+                android:background="@drawable/shape_corner_8sp_wite"
+                android:id="@+id/rlv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/theme_button_bg"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_58sdp"
+                android:paddingRight="@dimen/_58sdp"
+                android:text="@string/lab_Submit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

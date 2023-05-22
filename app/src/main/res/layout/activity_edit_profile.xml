@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="handler"
+            type="com.earth.angel.mine.ui.EditProfileActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFAFAFA"
+        tools:context=".mine.ui.EditProfileActivity">
+
+        <RelativeLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/rlTopToolbar"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/tool_bar_min_height">
+
+            <ImageView
+                android:id="@+id/tvLeftToolUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/bank" />
+
+            <TextView
+                android:id="@+id/tvTitleCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF111111"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/toolbarTabRight"
+                style="@style/Theme.ToolBar.MenuTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="#FF656565"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp" />
+
+            <ImageView
+                android:id="@+id/ivRightTool"
+                style="@style/Theme.ToolBar.MenuImageView"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+
+        <androidx.constraintlayout.helper.widget.Layer
+            android:id="@+id/llPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:constraint_referenced_ids="ivHead,tvphoto,ivreTurn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlTopToolbar" />
+
+        <TextView
+            android:id="@+id/tvphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_15sdp"
+            android:text="Photo"
+            android:textColor="#ff343434"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivHead"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivHead" />
+
+        <com.earth.libbase.view.ShapedImageView
+            android:id="@+id/ivHead"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginLeft="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toStartOf="@+id/ivreTurn"
+            app:layout_constraintTop_toBottomOf="@+id/rlTopToolbar"
+            app:round_radius="@dimen/_8sdp"
+            app:shape_mode="circle" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/ivreTurn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/_15sdp"
+            android:src="@mipmap/return_black"
+            app:layout_constraintBottom_toBottomOf="@+id/ivHead"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivHead" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/head_banji"
+            app:layout_constraintBottom_toBottomOf="@+id/ivHead"
+            app:layout_constraintEnd_toEndOf="@+id/ivHead" />
+
+        <androidx.constraintlayout.helper.widget.Layer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:constraint_referenced_ids="tvUsername,ivreTurnName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivHead"></androidx.constraintlayout.helper.widget.Layer>
+
+        <TextView
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:text="Username"
+            android:textColor="#ff343434"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivHead" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/page_space"
+           android:paddingRight="@dimen/page_space"
+            android:id="@+id/etName"
+            android:gravity="right"
+            style="@style/UserSign.InputText"
+            app:layout_constraintStart_toEndOf="@+id/tvUsername"
+            app:layout_constraintEnd_toStartOf="@+id/ivreTurnName"
+            app:layout_constraintTop_toTopOf="@+id/ivreTurnName"
+            app:layout_constraintBottom_toBottomOf="@+id/ivreTurnName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FF777777"
+            android:textSize="14sp"
+            />
+        <ImageView
+            android:visibility="invisible"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:id="@+id/ivreTurnName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/return_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvUsername"
+            app:layout_constraintBottom_toBottomOf="@+id/tvUsername"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

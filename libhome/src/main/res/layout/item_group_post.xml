@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center|left"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/llGroupBg"
+        android:gravity="center"
+        android:background="@drawable/bg_group_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.earth.libbase.view.ShapedImageView
+            android:layout_margin="@dimen/_8sdp"
+            android:id="@+id/ivGroupHead"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@mipmap/group_comment"
+            android:scaleType="centerCrop"
+            app:round_radius="@dimen/_8sdp"
+            app:shape_mode="circle"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"/>
+        <TextView
+            android:id="@+id/ivGroupName"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:lines="1"
+            style="@style/Theme.BaseTextView"
+            app:layout_constraintTop_toTopOf="@+id/ivGroupHead"
+            app:layout_constraintBottom_toBottomOf="@+id/ivGroupHead"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivGroupHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FF555555"
+            android:textSize="14sp"
+            />
+        <ImageView
+            android:id="@+id/ivGroupDelete"
+            android:padding="@dimen/_10sdp"
+            android:src="@mipmap/group_closed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

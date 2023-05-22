@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.helper.widget.Layer
+        app:constraint_referenced_ids="tvShakeYes,ivShakeYes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/ll_shake_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.constraintlayout.helper.widget.Layer>
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/tvShakeYes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Looking for people shaking their phones"
+        android:textColor="#FF676767"
+        android:textSize="16sp"
+        />
+    <ImageView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/ivShakeYes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvShakeYes"
+        android:src="@mipmap/shake_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+    <TextView
+        android:paddingBottom="@dimen/page_space"
+        android:layout_marginLeft="@dimen/page_space"
+        android:paddingTop="@dimen/page_space"
+        app:layout_constraintTop_toBottomOf="@+id/ivShakeYes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tvRecommended"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_Recommended"
+        android:textColor="#FF676767"
+        android:textSize="16sp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

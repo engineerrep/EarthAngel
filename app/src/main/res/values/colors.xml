@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="color_f6f6f6">#F6F6F6</color>
+    <color name="login_hint">#DDCED8</color>
+    <color name="shareBg">#D3BCA6</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="divider_color">#FFD8D8D8</color>
+    <color name="text_color">@color/black</color>
+    <color name="chat_input">#FFF5F5F5</color>
+    <color name="chat_send">#3EB874</color>
+
+    <color name="themColor">#FF83D69E</color>
+    <color name="unSelectColor">#FF999999</color>
+    <color name="line">#EEEEEE</color>
+    <color name="text_theme_hint">#ff869498</color>
+    <color name="login_un">#C1C0CE</color>
+    <color name="black">#FF000000</color>
+    <color name="overlay">#60000000</color>
+    <color name="black30">#4D000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="main_unselect">#FF3E3E3E</color>
+    <color name="bar_line">#FFF1F1F1</color>
+    <color name="text_color_vice">@color/white</color>
+    <color name="basic_profile_title">#35212E</color>
+    <color name="line_bg">#FFF4F4F4</color>
+    <color name="rank_un">#FF676767</color>
+    <color name="chat_bg">#FFF4F4F4</color>
+    <color name="hint_user_name_bg">#999999</color>
+    <color name="red_user_name_bg">#FF0000</color>
+    <color name="main_user_photo">#666666</color>
+    <color name="share_bg">#C9B29E</color>
+    <color name="et_white">#F4F9FB</color>
+    <color name="et_grey">#F1F1F1</color>
+
+</resources>

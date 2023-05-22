@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin20"
+        android:paddingRight="@dimen/margin10"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.earth.libbase.view.ShapedImageView
+            android:id="@+id/ivlibMineHeadImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:round_radius="@dimen/radius"
+            app:shape_mode="circle"
+            android:scaleType="centerCrop"
+            android:background="@mipmap/base_comm_head"
+            android:layout_width="@dimen/head_image"
+            android:layout_height="@dimen/head_image"/>
+        <TextView
+            android:layout_marginLeft="@dimen/margin10"
+            android:id="@+id/ivLibMineName"
+            app:layout_constraintTop_toTopOf="@+id/ivlibMineHeadImage"
+            app:layout_constraintStart_toEndOf="@+id/ivlibMineHeadImage"
+            app:layout_constraintBottom_toTopOf="@+id/ivLibMinedIntroduce"
+            style="@style/Theme.BaseTitleTextView"
+            android:fontFamily="@font/avenirnext_latobold"
+            android:text=""
+            android:textColor="#ff555555"
+            />
+        <TextView
+            android:id="@+id/ivLibMinedIntroduce"
+            app:layout_constraintTop_toBottomOf="@+id/ivLibMineName"
+            app:layout_constraintStart_toStartOf="@+id/ivLibMineName"
+            app:layout_constraintBottom_toBottomOf="@+id/ivlibMineHeadImage"
+            style="@style/Theme.BaseTextView"
+            android:text=""
+            android:textColor="#ff9d9d9d"
+            android:textSize="14sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

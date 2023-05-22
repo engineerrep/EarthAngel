@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.helper.widget.Layer
+        app:constraint_referenced_ids="iv_thumb"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/lay_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <com.earth.libbase.view.ShapedImageView
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/iv_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/shape_corner_edit"
+        app:layout_constraintDimensionRatio="1:1"
+        app:shape_mode="circle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:round_radius="@dimen/_8sdp" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

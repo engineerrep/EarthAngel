@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.earth.libmine">
+
+    <application>
+        <activity android:name=".set.ChangePasswordActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".point.PointActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".record.RecordDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".record.LibMineRecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".classification.ClassificationListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".classification.ClassificationMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".set.LibMineShippingAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".set.LibMineEtNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".set.LibMineSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LibMineCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LibMineUserActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

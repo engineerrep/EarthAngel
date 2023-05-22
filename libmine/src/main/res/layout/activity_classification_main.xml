@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <import type="com.earth.libmine.classification.ClassificationMainActivity"/>
+        <variable
+            name="handler"
+            type="com.earth.libmine.classification.ClassificationMainActivity" />
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".classification.ClassificationMainActivity">
+
+        <include layout="@layout/libmine_titlebar"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ClassifiCationRlv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlLibMineBar" />
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LibEmpty"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/base_empty_pocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:visibility="gone"
+                style="@style/Theme.BaseTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:text=""
+                android:textColor="#ff555555"
+                android:textSize="24sp" />
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginRight="@dimen/_39sdp"
+                android:layout_marginLeft="@dimen/_39sdp"
+                style="@style/Theme.BaseTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_no_items"
+                android:textColor="#ff9d9d9d"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+

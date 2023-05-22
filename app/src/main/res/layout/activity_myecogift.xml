@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="handler"
+            type="com.earth.angel.mine.ui.MyEcoGiftActivity" />
+
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        bind:layout_constraintTop_toTopOf="parent"
+        bind:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/rlTopToolbar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/tool_bar_min_height">
+
+        <ImageView
+            android:id="@+id/tvLeftTool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/bank" />
+
+        <TextView
+            android:layout_toRightOf="@+id/tvLeftTool"
+            android:id="@+id/tvTitleCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF111111"
+            android:layout_centerInParent="true"
+            android:lines="1"
+            android:layout_toLeftOf="@+id/llRight"
+            android:enabled="true"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:text=""
+            android:id="@+id/toolbarTabRight"
+            style="@style/Theme.ToolBar.MenuTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="#FF656565"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:padding="@dimen/_10sdp" />
+            <LinearLayout
+                android:id="@+id/llRight"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivRightTool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/post_photo"
+                     />
+                <TextView
+                    style="@style/Theme.ToolBar.MenuTextView"
+                    android:textSize="12sp"
+                    android:text="@string/lab_post"
+
+                    android:id="@+id/toolbarTabRightPost"
+                    android:textColor="#000000"
+                  />
+            </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.earth.angel.view.xrecylerview.XRecyclerView
+        android:background="#EFF2F1"
+        bind:layout_constraintTop_toBottomOf="@+id/rlTopToolbar"
+        bind:layout_constraintBottom_toBottomOf="parent"
+        bind:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/rvList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp" />
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvPeople"
+        android:id="@+id/llEmpty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@mipmap/empty_contants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
+        <TextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:layout_marginRight="@dimen/_45sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab_upGift_empty"
+            android:textColor="#FF8D8D92"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

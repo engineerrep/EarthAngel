@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_3sdp"
+    android:paddingBottom="@dimen/_3sdp"
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:layout_marginRight="@dimen/_15sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<com.earth.libbase.view.ShapedImageView
+    android:id="@+id/iv"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:scaleType="centerCrop"
+    app:round_radius="@dimen/_8sdp"
+    app:shape_mode="circle"
+
+    android:layout_width="@dimen/_48sdp"
+    android:layout_height="@dimen/_48sdp"/>
+    <TextView
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/tvNum"
+        app:layout_constraintTop_toTopOf="@+id/iv"
+        app:layout_constraintStart_toEndOf="@+id/iv"
+        app:layout_constraintEnd_toStartOf="@+id/tvJoined"
+        android:id="@+id/tv"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tinai’s  ID: 875"
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/tvNum"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:layout_constraintStart_toEndOf="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number : 7777"
+        android:textColor="#ff666666"
+        android:textSize="14sp"
+        />
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/lyJoined"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:constraint_referenced_ids="tvJoined"
+        android:layout_width="wrap_content"
+        android:background="@drawable/shape_corner_group_join"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginRight="@dimen/_4sdp"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        android:paddingRight="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv"
+        app:layout_constraintBottom_toBottomOf="@+id/iv"
+        android:id="@+id/tvJoined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

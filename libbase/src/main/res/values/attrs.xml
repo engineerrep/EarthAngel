@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShapedImageView">
+        <attr name="shape_mode" format="enum">
+            <enum name="round_rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+        <attr name="round_radius" format="dimension" />
+
+        <attr name="stroke_width" format="dimension" />
+        <attr name="stroke_color" format="color|reference" />
+    </declare-styleable>
+    <style name="DialogInOutAnimation">
+        <item name="android:windowEnterAnimation">@anim/base_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/base_dialog_out</item>
+    </style>
+    <style name="DialogAlterWithNoAnimation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+
+    </style>
+    <declare-styleable name="IndefinitePagerIndicator">
+        <attr name="dotCount" format="integer" />
+        <attr name="fadingDotCount" format="integer" />
+        <attr name="dotRadius" format="dimension" />
+        <attr name="selectedDotRadius" format="dimension" />
+        <attr name="dotColor" format="color" />
+        <attr name="selectedDotColor" format="color" />
+        <attr name="dotSeparation" format="dimension" />
+        <attr name="supportRTL" format="boolean" />
+        <attr name="verticalSupport" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="custom_textview">
+        <!--        右边箭头图片资源-->
+        <attr name="arrow_resource" format="reference" />
+        <!--        标题文案-->
+        <attr name="title_text" format="string" />
+        <attr name="title_text_color" format="color" />
+        <!--        内容颜色-->
+        <attr name="content_text_color" format="color" />
+        <!--        分割线颜色-->
+        <attr name="divider_color" format="color" />
+        <!--        内容默认文案-->
+        <attr name="hint_content_text" format="reference" />
+        <!--        内容文案-->
+        <attr name="content_text" format="string" localization="suggested" />
+        <!--        是否需要右边箭头-->
+        <attr name="needArrow" format="boolean">true</attr>
+        <!--        是否需要内容，如setting没有内容-->
+        <attr name="needContent" format="boolean" />
+        <!--        是否需要分割线-->
+        <attr name="need_divider" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="LoopView">
+        <attr name="awv_textsize" format="integer" />
+        <attr name="awv_lineSpace" format="float" />
+        <attr name="awv_centerTextColor" format="integer" />
+        <attr name="awv_outerTextColor" format="integer" />
+        <attr name="awv_dividerTextColor" format="integer" />
+        <attr name="awv_itemsVisibleCount" format="integer" />
+        <attr name="awv_isLoop" format="boolean" />
+        <attr name="awv_isCurve" format="boolean" />
+        <attr name="awv_initialPosition" format="integer" />
+        <attr name="awv_scaleX" format="float" />
+    </declare-styleable>
+</resources>

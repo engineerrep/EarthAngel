@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="com.earth.libmine.set.ChangeSuccessFragment" />
+
+        <variable
+            name="handler"
+            type="ChangeSuccessFragment" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/base_white"
+        android:layout_height="match_parent"
+        tools:context=".regist.ForgotPasswordActivity">
+        <include layout="@layout/libmine_titlebar"/>
+        <ImageView
+            android:id="@+id/passwordSuccessIV"
+            android:layout_marginTop="@dimen/margin60"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlLibMineBar"
+            android:src="@mipmap/password_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/passwordSuccessTitle"
+            android:layout_marginTop="@dimen/margin42"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordSuccessIV"
+            android:fontFamily="@font/avenirnext_latobold"
+            style="@style/Theme.BaseTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Changed"
+            android:textColor="#ff555555"
+            android:textSize="24sp"
+            />
+        <TextView
+            style="@style/Theme.BaseTextView"
+            android:gravity="center"
+            android:id="@+id/passwordSuccessTv"
+            android:layout_marginTop="@dimen/margin14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordSuccessTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="You have changed the password. \nGo back to the login page now."
+            android:textColor="#ff9d9d9d"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/margin80"
+            android:paddingTop="@dimen/btn_margin"
+            android:paddingBottom="@dimen/btn_margin"
+            android:layout_marginRight="@dimen/base_page"
+            android:layout_marginLeft="@dimen/base_page"
+            android:background="@drawable/bg_corners_shopp_28"
+            android:gravity="center"
+            android:fontFamily="@font/avenirnext_semibold"
+            app:layout_constraintTop_toBottomOf="@+id/passwordSuccessTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/nextBtn"
+            android:textSize="18sp"
+            android:textColor="@color/base_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

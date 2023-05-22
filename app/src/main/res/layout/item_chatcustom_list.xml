@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    app:layout_constraintTop_toBottomOf="@+id/CustomTitle"
+    app:layout_constraintStart_toStartOf="@+id/CustomTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.earth.libbase.view.ShapedImageView
+        android:layout_marginTop="@dimen/margin10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/CustomImg"
+        android:layout_width="@dimen/margin50"
+        android:layout_height="@dimen/margin50"
+        android:scaleType="centerCrop"
+        app:round_radius="@dimen/margin8"
+        app:shape_mode="round_rect"
+        android:src="@drawable/base_biankuang_white_8"
+        />
+    <TextView
+        android:layout_marginRight="@dimen/margin10"
+        android:id="@+id/CustomTv"
+        android:layout_marginLeft="@dimen/margin12"
+        style="@style/Theme.BaseTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CustomImg"
+        app:layout_constraintTop_toTopOf="@+id/CustomImg"
+        app:layout_constraintBottom_toBottomOf="@+id/CustomImg"
+        android:layout_toRightOf="@+id/CustomImg"
+        android:layout_width="0dp"
+        android:lines="2"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF777777"
+        android:textSize="14sp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

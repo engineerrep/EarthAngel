@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/base_white"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/base_page"
+        tools:context=".gift.HomeGiftDetailsActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/LibHomeGiftRlv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/LibHomeGiftline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/LibHomeGiftRlv"
+            app:layout_constraintStart_toStartOf="parent">
+        </TextView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LibHomeGiftCl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/LibHomeGiftline">
+
+            <com.earth.libbase.view.IndefinitePagerIndicator
+                android:id="@+id/LibHomeIfpi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_page"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/LibHomeGiftTitle"
+                style="@style/Theme.BaseTitleTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_page"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginRight="@dimen/base_page"
+                android:text=""
+                android:textColor="#ff090909"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeIfpi" />
+
+            <TextView
+                android:id="@+id/LibHomeGiftDay"
+                style="@style/Theme.BaseTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/base_page"
+                android:background="@drawable/bg_image_best_12"
+                android:padding="@dimen/_4sdp"
+                android:text=""
+                android:textColor="#ff9d9d9d"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeIfpi" />
+
+            <TextView
+                android:id="@+id/LibHomeGiftLocation"
+                style="@style/Theme.BaseTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/base_page"
+                android:background="@drawable/bg_image_best_12"
+                android:padding="@dimen/_4sdp"
+                android:text="Auckland"
+                android:textColor="#ff9d9d9d"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/LibHomeGiftDay"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin50"
+                android:id="@+id/LibHomeMessageEmpty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/detalis_empty"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeGiftTitle" />
+
+            <LinearLayout
+                android:id="@+id/LibHomell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeMessageEmpty">
+
+                <TextView
+                    android:id="@+id/LibHomeMessage"
+                    style="@style/Theme.BaseTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_page"
+                    android:layout_marginTop="@dimen/margin28"
+                    android:layout_marginRight="@dimen/base_page"
+                    android:background="@drawable/bg_corners_shopp_28"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/btnMargin"
+                    android:paddingBottom="@dimen/btnMargin"
+                    android:text="@string/base_I_Want_This"
+                    android:textColor="#ffffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/LibHomeAddBag"
+                    style="@style/Theme.BaseTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_page"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:layout_marginRight="@dimen/base_page"
+                    android:background="@drawable/bg_corners_shopp_28_side"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/btnMargin"
+                    android:paddingBottom="@dimen/btnMargin"
+                    android:text="@string/base_Add_to_cart"
+                    android:textColor="@color/BaseThemColor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LibHomeDetailsLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_page"
+                android:layout_marginTop="@dimen/titleMain"
+                android:layout_marginRight="@dimen/base_page"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomell">
+
+                <TextView
+                    style="@style/Theme.BaseTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Details"
+                    android:textColor="#ff090909"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/LibHomell" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/lineHeight"
+                    android:background="@color/line"
+                    android:layout_marginTop="@dimen/margin16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Theme.BaseTextView"
+                        android:fontFamily="@font/avenirnext_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_Post_time"
+                        android:textColor="#ff9d9d9d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/Theme.BaseTextView"
+                        android:fontFamily="@font/avenirnext_medium"
+                        android:id="@+id/ProductTimeTv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="#ff555555"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ProductCityLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Theme.BaseTextView"
+                        android:fontFamily="@font/avenirnext_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Location"
+                        android:textColor="#ff9d9d9d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/Theme.BaseTextView"
+                        android:fontFamily="@font/avenirnext_medium"
+                        android:id="@+id/ProductCityTv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="#ff555555"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Theme.BaseTextView"
+                        android:fontFamily="@font/avenirnext_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/base_Condition"
+                        android:textColor="#ff9d9d9d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/ProductConditionTv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="#ff555555"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Theme.BaseTextView"
+                        android:fontFamily="@font/avenirnext_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/base_Category"
+                        android:textColor="#ff9d9d9d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/Theme.BaseTextView"
+                        android:fontFamily="@font/avenirnext_medium"
+                        android:id="@+id/ProductCategoryTv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="#ff555555"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/lineHeight"
+                    android:background="@color/line"
+                    android:layout_marginTop="@dimen/margin16" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.helper.widget.Layer
+                android:id="@+id/LibHomeTitleDeLy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="LibHomeTitleDe,LibHomeDetailsLine1,LibHomeDetailstv,LibHomeDetailsLine2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeDetailsLL" />
+
+            <TextView
+                android:id="@+id/LibHomeTitleDe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_page"
+                android:layout_marginTop="@dimen/titleMain"
+                android:text="Description"
+                android:textColor="#ff090909"
+                style="@style/Theme.BaseTitleTextView"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeDetailsLL" />
+
+            <View
+                android:id="@+id/LibHomeDetailsLine1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lineHeight"
+                android:background="@color/line"
+                android:layout_marginLeft="@dimen/base_page"
+                android:layout_marginTop="@dimen/margin16"
+                android:layout_marginRight="@dimen/base_page"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeTitleDe" />
+
+            <TextView
+                android:id="@+id/LibHomeDetailstv"
+                style="@style/Theme.BaseTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_page"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_marginRight="@dimen/base_page"
+                android:text=""
+                android:textColor="#ff9d9d9d"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeDetailsLine1" />
+
+            <View
+                android:id="@+id/LibHomeDetailsLine2"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginLeft="@dimen/base_page"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_marginRight="@dimen/base_page"
+                android:background="#FFDCDCDC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeDetailstv" />
+
+            <TextView
+                android:id="@+id/LibHomeEnvi"
+                style="@style/Theme.BaseTitleTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_page"
+                android:layout_marginTop="@dimen/titleMain"
+                android:layout_marginRight="@dimen/base_page"
+                android:text="Environmentalists"
+                android:textColor="#ff000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeDetailsLine2" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/LibHomecl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/base_page"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginEnd="@dimen/base_page"
+                android:background="@drawable/bg_image_best"
+                android:paddingBottom="@dimen/margin24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomeEnvi">
+
+                <com.earth.libbase.view.ShapedImageView
+                    android:id="@+id/ivlibHomeGiftImage"
+                    android:layout_width="@dimen/head_gift"
+                    android:layout_height="@dimen/head_gift"
+                    android:layout_marginLeft="@dimen/base_page"
+                    android:layout_marginTop="@dimen/margin24"
+                    android:background="@mipmap/base_comm_head"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:round_radius="@dimen/radius"
+                    app:shape_mode="circle" />
+
+                <TextView
+                    android:id="@+id/ivLibHomeName"
+                    style="@style/Theme.BaseTitleTextView"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/avenirnext_latobold"
+                    android:text=""
+                    android:lines="1"
+                    android:layout_width="0dp"
+                    android:gravity="left"
+                    android:textColor="#ff555555"
+                    app:layout_constraintBottom_toTopOf="@+id/ivLibHomedIntroduce"
+                    app:layout_constraintStart_toEndOf="@+id/ivlibHomeGiftImage"
+                    app:layout_constraintEnd_toStartOf="@+id/ivLibHomedUserDetalisIv"
+                    app:layout_constraintTop_toTopOf="@+id/ivlibHomeGiftImage" />
+
+                <TextView
+                    android:id="@+id/ivLibHomedIntroduce"
+                    style="@style/Theme.BaseTextView"
+                    android:text=""
+                    android:textColor="#ff9d9d9d"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivlibHomeGiftImage"
+                    app:layout_constraintStart_toStartOf="@+id/ivLibHomeName"
+                    app:layout_constraintTop_toBottomOf="@+id/ivLibHomeName" />
+
+                <ImageView
+                    android:id="@+id/ivLibHomedUserDetalisIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_18sdp"
+                    android:src="@mipmap/user_detalis"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivlibHomeGiftImage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivlibHomeGiftImage" />
+
+                <ImageView
+                    android:id="@+id/LibHomeUserSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:src="@mipmap/detalis_save"
+                    app:layout_constraintStart_toStartOf="@+id/ivLibHomedIntroduce"
+                    app:layout_constraintTop_toBottomOf="@+id/ivlibHomeGiftImage" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            <TextView
+                android:layout_marginTop="@dimen/titleMain"
+                android:layout_marginLeft="@dimen/base_page"
+                android:id="@+id/HomeGiftMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/base_Comment"
+                android:textColor="#ff000000"
+                style="@style/Theme.BaseTitleTextView"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LibHomecl" />
+            <LinearLayout
+                android:id="@+id/HomeGiftMessageLL"
+                android:layout_marginTop="@dimen/base_page"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/base_page"
+                android:layout_marginRight="@dimen/base_page"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/HomeGiftMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.earth.libbase.view.ShapedImageView
+                    android:id="@+id/HomeGiftMessageHead"
+                    android:layout_width="@dimen/head_message"
+                    android:layout_height="@dimen/head_message"
+                    android:background="@mipmap/base_comm_head"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/HomeGiftMessage"
+                    app:shape_mode="circle" />
+
+                <TextView
+                    app:layout_constraintStart_toEndOf="@+id/HomeGiftMessageHead"
+                    app:layout_constraintTop_toBottomOf="@+id/HomeGiftMessage"
+                    android:id="@+id/etPhoneLogin"
+                    style="@style/UserSign.InputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/base_page"
+                    android:fontFamily="@font/avenirnext_regular"
+                    android:hint="Leave a comment about why you want this"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textColor="#FF9D9D9D"
+                    android:layout_marginLeft="@dimen/base_page"
+                    android:background="@drawable/bg_regist_8"
+                    android:textColorHint="#FF9D9D9D"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <View
+                android:id="@+id/viewMessageLine"
+                app:layout_constraintTop_toBottomOf="@+id/HomeGiftMessageLL"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lineHeight"
+                android:background="@color/line"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/base_page"
+                android:layout_marginRight="@dimen/base_page" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/ivPageNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/base_page"
+            android:src="@mipmap/product_detalis_num"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineHead"
+            app:layout_constraintStart_toStartOf="@+id/guidelineHead" />
+        <TextView
+            android:id="@+id/tvPageNum"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPageNum"
+            app:layout_constraintEnd_toEndOf="@+id/ivPageNum"
+            app:layout_constraintStart_toStartOf="@+id/ivPageNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/guidelineHead"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@+id/LibHomeGiftCl" />
+
+        <ImageView
+            android:id="@+id/LibHomeGiftSaveImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:src="@mipmap/user_save"
+            app:layout_constraintBottom_toBottomOf="@+id/guidelineHead"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guidelineHead" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/base_page" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/base_page" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

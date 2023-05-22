@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="com.earth.angel.appphoto.PhotoEtidContentActivity" />
+
+        <variable
+            name="handler"
+            type="PhotoEtidContentActivity" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".appphoto.PhotoEtidContentActivity">
+        <include layout="@layout/include_top_bar"/>
+        <TextView
+            android:id="@+id/PhotoEtidContentTitle"
+            android:layout_margin="@dimen/base_page"
+
+            app:layout_constraintTop_toBottomOf="@+id/rlTopToolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Theme.BaseTextView"
+            android:fontFamily="@font/avenirnext_medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tell everyone what is your product today"
+            android:textColor="#ff555555"
+            android:textSize="16sp"
+            />
+        <androidx.constraintlayout.helper.widget.Layer
+            android:id="@+id/LyTiE"
+            android:background="@drawable/bg_dot_line"
+            app:constraint_referenced_ids="PhotoEtidContentEt,tv_num,tv_all"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PhotoEtidContentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_margin="@dimen/base_page"
+            android:id="@+id/PhotoEtidContentEt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="@dimen/base_page"
+            android:fontFamily="@font/avenirnext_regular"
+            android:hint="What’s this"
+            android:lines="10"
+            android:maxLines="10"
+            android:gravity="top|left"
+            android:background="@null"
+            android:padding="@dimen/page_space"
+            android:textColor="@color/text_color"
+            android:textColorHint="#FF555555"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PhotoEtidContentTitle" />
+        <TextView
+            android:paddingTop="@dimen/base_page"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingBottom="@dimen/base_page"
+            android:gravity="right"
+            android:id="@+id/tv_num"
+            app:layout_constraintEnd_toStartOf="@+id/tv_all"
+            app:layout_constraintTop_toBottomOf="@+id/PhotoEtidContentEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_0"
+            android:textColor="#FF989898"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:paddingTop="@dimen/base_page"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/base_page"
+            android:paddingBottom="@dimen/base_page"
+            android:id="@+id/tv_all"
+            app:layout_constraintEnd_toEndOf="@+id/PhotoEtidContentEt"
+            app:layout_constraintTop_toBottomOf="@+id/PhotoEtidContentEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_500"
+            android:textColor="#FF989898"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/PhotoEtidContentDone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_page"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/base_page"
+            android:background="@drawable/bg_corners_shopp_28"
+            android:gravity="center"
+            android:padding="@dimen/_12sdp"
+            android:text="Done"
+            android:textColor="#ffffffff"
+            android:textSize="18sp"
+            style="@style/Theme.BaseTitleTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_all" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

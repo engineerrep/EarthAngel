@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.helper.widget.Layer
+        app:constraint_referenced_ids="iv_thumb"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/lay_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <com.earth.libbase.view.ShapedImageView
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/iv_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/shape_corner_edit"
+        app:layout_constraintDimensionRatio="1:1"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:round_radius="@dimen/_8sdp"
+        app:shape_mode="round_rect" />
+    <LinearLayout
+        android:id="@+id/llEpty"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/iv_thumb"
+        app:layout_constraintEnd_toEndOf="@+id/iv_thumb"
+        app:layout_constraintTop_toTopOf="@+id/iv_thumb"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_thumb"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+
+
+            android:id="@+id/iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@mipmap/photo"
+
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tvMore"
+            android:text="Add up to 9 photos"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/themColor"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ImageView
+        app:layout_constraintRight_toRightOf="@+id/iv_thumb"
+        app:layout_constraintTop_toTopOf="@+id/iv_thumb"
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@mipmap/pop_share_delete" />
+    <TextView
+        android:id="@+id/tvcover"
+        android:gravity="center"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:background="@drawable/cover_bg"
+        app:layout_constraintEnd_toEndOf="@+id/iv_thumb"
+        app:layout_constraintStart_toStartOf="@+id/iv_thumb"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_thumb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cover"
+        android:alpha="0.8"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

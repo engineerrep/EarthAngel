@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="handler"
+            type="com.earth.angel.gift.ui.GroupDetailsActivity" />
+
+        <variable
+            name="pAdapter"
+            type="androidx.recyclerview.widget.RecyclerView.Adapter" />
+
+        <variable
+            name="pLayoutManager"
+            type="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_top_bar"></include>
+
+        <com.earth.angel.view.xrecylerview.XRecyclerView
+            app:layout_constraintTop_toBottomOf="@+id/rlTopToolbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+          />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

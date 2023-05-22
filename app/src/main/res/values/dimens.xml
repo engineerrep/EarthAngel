@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pw_Radius">15dp</dimen>
+
+    //内容与手机左右两边的边距
+    <dimen name="page_space">@dimen/_16sdp</dimen>
+    <dimen name="message_size">@dimen/_12sdp</dimen>
+
+    <dimen name="tool_bar_min_height">@dimen/_40sdp</dimen>
+
+    <dimen name="user_profile_radius">@dimen/_8sdp</dimen>
+
+    <dimen name="chat_voice_max_w">@dimen/_180sdp</dimen>
+    <dimen name="chat_voice_mix_w">@dimen/_60sdp</dimen>
+
+    <dimen name="head_image">@dimen/_58sdp</dimen>
+
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.earth.angel.user.ui.AddUserActivity"/>
+        <variable
+            name="handler"
+            type="com.earth.angel.user.ui.AddUserActivity" />
+    </data>
+
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.ui.AddUserActivity">
+    <include layout="@layout/include_top_bar"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayoutWhoWant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/themColor"
+        app:tabTextColor="@color/unSelectColor"
+        app:tabSelectedTextColor="#FF323232"
+        app:tabIndicatorFullWidth="false"
+        app:tabMode="auto"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rlTopToolbar" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpagerWhoWant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tablayoutWhoWant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+</layout>

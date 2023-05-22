@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/_10sdp">
+
+    <com.earth.libbase.view.ShapedImageView
+        android:id="@+id/ivlibHomeHeadImage"
+        android:layout_width="@dimen/head_image"
+        android:layout_height="@dimen/head_image"
+        android:scaleType="centerCrop"
+        android:background="@mipmap/base_comm_head"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:round_radius="@dimen/radius"
+        app:shape_mode="circle" />
+
+    <TextView
+        android:id="@+id/ivLibHomeName"
+        style="@style/Theme.BaseTitleTextView"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:fontFamily="@font/avenirnext_latobold"
+        android:lines="1"
+        android:text=""
+        android:textColor="#ff555555"
+        app:layout_constraintBottom_toTopOf="@+id/ivLibHomedIntroduce"
+        app:layout_constraintStart_toEndOf="@+id/ivlibHomeHeadImage"
+        app:layout_constraintTop_toTopOf="@+id/ivlibHomeHeadImage" />
+
+    <ImageView
+        android:id="@+id/LibHomeUserLocationIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/lib_home_user_location"
+        app:layout_constraintBottom_toBottomOf="@+id/ivlibHomeHeadImage"
+        app:layout_constraintStart_toStartOf="@+id/ivLibHomeName"
+        app:layout_constraintTop_toBottomOf="@+id/ivLibHomeName" />
+
+    <TextView
+        android:id="@+id/ivLibHomedIntroduce"
+        style="@style/Theme.BaseTextView"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:lines="1"
+        android:text=""
+        android:textColor="#ff9d9d9d"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivlibHomeHeadImage"
+        app:layout_constraintStart_toEndOf="@+id/LibHomeUserLocationIV"
+        app:layout_constraintTop_toBottomOf="@+id/ivLibHomeName" />
+
+    <ImageView
+        android:id="@+id/LibHomeUserSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:src="@mipmap/lib_home_user_save"
+        app:layout_constraintBottom_toBottomOf="@+id/ivlibHomeHeadImage"
+        app:layout_constraintStart_toEndOf="@+id/ivLibHomedIntroduce"
+        app:layout_constraintTop_toTopOf="@+id/ivlibHomeHeadImage" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_12sdp"
+        android:padding="@dimen/_12sdp"
+        android:background="@drawable/bg_image_best"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/LibHomeUserSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivlibHomeHeadImage">
+        <LinearLayout
+            android:id="@+id/LibHomeItemGiftOneLl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.earth.libbase.view.ShapedImageView
+                android:id="@+id/LibHomeItemGiftOne"
+
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@mipmap/base_comm_img"
+
+                android:scaleType="centerCrop"
+                app:round_radius="@dimen/radius"
+                app:shape_mode="round_rect" />
+            <TextView
+                android:id="@+id/tvText"
+                style="@style/Theme.BaseTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:ellipsize="end"
+                android:lines="3"
+                android:text=""
+                android:textColor="#ff555555"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LibHomeItemGiftTwoLl"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.earth.libbase.view.ShapedImageView
+                android:id="@+id/LibHomeItemGiftTwo"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@mipmap/base_comm_img"
+
+                android:scaleType="centerCrop"
+                app:round_radius="@dimen/radius"
+                app:shape_mode="round_rect" />
+            <TextView
+                android:id="@+id/tvTextTwo"
+                style="@style/Theme.BaseTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:ellipsize="end"
+                android:lines="3"
+                android:text=""
+                android:textColor="#ff555555"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

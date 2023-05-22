@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_Article">
+    <fragment
+        android:id="@+id/navigation_Article"
+        android:name="com.earth.libarticl.LibArticleFragment"
+        android:label="1"
+        tools:layout="@layout/fragment_libarticle" />
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.earth.libhome.ui.HomeFragment"
+        android:label="2"
+        tools:layout="@layout/fragment_home" />
+
+
+
+    <fragment
+        android:id="@+id/navigation_navi"
+        android:name="com.earth.libmine.ui.LibMineFragment"
+        android:label="4"
+        tools:layout="@layout/fragment_lib_mine" />
+
+
+</navigation>
