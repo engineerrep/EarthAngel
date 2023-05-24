@@ -37,3 +37,6 @@ EarthAngel不仅对环境有益，而且对于社区也有益。通过回收闲�
 EarthAngel 使用[MIT 许可证](https://github.com/engineerrep/EarthAngel/blob/main/LICENSE)发布。
 ## 4.联系我们
 感谢您对 ShareVC 项目的支持。如有任何疑问,请通过 GitHub Issues 或通过电子邮件[engineerrep@gmail.com](mailto:engineerrep@gmail.com)与我们联系。
+## 5.隐私政策
+
+我们非常重视用户的隐私，我们可能会收集一些数据活跃信息，如贡献者、下载量、活跃度等，以便更好地了解项目的使用情况和改进项目。但我们不会收集用户的具体信息，如姓名、电子邮件地址、IP地址等。我们承诺保护用户的隐私，不会将用户的个人信息泄露给第三方。如果您有任何关于隐私政策的问题或疑虑，请联系我们[engineerrep@gmail.com](mailto:engineerrep@gmail.com)。
