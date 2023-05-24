@@ -2,21 +2,24 @@
 English|[中文版](https://github.com/engineerrep/EarthAngel/blob/main/README_CN.md)
 
 ## 1. Project Overview
-### 1.1 Project Summary
-EarthAngel is an App designed to help people recycle second-hand items. It provides a platform for owners of unused items to post them on it and for people in need to contact the owners to obtain the items free of charge.
 
-The main feature of EarthAngel is its provision of free services. In today's consumption-based society, people often choose to sell unused items to earn extra income. However, these items might be what some people in need require, but they cannot afford the cost of purchasing them. EarthAngel provides a perfect platform for these people to obtain the items they need for free.
+### 1.1 Project Description
 
-EarthAngel is not only beneficial to the environment but also to the community. By recycling unused items, we can reduce waste, ease the burden of landfills, and give these items to those who need them. This not only helps to solve some of their problems but also enhances community cohesion.
+EarthAngel is an App dedicated to recycling unused items, with the aim of providing a platform for individuals to post their unused items for others to obtain for free.
 
-If you have any unused items, consider posting them on EarthAngel. Through this platform, you can help people in need of these items and make contributions to the environment and community. If you need some items, you can also find them on EarthAngel. This is a community where we can help each other and make contributions to the environment and community together.
+EarthAngel's main feature is that it is completely free. In today's consumer-driven society, individuals often turn to selling their unused items to generate additional income. However, for those in need, these items may be essential, but they cannot afford them. EarthAngel provides the perfect platform for people to obtain the items they need for free.
+
+EarthAngel also benefits the environment. By recycling unused items, we can reduce waste, decrease the burden on landfills, and provide these items to those in need. This not only helps them solve problems, but also protects the environment.
+
+Consider posting your unused items on EarthAngel to help those in need and make a contribution to the environment. And if you are in need of items, you can also search for them on EarthAngel.
 
 ### 1.2 Project Features
-- Environmental concept: EarthAngel is an app dedicated to environmental protection. By recycling second-hand items, we reduce waste of resources and ease the burden of landfills. This not only helps to protect the environment but also contributes to a better world for the future.
-  
-- Free services: EarthAngel provides completely free services aimed at helping those in need obtain the items they require. This is also beneficial to owners of items as they can give away unused items free to those who require them.
-  
-- Community connection: EarthAngel is not only an app for recycling second-hand items but also helps people in the community to connect. Through this platform, people can help and support each other in the community and build compassionate community relationships.
+
+- Environmental concept: EarthAngel is committed to environmental conservation by recycling unused items, reducing waste and the burden on landfills. This not only protects the environment but also contributes to the future.
+
+- Free services: EarthAngel's services are completely free, aimed at helping people in need obtain the items they require. For the item owners, this is also a good thing, as they can provide unused items for free to those who need them.
+
+- Establishing connections and support: EarthAngel is an application for recycling unused items, which not only helps individuals find the items they need but also establishes connections and mutual support.
 
 ## 2. Contribution Guidelines
 We welcome everyone to contribute! EarthAngel is an open-source project, and we appreciate your enthusiastic support. This project follows the [MIT License](https://github.com/engineerrep/EarthAngel/blob/main/LICENSE).
