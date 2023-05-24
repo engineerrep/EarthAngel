@@ -1,4 +1,4 @@
-# EarthAngel Project Description
+# EarthAngel Project Introduction
 English|[中文版](https://github.com/engineerrep/EarthAngel/blob/main/README_CN.md)
 
 ## 1. Project Overview
