@@ -1,6 +1,10 @@
 # EarthAngel Project Introduction
 English|[中文版](https://github.com/engineerrep/EarthAngel/blob/main/README_CN.md)
 
+#### We offer free backend support unless you ask for customized features. If you are a front-end engineer, you can get this android app up running in a few hours and for free.
+
+#### Please contact us through GitHub Issues or by email at [engineerrep@gmail.com](mailto:engineerrep@gmail.com).
+
 ## 1. Project Overview
 
 ### 1.1 Project Description
