@@ -1,6 +1,10 @@
 # EarthAngel项目说明
 [English](https://github.com/engineerrep/EarthAngel/blob/main/README.md)|中文版
 
+#### 我们提供免费的后端支持，除非您要求定制功能。如果您是一名前端工程师，您可以免费且仅花费几个小时便能将这个安卓应用程序上线。
+
+#### 请通过 GitHub Issues 或通过电子邮件[engineerrep@gmail.com](mailto:engineerrep@gmail.com)与我们联系。
+
 ## 1.项目简介
 
 ### 1.1项目概述
