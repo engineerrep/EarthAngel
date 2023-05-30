@@ -9,11 +9,13 @@ English|[中文版](https://github.com/engineerrep/EarthAngel/blob/main/README_C
 
 ### 1.1 Project Description
 
-EarthAngel is an App dedicated to recycling unused items, with the aim of providing a platform for individuals to post their unused items for others to obtain for free.
+EarthAngel is the world’s first app dedicated to recycling unused items, with the aim of providing a platform for individuals to post their unused items for others to obtain for free.
 
-EarthAngel's main feature is that it is completely free. In today's consumer-driven society, individuals often turn to selling their unused items to generate additional income. However, for those in need, these items may be essential, but they cannot afford them. EarthAngel provides the perfect platform for people to obtain the items they need for free.
+EarthAngel's main feature is that it is completely free.
 
-EarthAngel also benefits the environment. By recycling unused items, we can reduce waste, decrease the burden on landfills, and provide these items to those in need. This not only helps them solve problems, but also protects the environment.
+In today’s consumer-driven society individuals often turn to selling their unused items to generate additional income. It is often very time consuming and not very efficient. They prefer to give these items away.   However for those in need,these items may be essential, but they cannot afford them. EarthAngel provides the perfect platform to bridge these two groups
+
+EarthAngel also benefits the environment. By recycling unused items, we can reduce waste,decrease the burden on landfills, and provide these items to those in need. This not only helps them solve problems, but also protects the environment.  And more people can live better life.
 
 Consider posting your unused items on EarthAngel to help those in need and make a contribution to the environment. And if you are in need of items, you can also search for them on EarthAngel.
 
